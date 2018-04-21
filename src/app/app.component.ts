@@ -1,5 +1,6 @@
+import { DashboardPage } from './../pages/dashboard/dashboard';
 import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Platform, MenuController  } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -9,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { AuthProvider } from '../providers/auth/auth';
 import { AnalyticsProvider } from '../providers/analytics/analytics';
 import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
+import { LoginSliderPage } from '../pages/login-slider/login-slider';
 
 @Component({
   templateUrl: 'app.html'
@@ -23,10 +25,14 @@ export class MyApp {
     splashScreen: SplashScreen,
     auth: AuthProvider,
     analytics: AnalyticsProvider,
-    remoteConfig: RemoteConfigProvider
+    remoteConfig: RemoteConfigProvider,
+    public menuCtrl: MenuController
   ) {
+    // menuController: menuCtrl;
     // when the platform is ready
     platform.ready().then(() => {
+      this.menuCtrl.swipeEnable(false);
+
       // we need to check if the user is logged in
       auth.getCurrentUser()
         .then(user => {
@@ -34,10 +40,13 @@ export class MyApp {
           // this is a cool way of showing pages
           if (user) {
             // if we have an observable - then show the tabs page
-            this.rootPage = TabsPage
+            this.rootPage = DashboardPage
           } else {
             // else show the login page
-            this.rootPage = LoginPage
+            this.rootPage = LoginSliderPage
+            // this.rootPage = LoginPage
+
+
           }
 
           statusBar.styleDefault();

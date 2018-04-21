@@ -1,3 +1,5 @@
+import { LoginSliderPage } from './../pages/login-slider/login-slider';
+import { DashboardPage } from './../pages/dashboard/dashboard';
 // NgModules help organize an application into cohesive blocks of functionality.
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -51,6 +53,8 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     TabsPage,
     // add the login page as declaration
     LoginPage,
+    DashboardPage,
+    LoginSliderPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,9 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
   entryComponents: [
     MyApp,
     TabsPage,
-    LoginPage
+    LoginPage,
+    DashboardPage,
+    LoginSliderPage
   ],
   providers: [
     StatusBar,

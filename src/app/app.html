@@ -1,1 +1,77 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+
+  <ion-header class="menu_header">
+    <ion-toolbar>
+      <ion-grid class="menu_header_grid">
+        <ion-row row-center>
+          <ion-col col-8 class="header_title">
+            <ion-label text-capitalize padding-top>danerys targerian</ion-label>
+          </ion-col>
+          <ion-col col-4>
+            <div>
+              <img id="profilepic" src="../assets/imgs/student_70.png" />
+            </div>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-list class="menu_wrapper">
+      <button ion-item class="menu_button">
+        <ion-icon name="home" class="menu_icon" color="primary"></ion-icon>
+        Home
+      </button>
+
+      <button ion-item class="menu_button">
+        <ion-icon name="notifications" class="menu_icon"></ion-icon>
+        Notifications
+      </button>
+      <button ion-item>
+        <ion-icon name="timer" class="menu_icon menu_lastitem"></ion-icon>
+        Time Table
+      </button>
+      <ion-item-divider></ion-item-divider>
+      <button ion-item>
+        <ion-icon name="bookmarks" class="menu_icon"></ion-icon>
+        Diary
+      </button>
+      <button ion-item>
+        <ion-icon name="book" class="menu_icon"></ion-icon>
+        Academics
+      </button>
+      <button ion-item>
+        <ion-icon name="flask" class="menu_icon"></ion-icon>
+        Subjects
+      </button>
+      <ion-item-divider></ion-item-divider>
+      <button ion-item>
+        <ion-icon name="images" class="menu_icon"></ion-icon>
+        Gallery
+      </button>
+      <button ion-item>
+        <ion-icon name="done-all" class="menu_icon"></ion-icon>
+        Fees
+      </button>
+      <button ion-item class="menu_lastitem">
+        <ion-icon name="call" class="menu_icon"></ion-icon>
+        Contact Us
+      </button>
+      <ion-item-divider></ion-item-divider>
+      <button ion-item>
+        <ion-label>
+          <ion-icon name="settings" class="menu_icon" color="primary"></ion-icon>
+          Settings
+        </ion-label>
+
+      </button>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- <ion-nav [root]="rootPage"></ion-nav> -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

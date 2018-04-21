@@ -14,3 +14,37 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+// put some space b/w icon and label
+.menu_icon {
+  color: darkgrey;
+  color: palevioletred;
+  padding-right: 25px;
+}
+.menu_button {
+  // border: palevioletred;
+  // border-top-width: 5px !important;
+  &.item{
+    // color: paleturquoise;
+
+}
+
+}
+.item-divider {
+  // border-color: red !important;
+  border-width: 2px;
+  height: 0px !important;
+}
+
+.item-inner{
+  // border-image-width: 17px;
+  border-bottom-width: 0px !important;
+
+
+}
+.header_title{
+  // background: paleturquoise;
+}
+.menu_header_grid{
+  // background: plum !important;
+  align-content: center !important;
+}

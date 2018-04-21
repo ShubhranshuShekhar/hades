@@ -25678,12 +25678,41 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.menu_icon {
+  color: darkgrey;
+  color: palevioletred;
+  padding-right: 25px;
+}
+
+.item-divider {
+  border-width: 2px;
+  height: 0px !important;
+}
+
+.item-inner {
+  border-bottom-width: 0px !important;
+}
+
+.menu_header_grid {
+  -webkit-align-content: center !important;
+  -ms-flex-line-pack: center !important;
+  align-content: center !important;
+}
+
 heart-button ion-icon {
   color: firebrick;
   font-size: 2em;
 }
 
 .login-content {
+  background-image: url("../../assets/imgs/login_topography.png");
+  background-color: transparent;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.login-slider-main {
   background-image: url("../../assets/imgs/login_topography.png");
   background-color: transparent;
   -webkit-align-content: center;
