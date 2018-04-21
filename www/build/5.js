@@ -140,9 +140,9 @@ var LoginModalPage = (function () {
                         // await this.auth.anonymousLogin();
                         _a.sent();
                         // loader.dismiss()
+                        window.location.reload();
                         return [4 /*yield*/, this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_0__dashboard_dashboard__["a" /* DashboardPage */])];
                     case 3:
-                        // loader.dismiss()
                         _a.sent();
                         return [3 /*break*/, 5];
                     case 4:

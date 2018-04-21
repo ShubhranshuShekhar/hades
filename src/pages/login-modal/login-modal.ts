@@ -56,6 +56,7 @@ try{
       await this.auth.emailLogin(this.user_email, this.user_password);
 
       // loader.dismiss()
+      window.location.reload();
       await this.navCtrl.setRoot(DashboardPage);
       // this.menuCtrl.swipeEnable(true);
     }
