@@ -19,7 +19,7 @@ import { auth } from 'firebase/app';
 })
 export class MyApp {
   rootPage:any = null;
-  // counter:Number;
+  loggedIn:boolean = false;
 
   // these providers should be injected in constructor
   constructor(
@@ -43,7 +43,7 @@ export class MyApp {
       // we need to check if the user is logged in
       auth.getCurrentUser()
         .then(user => {
-
+this.loggedIn = true;
           // this is a cool way of showing pages
           if (user) {
             // if we have an observable - then show the tabs page
