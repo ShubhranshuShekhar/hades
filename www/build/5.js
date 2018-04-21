@@ -43,7 +43,7 @@ var LoginModalPageModule = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginModalPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs_tabs__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dashboard_dashboard__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(35);
@@ -102,12 +102,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
  * Ionic pages and navigation.
  */
 var LoginModalPage = (function () {
-    function LoginModalPage(navCtrl, navParams, viewCtrl, auth, loadingCtrl) {
+    function LoginModalPage(navCtrl, navParams, viewCtrl, auth, loadingCtrl, menuCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.viewCtrl = viewCtrl;
         this.auth = auth;
         this.loadingCtrl = loadingCtrl;
+        this.menuCtrl = menuCtrl;
         this.showButton = true;
         this.showSpinner = false;
         this.showLabel = false;
@@ -139,7 +140,7 @@ var LoginModalPage = (function () {
                         // await this.auth.anonymousLogin();
                         _a.sent();
                         // loader.dismiss()
-                        return [4 /*yield*/, this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_0__tabs_tabs__["a" /* TabsPage */])];
+                        return [4 /*yield*/, this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_0__dashboard_dashboard__["a" /* DashboardPage */])];
                     case 3:
                         // loader.dismiss()
                         _a.sent();
@@ -160,13 +161,10 @@ var LoginModalPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
             selector: 'page-login-modal',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\login-modal\login-modal.html"*/'<!--\n\n  Generated template for the LoginModalPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Login</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="closeModal()">Close</button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-item>\n\n        <ion-label color="primary" stacked>Email</ion-label>\n\n        <ion-input type="email" placeholder="Email Address" [(ngModel)]="user_email"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label color="primary" stacked>Password</ion-label>\n\n        <ion-input type="password" placeholder="Secret Key" [(ngModel)]="user_password"></ion-input>\n\n      </ion-item>\n\n    </ion-row>\n\n    <ion-row justify-content-center style="margin-top: 25px">\n\n\n\n      <button ion-button icon-left  color="light" (tap)="loginEmail()" *ngIf="showButton">\n\n        <ion-icon name="lock" style="padding-right: 13px"></ion-icon>\n\n        Login\n\n      </button>\n\n\n\n      <!-- <button ion-button (tap)="loginEmail()" *ngIf="showButton">Open Modal</button> -->\n\n      <ion-spinner *ngIf="showSpinner"></ion-spinner>\n\n\n\n\n\n    </ion-row>\n\n    <ion-row justify-content-center *ngIf="showLabel">\n\n        <!-- <ion-label *ngIf="showLabel">Email id or password doesn\'t match.</ion-label> -->\n\n        <p>Email id or password doesn\'t match.</p>\n\n    </ion-row>\n\n  </ion-grid>\n\n\n\n  <!-- <button ion-button (tap)="loginEmail()">Open Modal</button>\n\n  <ion-spinner style="margin-top: 13px"></ion-spinner> -->\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\login-modal\login-modal.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* LoadingController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* ViewController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* LoadingController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* MenuController */]) === "function" && _f || Object])
     ], LoginModalPage);
     return LoginModalPage;
+    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=login-modal.js.map

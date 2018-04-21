@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component } from "@angular/core";
+import {
+  IonicPage,
+  NavController,
+  NavParams,
+  MenuController
+} from "ionic-angular";
 
 /**
  * Generated class for the DashboardPage page.
@@ -10,16 +15,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-dashboard',
-  templateUrl: 'dashboard.html',
+  selector: "page-dashboard",
+  templateUrl: "dashboard.html"
 })
 export class DashboardPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public menuCtrl: MenuController
+  ) {
+    // window.location.reload();
   }
+
+
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DashboardPage');
-  }
+    // this.menuCtrl.enable(true);
+    console.log(this.menuCtrl.isEnabled());
+    console.log("ionViewDidLoad DashboardPage");
+    this.menuCtrl.swipeEnable(true);
 
+
+  }
 }

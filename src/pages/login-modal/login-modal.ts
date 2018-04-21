@@ -1,6 +1,7 @@
+import { DashboardPage } from './../dashboard/dashboard';
 import { TabsPage } from './../tabs/tabs';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController, LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController, LoadingController, MenuController } from 'ionic-angular';
 import { AuthProvider } from "../../providers/auth/auth";
 
 /**
@@ -27,6 +28,7 @@ export class LoginModalPage {
     public viewCtrl : ViewController,
     public auth: AuthProvider,
     public loadingCtrl: LoadingController,
+    public menuCtrl: MenuController
   ) {
     this.showButton = true;
     this.showSpinner = false;
@@ -54,7 +56,8 @@ try{
       await this.auth.emailLogin(this.user_email, this.user_password);
 
       // loader.dismiss()
-      await this.navCtrl.setRoot(TabsPage)
+      await this.navCtrl.setRoot(DashboardPage);
+      // this.menuCtrl.swipeEnable(true);
     }
     catch (e){
       console.log("Error");
