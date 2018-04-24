@@ -1,10 +1,11 @@
 import { UserLogoutComponent } from './../components/user-logout/user-logout';
 import { DashboardPage } from './../pages/dashboard/dashboard';
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { NavController } from 'ionic-angular';
+import { Nav } from "ionic-angular";
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 // i need to import the providers
@@ -13,11 +14,14 @@ import { AnalyticsProvider } from '../providers/analytics/analytics';
 import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
 import { LoginSliderPage } from '../pages/login-slider/login-slider';
 import { auth } from 'firebase/app';
+import { HomeworkStudentPage } from '../pages/homework-student/homework-student';
+import { Page } from 'ionic-angular/navigation/nav-util';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
+  @ViewChild(Nav) nav: Nav;
   rootPage:any = null;
   loggedIn:boolean = false;
 
@@ -30,6 +34,8 @@ export class MyApp {
     analytics: AnalyticsProvider,
     remoteConfig: RemoteConfigProvider,
     public menuCtrl: MenuController,
+    // i should use view child and not nav controller
+    // public navCtrl: NavController
 
   ) {
 
@@ -72,7 +78,13 @@ this.loggedIn = true;
     });
 
   }
+  openPage(){
+    console.log("open page has been clicked in app.c.t");
+    // this.rootPage(LoginSliderPage);
+    this.nav.setRoot(HomeworkStudentPage);
+    // this.rootPage(HomeworkStudentPage);
 
+  }
   async logOut(){
     console.log("User is logging out");
     await this.auth.logout();

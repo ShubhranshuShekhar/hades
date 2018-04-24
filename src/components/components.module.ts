@@ -13,6 +13,7 @@ import { ImageUploadComponent, UploadModal } from './image-upload/image-upload';
 import { FcmHandlerComponent } from './fcm-handler/fcm-handler';
 import { FcmTopicComponent } from './fcm-topic/fcm-topic';
 import { EmailLoginComponent } from './email-login/email-login';
+import { AssignmentChartComponent } from './assignment-chart/assignment-chart';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { EmailLoginComponent } from './email-login/email-login';
     FcmHandlerComponent,
     FcmTopicComponent,
     EmailLoginComponent,
+    AssignmentChartComponent,
         
     ],
     imports: [
@@ -48,6 +50,7 @@ import { EmailLoginComponent } from './email-login/email-login';
     FcmHandlerComponent,
     FcmTopicComponent,
     EmailLoginComponent,
+    AssignmentChartComponent,
         
     ],
     entryComponents: [

@@ -1,3 +1,4 @@
+import { HomeworkStudentPage } from './../pages/homework-student/homework-student';
 import { LoginSliderPage } from './../pages/login-slider/login-slider';
 import { DashboardPage } from './../pages/dashboard/dashboard';
 // NgModules help organize an application into cohesive blocks of functionality.
@@ -54,7 +55,8 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     // add the login page as declaration
     LoginPage,
     DashboardPage,
-    LoginSliderPage
+    LoginSliderPage,
+    HomeworkStudentPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +73,8 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     TabsPage,
     LoginPage,
     DashboardPage,
-    LoginSliderPage
+    LoginSliderPage,
+    HomeworkStudentPage
   ],
   providers: [
     StatusBar,
@@ -85,7 +88,8 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     AdMobFree,
     FcmProvider,
     AnalyticsProvider,
-    RemoteConfigProvider
+    RemoteConfigProvider,
+
   ]
 })
 export class AppModule {}
