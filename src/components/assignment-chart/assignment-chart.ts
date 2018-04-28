@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Chart } from "chart.js";
+import { Chart } from 'chart.js';
 /**
  * Generated class for the AssignmentChartComponent component.
  *
@@ -24,7 +24,7 @@ export class AssignmentChartComponent {
     this.text = 'Hello World';
   }
   ionViewDidLoad() {
-
+console.log("Ion view did load in Assignment-Chart");
     this.barChart = new Chart(this.barCanvas.nativeElement, {
 
         type: 'bar',

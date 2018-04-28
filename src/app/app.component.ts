@@ -62,7 +62,12 @@ this.loggedIn = true;
 
           } else {
             // else show the login page
-            this.rootPage = LoginSliderPage
+            // TODO: Disbale this
+            this.menuCtrl.swipeEnable(true);
+            this.rootPage = DashboardPage
+
+            // TODO: Enable this
+            // this.rootPage = LoginSliderPage
             // this.rootPage = LoginPage
 
 
