@@ -1,15 +1,15 @@
 webpackJsonp([8],{
 
-/***/ 792:
+/***/ 795:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeworkStudentPageModule", function() { return HomeworkStudentPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__homework_student__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_assignment_chart_assignment_chart__ = __webpack_require__(487);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginSliderPageModule", function() { return LoginSliderPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_email_login_email_login__ = __webpack_require__(487);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_slider__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,24 +20,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var HomeworkStudentPageModule = (function () {
-    function HomeworkStudentPageModule() {
+var LoginSliderPageModule = (function () {
+    function LoginSliderPageModule() {
     }
-    HomeworkStudentPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+    LoginSliderPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__homework_student__["a" /* HomeworkStudentPage */],
-                __WEBPACK_IMPORTED_MODULE_3__components_assignment_chart_assignment_chart__["a" /* AssignmentChartComponent */]
+                __WEBPACK_IMPORTED_MODULE_3__login_slider__["a" /* LoginSliderPage */],
+                __WEBPACK_IMPORTED_MODULE_0__components_email_login_email_login__["a" /* EmailLoginComponent */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__homework_student__["a" /* HomeworkStudentPage */]),
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__login_slider__["a" /* LoginSliderPage */]),
             ],
         })
-    ], HomeworkStudentPageModule);
-    return HomeworkStudentPageModule;
+    ], LoginSliderPageModule);
+    return LoginSliderPageModule;
 }());
 
-//# sourceMappingURL=homework-student.module.js.map
+//# sourceMappingURL=login-slider.module.js.map
 
 /***/ })
 

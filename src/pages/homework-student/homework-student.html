@@ -17,11 +17,205 @@
 
 
 <ion-content padding>
-    <assignment-chart></assignment-chart>
-<ion-grid>
-  <ion-row justify-content-center align-items-bottom style="height: 30%;">
 
+
+
+
+  <ion-grid>
+    <ion-row justify-content-center align-items-bottom style="height: 30%;">
+      <canvas #barCanvas></canvas>
+    </ion-row>
+    <ion-row style="width: 100%">
+      <!-- <ion-list inset>
+        <ion-buttons>This is a button</ion-buttons>
+        <ion-item>Something goes here</ion-item>
+        <p>Write table of 19</p>
+        <p>test 1</p>
+        <p>test 1</p>
+        <p>test 1</p>
+        <p>test 1test 1test 1test 1test 1</p>
+
+        </ion-list> -->
+      <ion-list style="width: 100%">
+        <ion-item-group>
+          <ion-item-divider color="light">April</ion-item-divider>
+          <ion-row class="assignments" (tap)="openModal()">
+            <ion-col col-1 class="color-col"></ion-col>
+            <ion-col col-11>
+              <ion-item class="assignment-list">
+                <h2>Write states and capital of india</h2>
+                <p>
+                  <b>Tuesday, 20th May
+                    <!-- <span style="color: plum">New</span> -->
+                  </b>
+                </p>
+                <!-- <button ion-button clear item-end>View</button> -->
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+<!-- Delete from here -->
+<ion-row class="assignments" (tap)="openModal()">
+    <ion-col col-1 class="color-col" style="background-color: palevioletred !important"></ion-col>
+    <ion-col col-11>
+      <ion-item class="assignment-list">
+        <h2>Write states and capital of india</h2>
+        <p>
+          <b>Tuesday, 20th May
+            <!-- <span style="color: plum">New</span> -->
+          </b>
+        </p>
+        <!-- <button ion-button clear item-end>View</button> -->
+      </ion-item>
+    </ion-col>
   </ion-row>
-  <ion-row></ion-row>
-</ion-grid>
+  <ion-row class="assignments" (tap)="openModal()">
+      <ion-col col-1 class="color-col"></ion-col>
+      <ion-col col-11>
+        <ion-item class="assignment-list">
+          <h2>Write states and capital of india</h2>
+          <p>
+            <b>Tuesday, 20th May
+              <!-- <span style="color: plum">New</span> -->
+            </b>
+          </p>
+          <!-- <button ion-button clear item-end>View</button> -->
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="assignments" (tap)="openModal()">
+        <ion-col col-1 class="color-col"></ion-col>
+        <ion-col col-11>
+          <ion-item class="assignment-list">
+            <h2>Write states and capital of india</h2>
+            <p>
+              <b>Tuesday, 20th May
+                <!-- <span style="color: plum">New</span> -->
+              </b>
+            </p>
+            <!-- <button ion-button clear item-end>View</button> -->
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="assignments" (tap)="openModal()">
+          <ion-col col-1 class="color-col"></ion-col>
+          <ion-col col-11>
+            <ion-item class="assignment-list">
+              <h2>Write states and capital of india</h2>
+              <p>
+                <b>Tuesday, 20th May
+                  <!-- <span style="color: plum">New</span> -->
+                </b>
+              </p>
+              <!-- <button ion-button clear item-end>View</button> -->
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="assignments" (tap)="openModal()">
+            <ion-col col-1 class="color-col"></ion-col>
+            <ion-col col-11>
+              <ion-item class="assignment-list">
+                <h2>Write states and capital of india</h2>
+                <p>
+                  <b>Tuesday, 20th May
+                    <!-- <span style="color: plum">New</span> -->
+                  </b>
+                </p>
+                <!-- <button ion-button clear item-end>View</button> -->
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row class="assignments" (tap)="openModal()">
+              <ion-col col-1 class="color-col"></ion-col>
+              <ion-col col-11>
+                <ion-item class="assignment-list">
+                  <h2>Write states and capital of india</h2>
+                  <p>
+                    <b>Tuesday, 20th May
+                      <!-- <span style="color: plum">New</span> -->
+                    </b>
+                  </p>
+                  <!-- <button ion-button clear item-end>View</button> -->
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row class="assignments" (tap)="openModal()">
+                <ion-col col-1 class="color-col"></ion-col>
+                <ion-col col-11>
+                  <ion-item class="assignment-list">
+                    <h2>Write states and capital of india</h2>
+                    <p>
+                      <b>Tuesday, 20th May
+                        <!-- <span style="color: plum">New</span> -->
+                      </b>
+                    </p>
+                    <!-- <button ion-button clear item-end>View</button> -->
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="assignments" (tap)="openModal()">
+                  <ion-col col-1 class="color-col"></ion-col>
+                  <ion-col col-11>
+                    <ion-item class="assignment-list">
+                      <h2>Write states and capital of india</h2>
+                      <p>
+                        <b>Tuesday, 20th May
+                          <!-- <span style="color: plum">New</span> -->
+                        </b>
+                      </p>
+                      <!-- <button ion-button clear item-end>View</button> -->
+                    </ion-item>
+                  </ion-col>
+                </ion-row>
+                <ion-row class="assignments" (tap)="openModal()">
+                    <ion-col col-1 class="color-col"></ion-col>
+                    <ion-col col-11>
+                      <ion-item class="assignment-list">
+                        <h2>Write states and capital of india</h2>
+                        <p>
+                          <b>Tuesday, 20th May
+                            <!-- <span style="color: plum">New</span> -->
+                          </b>
+                        </p>
+                        <!-- <button ion-button clear item-end>View</button> -->
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="assignments" (tap)="openModal()">
+                      <ion-col col-1 class="color-col"></ion-col>
+                      <ion-col col-11>
+                        <ion-item class="assignment-list">
+                          <h2>Write states and capital of india</h2>
+                          <p>
+                            <b>Tuesday, 20th May
+                              <!-- <span style="color: plum">New</span> -->
+                            </b>
+                          </p>
+                          <!-- <button ion-button clear item-end>View</button> -->
+                        </ion-item>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row class="assignments" (tap)="openModal()">
+                        <ion-col col-1 class="color-col"></ion-col>
+                        <ion-col col-11>
+                          <ion-item class="assignment-list">
+                            <h2>Write states and capital of india</h2>
+                            <p>
+                              <b>Tuesday, 20th May
+                                <!-- <span style="color: plum">New</span> -->
+                              </b>
+                            </p>
+                            <!-- <button ion-button clear item-end>View</button> -->
+                          </ion-item>
+                        </ion-col>
+                      </ion-row>
+
+
+<!-- Till here -->
+
+        </ion-item-group>
+      </ion-list>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,3 +1,4 @@
+import { HomeworkStudentPage } from './../pages/homework-student/homework-student';
 import { UserLogoutComponent } from './../components/user-logout/user-logout';
 import { DashboardPage } from './../pages/dashboard/dashboard';
 import { Component, ViewChild } from '@angular/core';
@@ -14,7 +15,7 @@ import { AnalyticsProvider } from '../providers/analytics/analytics';
 import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
 import { LoginSliderPage } from '../pages/login-slider/login-slider';
 import { auth } from 'firebase/app';
-import { HomeworkStudentPage } from '../pages/homework-student/homework-student';
+
 import { Page } from 'ionic-angular/navigation/nav-util';
 
 @Component({
@@ -58,13 +59,15 @@ this.loggedIn = true;
           //   window.location.reload();
           //   this.counter = + 1;
           // }
-            this.rootPage = DashboardPage
+            // this.rootPage = DashboardPage
+            this.rootPage = HomeworkStudentPage;
 
           } else {
             // else show the login page
             // TODO: Disbale this
             this.menuCtrl.swipeEnable(true);
-            this.rootPage = DashboardPage
+            // this.rootPage = DashboardPage
+            this.rootPage = HomeworkStudentPage;
 
             // TODO: Enable this
             // this.rootPage = LoginSliderPage

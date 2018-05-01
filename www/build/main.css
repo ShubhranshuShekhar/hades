@@ -25705,6 +25705,14 @@ ion-navbar.toolbar {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.ios page-home .scroll-content, .md page-home .scroll-content {
+  background-color: #f4f4f4;
+}
+
+.ios page-home ion-card-header, .md page-home ion-card-header {
+  font-weight: bold;
+}
+
 heart-button ion-icon {
   color: firebrick;
   font-size: 2em;
@@ -25811,6 +25819,31 @@ heart-button ion-icon {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 7px;
+}
+
+ion-content .scroll-content {
+  padding: 7px !important;
+}
+
+.assignments ion-col {
+  color: turquoise;
+  padding: 0px !important;
+}
+
+.assignments .color-col {
+  background-color: turquoise;
+  background-image: url("../../assets/imgs/line_slant.png");
+}
+
+.assignment-list {
+  padding-left: 7px !important;
+  border-bottom-width: 1px !important;
+  border-color: gray;
+  border-style: inset;
+}
+
+.assignment-list ion-label {
+  margin-bottom: 7px !important;
 }
 
 .login-content {

@@ -1,3 +1,36 @@
-page-homework-student {
+ion-content{
+  .scroll-content{
+  padding: 7px !important;
 
+  // background-color: darkviolet;
+}
+}
+
+ion-grid{
+  // padding: 0px !important;
+  // background-color: darkviolet;
+}
+
+.assignments{
+  ion-col{
+    color: turquoise;
+    padding: 0px !important;
+  }
+  .color-col{
+    background-color: turquoise;
+    background-image: url("../../assets/imgs/line_slant.png");
+
+
+  }
+}
+.assignment-list{
+  // color: red;
+  padding-left: 7px !important;
+  border-bottom-width: 1px !important;
+  border-color: gray;
+  border-style: inset;
+ion-label{
+  // color: green;
+  margin-bottom: 7px !important;
+}
 }
