@@ -1,0 +1,74 @@
+.dashbord-content{
+  align-content: center;
+  background-color: aqua !important;
+  padding: 0% !important;
+  margin: 0% !important
+}
+
+.dashboard-grid{
+  padding: 0% !important;
+  margin: 0% !important;
+
+}
+
+.dashboard-first-row{
+  height: 3px;
+  background-color: paleturquoise;
+  // padding: 0% !important;
+  // margin: 0% !important;
+  // box-sizing: initial;
+  // border-spacing: 0;
+  // border-collapse: collapse !important;
+}
+
+.dashboard-second-row{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  background: linear-gradient(to right, #a8c0ff, #3f2b96); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  align-content: center !important;
+
+}
+
+.div-assignments{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  // background: linear-gradient(to right, #a8c0ff, #3f2b96); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: whitesmoke !important;
+  width: 70%;
+  margin-top: 7px;
+  align-content: center !important;
+}
+
+.dashboard-third-row{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 7px;
+  background: linear-gradient(to right, #a8c0ff, #3f2b96); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  align-content: center !important;
+
+}
+.dashboard-icons{
+  background: transparent !important;
+  width: 81px;
+  height: 81px;
+}
+
+.dashboard-icon-row{
+  padding: 7px !important;
+  border-bottom: 1px inset;
+  border-color: #3f2b96
+}
+
+.dashboard-icon-row2{
+  justify-content: center;
+  padding-top: 7px;
+
+}
+.dashboard-icon-col{
+  // border-right: 2px inset black;
+
+}

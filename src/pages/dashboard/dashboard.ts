@@ -5,6 +5,7 @@ import {
   NavParams,
   MenuController
 } from "ionic-angular";
+import { DiaryPage } from "../diary/diary";
 
 /**
  * Generated class for the DashboardPage page.
@@ -36,5 +37,9 @@ export class DashboardPage {
     this.menuCtrl.swipeEnable(true);
 
 
+  }
+
+  openPage(){
+    this.navCtrl.push(DiaryPage);
   }
 }

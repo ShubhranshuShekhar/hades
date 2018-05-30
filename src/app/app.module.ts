@@ -1,3 +1,4 @@
+import { DiaryPage } from './../pages/diary/diary';
 import { HomeworkStudentPage } from './../pages/homework-student/homework-student';
 import { LoginSliderPage } from './../pages/login-slider/login-slider';
 import { DashboardPage } from './../pages/dashboard/dashboard';
@@ -56,7 +57,8 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     LoginPage,
     DashboardPage,
     LoginSliderPage,
-    HomeworkStudentPage
+    HomeworkStudentPage,
+    DiaryPage
   ],
   imports: [
     BrowserModule,
@@ -74,7 +76,8 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     LoginPage,
     DashboardPage,
     LoginSliderPage,
-    HomeworkStudentPage
+    HomeworkStudentPage,
+    DiaryPage
   ],
   providers: [
     StatusBar,

@@ -1,3 +1,4 @@
+import { DiaryPage } from './../pages/diary/diary';
 import { HomeworkStudentPage } from './../pages/homework-student/homework-student';
 import { UserLogoutComponent } from './../components/user-logout/user-logout';
 import { DashboardPage } from './../pages/dashboard/dashboard';
@@ -9,6 +10,7 @@ import { NavController } from 'ionic-angular';
 import { Nav } from "ionic-angular";
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+
 // i need to import the providers
 import { AuthProvider } from '../providers/auth/auth';
 import { AnalyticsProvider } from '../providers/analytics/analytics';
@@ -59,15 +61,15 @@ this.loggedIn = true;
           //   window.location.reload();
           //   this.counter = + 1;
           // }
-            // this.rootPage = DashboardPage
-            this.rootPage = HomeworkStudentPage;
+            this.rootPage = DashboardPage
+            // this.rootPage = HomeworkStudentPage;
 
           } else {
             // else show the login page
             // TODO: Disbale this
             this.menuCtrl.swipeEnable(true);
-            // this.rootPage = DashboardPage
-            this.rootPage = HomeworkStudentPage;
+            this.rootPage = DashboardPage
+            // this.rootPage = HomeworkStudentPage;
 
             // TODO: Enable this
             // this.rootPage = LoginSliderPage
