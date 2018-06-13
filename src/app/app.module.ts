@@ -1,7 +1,15 @@
+import { AttendacneTeacherPage } from './../pages/attendacne-teacher/attendacne-teacher';
 import { DiaryPage } from './../pages/diary/diary';
 import { HomeworkStudentPage } from './../pages/homework-student/homework-student';
 import { LoginSliderPage } from './../pages/login-slider/login-slider';
+
+// Dashboard
 import { DashboardPage } from './../pages/dashboard/dashboard';
+import { DashboardTeacherPage } from './../pages/dashboard-teacher/dashboard-teacher';
+
+//Attendance
+
+
 // NgModules help organize an application into cohesive blocks of functionality.
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -55,7 +63,13 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     TabsPage,
     // add the login page as declaration
     LoginPage,
+    // adding both types of dashboard
     DashboardPage,
+    DashboardTeacherPage,
+
+    // attendacne page
+    AttendacneTeacherPage,
+
     LoginSliderPage,
     HomeworkStudentPage,
     DiaryPage
@@ -75,6 +89,11 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     TabsPage,
     LoginPage,
     DashboardPage,
+    DashboardTeacherPage,
+
+    // Attendance
+    AttendacneTeacherPage,
+
     LoginSliderPage,
     HomeworkStudentPage,
     DiaryPage

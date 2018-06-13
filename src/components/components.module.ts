@@ -14,6 +14,7 @@ import { FcmHandlerComponent } from './fcm-handler/fcm-handler';
 import { FcmTopicComponent } from './fcm-topic/fcm-topic';
 import { EmailLoginComponent } from './email-login/email-login';
 import { AssignmentChartComponent } from './assignment-chart/assignment-chart';
+import { AddAttendanceComponent } from './add-attendance/add-attendance';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { AssignmentChartComponent } from './assignment-chart/assignment-chart';
     FcmTopicComponent,
     EmailLoginComponent,
     AssignmentChartComponent,
+    AddAttendanceComponent,
         
     ],
     imports: [
@@ -51,6 +53,7 @@ import { AssignmentChartComponent } from './assignment-chart/assignment-chart';
     FcmTopicComponent,
     EmailLoginComponent,
     AssignmentChartComponent,
+    AddAttendanceComponent,
         
     ],
     entryComponents: [
