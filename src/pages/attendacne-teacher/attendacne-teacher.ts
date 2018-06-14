@@ -1,3 +1,6 @@
+import { ViewChild } from '@angular/core';
+import { Slides } from 'ionic-angular';
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -13,6 +16,7 @@ import { AuthProvider } from "../../providers/auth/auth";
 })
 export class AttendacneTeacherPage {
   teacher_standard: String;
+  @ViewChild(Slides) slides: Slides;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -31,5 +35,9 @@ export class AttendacneTeacherPage {
     this.teacher_standard = user.standard.name;
   });
 
+}
+
+ngAfterViewInit() {
+  this.slides.pager = true;
 }
 }
