@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileEditPageModule", function() { return ProfileEditPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_edit__ = __webpack_require__(812);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_edit__ = __webpack_require__(813);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var ProfileEditPageModule = (function () {
 
 /***/ }),
 
-/***/ 812:
+/***/ 813:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77,7 +77,7 @@ var ProfileEditPage = (function () {
     };
     ProfileEditPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-profile-edit',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\profile-edit\profile-edit.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Edit your Profile</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ng-container *ngIf="auth.user | async as user">\n\n  <ion-list>\n\n      \n\n    <ion-item>\n\n      <ion-label floating>Display Name</ion-label>\n\n      <ion-input [(ngModel)]="newName" type="text"></ion-input>\n\n    </ion-item>\n\n  \n\n  </ion-list>\n\n\n\n  <button ion-button small (click)="updateProfile(user)">\n\n      Save Changes\n\n  </button>\n\n\n\n  </ng-container>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\profile-edit\profile-edit.html"*/,
+            selector: 'page-profile-edit',template:/*ion-inline-start:"C:\code\hades\src\pages\profile-edit\profile-edit.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Edit your Profile</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <ng-container *ngIf="auth.user | async as user">\n\n  <ion-list>\n\n      \n\n    <ion-item>\n\n      <ion-label floating>Display Name</ion-label>\n\n      <ion-input [(ngModel)]="newName" type="text"></ion-input>\n\n    </ion-item>\n\n  \n\n  </ion-list>\n\n\n\n  <button ion-button small (click)="updateProfile(user)">\n\n      Save Changes\n\n  </button>\n\n\n\n  </ng-container>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\profile-edit\profile-edit.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],

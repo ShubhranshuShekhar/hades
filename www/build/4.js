@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostsCreatePageModule", function() { return PostsCreatePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__posts_create__ = __webpack_require__(811);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__posts_create__ = __webpack_require__(812);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(487);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -41,7 +41,7 @@ var PostsCreatePageModule = (function () {
 
 /***/ }),
 
-/***/ 811:
+/***/ 812:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50,7 +50,7 @@ var PostsCreatePageModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_database_database__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_analytics_analytics__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_analytics_analytics__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -136,7 +136,7 @@ var PostsCreatePage = (function () {
     };
     PostsCreatePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-posts-create',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\posts-create\posts-create.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Create a New Post</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding text-center>\n\n  <ng-container *ngIf="auth.user | async as user">\n\n    <img [hidden]="!post.img" [src]="post.img">\n\n\n\n    <p>Upload an image from your device and add some content to the post</p>\n\n\n\n    <ion-input floating type="text" placeholder="Post Content" [(ngModel)]="post.content"></ion-input>\n\n    \n\n    <hr>\n\n    \n\n    <ion-input floating type="text" placeholder="Paste Img URL or select from device" [(ngModel)]="post.img"></ion-input>\n\n    \n\n          \n\n    <image-upload [userId]="user.uid" (uploadFinished)="updateURL($event)"></image-upload>\n\n\n\n    <hr>\n\n\n\n    <button [disabled]="!post.img || !post.content" ion-button full color="secondary" (tap)="create(user)">Save Post</button>\n\n  </ng-container>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\posts-create\posts-create.html"*/,
+            selector: 'page-posts-create',template:/*ion-inline-start:"C:\code\hades\src\pages\posts-create\posts-create.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Create a New Post</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding text-center>\n\n  <ng-container *ngIf="auth.user | async as user">\n\n    <img [hidden]="!post.img" [src]="post.img">\n\n\n\n    <p>Upload an image from your device and add some content to the post</p>\n\n\n\n    <ion-input floating type="text" placeholder="Post Content" [(ngModel)]="post.content"></ion-input>\n\n    \n\n    <hr>\n\n    \n\n    <ion-input floating type="text" placeholder="Paste Img URL or select from device" [(ngModel)]="post.img"></ion-input>\n\n    \n\n          \n\n    <image-upload [userId]="user.uid" (uploadFinished)="updateURL($event)"></image-upload>\n\n\n\n    <hr>\n\n\n\n    <button [disabled]="!post.img || !post.content" ion-button full color="secondary" (tap)="create(user)">Save Post</button>\n\n  </ng-container>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\posts-create\posts-create.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],

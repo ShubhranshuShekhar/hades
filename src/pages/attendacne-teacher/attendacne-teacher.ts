@@ -31,18 +31,21 @@ export class AttendacneTeacherPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AttendacneTeacherPage');
     var val: any;
-    var list = this.db.getNameList();
-    list.ref.get().then(function(doc){
-      if (doc.exists){
-        val = doc.data;
-      console.log(doc.data());
-    }
-    else{
-      console.log("No such doc!!");
-    }
-  }
-  )
-
+    var coll = this.db.getStudents();
+    console.log("-------");
+    console.log(coll);
+    var allCities = coll.ref.get()
+    // var allCities = coll.ref.get()
+    .then(snapshot => {
+      console.log("###############");
+      console.log(snapshot);
+        snapshot.forEach(doc => {
+            console.log(doc.id, '=>', doc.data().class_id);
+        });
+    })
+    .catch(err => {
+        console.log('Error getting documents', err);
+    });
   // console.log(val.hello);
 
 

@@ -24,20 +24,24 @@ export interface NameList {
 @Injectable()
 export class DatabaseProvider {
   private postsRef: AngularFirestoreCollection<Post>;
-  private namelistRef:AngularFirestoreCollection<NameList>;
+  private namelistRef: AngularFirestoreCollection<NameList>;
   constructor(private afs: AngularFirestore) {
     this.postsRef = this.afs.collection('posts');
     this.namelistRef = this.afs.collection('namelist')
   }
 
-  getNameList(){
+  getNameList() {
     return this.afs.collection("namelist").doc('IXA2018')
 
-  //   return this.afs.collection<NameList>('namelist', ref =>
-  //   ref
-  //     .where('userId', '==', userId)
-  //  );
+    //   return this.afs.collection<NameList>('namelist', ref =>
+    //   ref
+    //     .where('userId', '==', userId)
+    //  );
 
+  }
+
+  getStudents() {
+    return this.afs.collection('class');
   }
 
   getRecentPosts() {
