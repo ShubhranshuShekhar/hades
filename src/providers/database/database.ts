@@ -1,10 +1,9 @@
-import { Injectable } from '@angular/core';
-import * as firebase from 'firebase/app';
+import { Injectable } from "@angular/core";
+import * as firebase from "firebase/app";
 import {
   AngularFirestore,
   AngularFirestoreCollection
-} from 'angularfire2/firestore';
-
+} from "angularfire2/firestore";
 
 export interface Post {
   userId: string;
@@ -26,35 +25,37 @@ export class DatabaseProvider {
   private postsRef: AngularFirestoreCollection<Post>;
   private namelistRef: AngularFirestoreCollection<NameList>;
   constructor(private afs: AngularFirestore) {
-    this.postsRef = this.afs.collection('posts');
-    this.namelistRef = this.afs.collection('namelist')
+    this.postsRef = this.afs.collection("posts");
+    this.namelistRef = this.afs.collection("namelist");
   }
 
   getNameList() {
-    return this.afs.collection("namelist").doc('IXA2018')
+    return this.afs.collection("namelist").doc("IXA2018");
 
     //   return this.afs.collection<NameList>('namelist', ref =>
     //   ref
     //     .where('userId', '==', userId)
     //  );
-
   }
 
-  getStudents() {
-    return this.afs.collection('class');
+
+  getStudentsByDivision(division: string) {
+    return this.afs
+      .collection("students")
+      .ref.where("division", "==", division);
   }
 
   getRecentPosts() {
-    return this.afs.collection<Post>('posts', ref =>
-      ref.orderBy('createdAt', 'desc').limit(10)
+    return this.afs.collection<Post>("posts", ref =>
+      ref.orderBy("createdAt", "desc").limit(10)
     );
   }
 
   getUserPosts(userId: string) {
-    return this.afs.collection<Post>('posts', ref =>
+    return this.afs.collection<Post>("posts", ref =>
       ref
-        .orderBy('createdAt', 'desc')
-        .where('userId', '==', userId)
+        .orderBy("createdAt", "desc")
+        .where("userId", "==", userId)
         .limit(10)
     );
   }
@@ -88,7 +89,7 @@ export class DatabaseProvider {
   //// RELATIONSHIPS ////
 
   getUsers() {
-    return this.afs.collection('users', ref => ref.limit(10)).valueChanges();
+    return this.afs.collection("users", ref => ref.limit(10)).valueChanges();
   }
 
   follow(followerId: string, followedId: string) {
@@ -102,7 +103,7 @@ export class DatabaseProvider {
     };
 
     return this.afs
-      .collection('relationships')
+      .collection("relationships")
       .doc(docId)
       .set(data);
   }
@@ -111,7 +112,7 @@ export class DatabaseProvider {
     const docId = this.concatIds(followerId, followedId);
 
     return this.afs
-      .collection('relationships')
+      .collection("relationships")
       .doc(docId)
       .delete();
   }
@@ -120,7 +121,7 @@ export class DatabaseProvider {
     const docId = this.concatIds(followerId, followedId);
 
     return this.afs
-      .collection('relationships')
+      .collection("relationships")
       .doc(docId)
       .valueChanges();
   }
