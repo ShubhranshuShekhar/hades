@@ -1,0 +1,24 @@
+<ion-list>
+  <div *ngFor="let student of students">
+    <ion-item class="itemClass">
+      <ion-label>{{student.id}} {{student.first_name}} {{student.last_name}}</ion-label>
+      <ion-toggle  checked="{{check}}" ></ion-toggle>
+    </ion-item>
+</div>
+</ion-list>
+
+
+
+<ion-list>
+  <button (click)="markTrue()" >
+    True
+  </button>
+
+  <button (click)="markFalse()" >
+      False
+
+    </button>
+
+
+
+</ion-list>

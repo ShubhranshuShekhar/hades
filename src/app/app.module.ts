@@ -1,4 +1,6 @@
-import { AttendacneTeacherPage } from './../pages/attendacne-teacher/attendacne-teacher';
+import { AttendanceTeacherPage } from "../pages/attendance-teacher/attendance-teacher";
+
+
 import { DiaryPage } from './../pages/diary/diary';
 import { HomeworkStudentPage } from './../pages/homework-student/homework-student';
 import { LoginSliderPage } from './../pages/login-slider/login-slider';
@@ -68,7 +70,7 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     DashboardTeacherPage,
 
     // attendacne page
-    AttendacneTeacherPage,
+    AttendanceTeacherPage,
 
     LoginSliderPage,
     HomeworkStudentPage,
@@ -92,7 +94,7 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     DashboardTeacherPage,
 
     // Attendance
-    AttendacneTeacherPage,
+    AttendanceTeacherPage,
 
     LoginSliderPage,
     HomeworkStudentPage,

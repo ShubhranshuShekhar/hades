@@ -25718,6 +25718,15 @@ heart-button ion-icon {
   font-size: 2em;
 }
 
+.itemClass .item-inner {
+  border-bottom: 1px inset !important;
+  border-color: #3f2b96 !important;
+}
+
+.itemClass .label {
+  margin: 3px !important;
+}
+
 .dashbord-content {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;

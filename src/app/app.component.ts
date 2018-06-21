@@ -5,7 +5,7 @@ import { UserLogoutComponent } from "./../components/user-logout/user-logout";
 import { DashboardPage } from "./../pages/dashboard/dashboard";
 import { DashboardTeacherPage } from './../pages/dashboard-teacher/dashboard-teacher';
 //Attendance
-import { AttendacneTeacherPage } from "../pages/attendacne-teacher/attendacne-teacher";
+import { AttendanceTeacherPage } from "../pages/attendance-teacher/attendance-teacher";
 
 
 import { Component, ViewChild } from "@angular/core";
@@ -65,7 +65,7 @@ export class MyApp {
           }
           if (user.role == "teacher"){
             // this.rootPage = DashboardTeacherPage;
-            this.rootPage = AttendacneTeacherPage;
+            this.rootPage = AttendanceTeacherPage;
           }
 
 
