@@ -41,15 +41,22 @@ export class AttendanceTeacherPage {
     var temp: Student;
     var Student: Student[];
     // tempData = [["Jack", "Daniels", "jackda01"],["Jhonny", "Walker", "jhonwalk"]];
-    temp = {first_name: "Jack", last_name: "Daniels", id: "jackda01"};
+    // temp = {first_name: "Jack", last_name: "Daniels", id: "jackda01"};
     Student = [
-      {first_name: "Jack", last_name: "Daniels", id: "jackda01"},
-      {first_name: "Jhonny", last_name: "Wakcer", id: "wacher01"},
-      {first_name: "Jin", last_name: "Beam", id: "beamjin01"},
-      {first_name: "Glen", last_name: "Fiddicch", id: "fiddigl01"},
+      {first_name: "Jack", last_name: "Daniels", id: "jackda01", is_present:true},
+      {first_name: "Jhonny", last_name: "Wakcer", id: "wacher01", is_present:false},
+      {first_name: "Jin", last_name: "Beam", id: "beamjin01", is_present:false},
+      {first_name: "Glen", last_name: "Fiddicch", id: "fiddigl01", is_present:true},
 
     ]
 
     return Student;
   }
+ 
+  displayAttendance(attendance){
+    console.log("I am in parent");
+    console.log(attendance);
+
+  }
+
 }

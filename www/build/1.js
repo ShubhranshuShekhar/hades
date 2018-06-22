@@ -83,7 +83,7 @@ var UserPostsPage = (function () {
     });
     UserPostsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-user-posts',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\user-posts\user-posts.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Posts by {{ displayName }}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <post-feed [userId]="userId"></post-feed>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\user-posts\user-posts.html"*/,
+            selector: 'page-user-posts',template:/*ion-inline-start:"C:\code\hades\src\pages\user-posts\user-posts.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Posts by {{ displayName }}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <post-feed [userId]="userId"></post-feed>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\user-posts\user-posts.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])

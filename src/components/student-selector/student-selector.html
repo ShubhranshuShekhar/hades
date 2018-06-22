@@ -2,7 +2,7 @@
   <div *ngFor="let student of students">
     <ion-item class="itemClass">
       <ion-label>{{student.id}} {{student.first_name}} {{student.last_name}}</ion-label>
-      <ion-toggle  checked="{{check}}" ></ion-toggle>
+      <ion-toggle  checked="{{attendance[student.id]}}" ></ion-toggle>
     </ion-item>
 </div>
 </ion-list>
@@ -18,7 +18,13 @@
       False
 
     </button>
+    <button (click)="reloadAttendance()" >
+      Reload
 
+    </button>
+    <button (click)="submitAttendance()" >
+      Submit
 
+    </button>
 
 </ion-list>

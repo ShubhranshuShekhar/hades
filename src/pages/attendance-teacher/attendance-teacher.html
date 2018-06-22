@@ -15,7 +15,7 @@
 
 <ion-content padding>
 
-<student-selector [students]="students"></student-selector>
+  <student-selector [students]="students" (attendanceMap)='displayAttendance($event)'> </student-selector>
 
 
 </ion-content>
