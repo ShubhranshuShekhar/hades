@@ -16,6 +16,9 @@ import { EmailLoginComponent } from './email-login/email-login';
 import { AssignmentChartComponent } from './assignment-chart/assignment-chart';
 import { AddAttendanceComponent } from './add-attendance/add-attendance';
 import { StudentSelectorComponent } from './student-selector/student-selector';
+import { ListDisplayComponent } from './list-display/list-display';
+import { PopoverComponent } from './popover/popover';
+import { AttendanceFilterComponent } from './attendance-filter/attendance-filter';
 
 
 @NgModule({
@@ -35,6 +38,9 @@ import { StudentSelectorComponent } from './student-selector/student-selector';
     AssignmentChartComponent,
     AddAttendanceComponent,
     StudentSelectorComponent,
+    ListDisplayComponent,
+    PopoverComponent,
+    AttendanceFilterComponent,
         
     ],
     imports: [
@@ -57,6 +63,9 @@ import { StudentSelectorComponent } from './student-selector/student-selector';
     AssignmentChartComponent,
     AddAttendanceComponent,
     StudentSelectorComponent,
+    ListDisplayComponent,
+    PopoverComponent,
+    AttendanceFilterComponent,
         
     ],
     entryComponents: [

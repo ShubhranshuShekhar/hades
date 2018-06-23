@@ -1,0 +1,9 @@
+<ion-list class="listClass">
+
+
+    <button ion-item *ngFor="let attendance of attendanceData" >
+        <ion-label>{{attendance.day + " " + attendance.date + "-" + attendance.month}}</ion-label>
+        <ion-label class="displayLabel"><b>{{attendance.present +"/" +  attendance.absent}}</b></ion-label>
+    </button>
+
+  </ion-list>

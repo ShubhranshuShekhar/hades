@@ -1,3 +1,4 @@
+import { PopoverPage } from './../pages/popover/popover';
 import { DiaryPage } from "./../pages/diary/diary";
 import { HomeworkStudentPage } from "./../pages/homework-student/homework-student";
 import { UserLogoutComponent } from "./../components/user-logout/user-logout";
@@ -25,6 +26,7 @@ import { LoginSliderPage } from "../pages/login-slider/login-slider";
 import { auth } from "firebase/app";
 
 import { Page } from "ionic-angular/navigation/nav-util";
+import { TeststuffsPage } from '../pages/teststuffs/teststuffs';
 
 @Component({
   templateUrl: "app.html"
@@ -66,6 +68,7 @@ export class MyApp {
           if (user.role == "teacher"){
             // this.rootPage = DashboardTeacherPage;
             this.rootPage = AttendanceTeacherPage;
+            // this.rootPage = TeststuffsPage;
           }
 
 

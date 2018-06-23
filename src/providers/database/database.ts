@@ -38,6 +38,11 @@ export class DatabaseProvider {
     //  );
   }
 
+getAttendancenyDivision(division: string){
+  return this.afs.collection("attendance").ref.where("division", "==", division);
+
+
+}
 
   getStudentsByDivision(division: string) {
     return this.afs

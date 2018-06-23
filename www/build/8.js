@@ -1,15 +1,14 @@
 webpackJsonp([8],{
 
-/***/ 804:
+/***/ 814:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginSliderPageModule", function() { return LoginSliderPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_email_login_email_login__ = __webpack_require__(488);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_slider__ = __webpack_require__(205);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeststuffsPageModule", function() { return TeststuffsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teststuffs__ = __webpack_require__(489);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,25 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var LoginSliderPageModule = (function () {
-    function LoginSliderPageModule() {
+var TeststuffsPageModule = (function () {
+    function TeststuffsPageModule() {
     }
-    LoginSliderPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+    TeststuffsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__login_slider__["a" /* LoginSliderPage */],
-                __WEBPACK_IMPORTED_MODULE_0__components_email_login_email_login__["a" /* EmailLoginComponent */]
+                __WEBPACK_IMPORTED_MODULE_2__teststuffs__["a" /* TeststuffsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__login_slider__["a" /* LoginSliderPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__teststuffs__["a" /* TeststuffsPage */]),
             ],
         })
-    ], LoginSliderPageModule);
-    return LoginSliderPageModule;
+    ], TeststuffsPageModule);
+    return TeststuffsPageModule;
 }());
 
-//# sourceMappingURL=login-slider.module.js.map
+//# sourceMappingURL=teststuffs.module.js.map
 
 /***/ })
 

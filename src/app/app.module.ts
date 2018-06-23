@@ -1,3 +1,5 @@
+import { TeststuffsPage } from './../pages/teststuffs/teststuffs';
+import { PopoverPage } from './../pages/popover/popover';
 import { AttendanceTeacherPage } from "../pages/attendance-teacher/attendance-teacher";
 
 
@@ -30,6 +32,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
+import { SortPipe } from '../pipes/sort/sort';
 /// DELETE this line
 //import { firebaseConfig } from '../env';
 
@@ -69,12 +72,18 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     DashboardPage,
     DashboardTeacherPage,
 
+    PopoverPage,
+
     // attendacne page
     AttendanceTeacherPage,
 
+    TeststuffsPage,
+
     LoginSliderPage,
     HomeworkStudentPage,
-    DiaryPage
+    DiaryPage,
+
+    SortPipe
   ],
   imports: [
     BrowserModule,
@@ -92,7 +101,8 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     LoginPage,
     DashboardPage,
     DashboardTeacherPage,
-
+    PopoverPage,
+TeststuffsPage,
     // Attendance
     AttendanceTeacherPage,
 

@@ -17,7 +17,7 @@ export class StudentSelectorComponent {
   // @Input() students:  string;
   @Input() students: Student[];
   @Output() attendanceMap = new EventEmitter();
-  
+
   attendance: Map<string, boolean> = new Map<string, boolean>();
   check: boolean;
   text: string;
@@ -33,7 +33,7 @@ export class StudentSelectorComponent {
 
   }
   ngOnInit(){
-    
+
   }
 
   ngOnChanges() {
