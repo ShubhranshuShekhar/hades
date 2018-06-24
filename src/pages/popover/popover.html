@@ -4,11 +4,8 @@
       </ion-list-header> -->
   <ion-item class="item-leave-height">
     <ion-label>Month</ion-label>
-    <ion-select>
-      <ion-option value="CASUAL LEAVE">Jan</ion-option>
-      <ion-option value="COMP OFF">Feb</ion-option>
-      <ion-option value="EARNED LEAVE">Mar</ion-option>
-      <ion-option value="SICK LEAVE">April</ion-option>
+    <ion-select [(ngModel)]="monthSelect">
+      <ion-option *ngFor="let month of months">{{month}}</ion-option>
     </ion-select>
   </ion-item>
   <!-- <ion-item-divider>
@@ -17,37 +14,37 @@
   <!-- <ion-label>Days</ion-label> -->
   <ion-item>
     <ion-label>All Days</ion-label>
-    <ion-toggle></ion-toggle>
+    <ion-toggle [(ngModel)]="allDaysToggle" (ionChange)="allDay($event)"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Monday</ion-label>
-    <ion-toggle></ion-toggle>
+    <ion-toggle [(ngModel)]="mondayToggle"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Tuesday</ion-label>
-    <ion-toggle></ion-toggle>
+    <ion-toggle [(ngModel)]="tuesdayToggle" ></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Wednesday</ion-label>
-    <ion-toggle></ion-toggle>
+    <ion-toggle [(ngModel)]="wednesdayToggle"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Thursday</ion-label>
-    <ion-toggle></ion-toggle>
+    <ion-toggle [(ngModel)]="thursdayToggle"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Friday</ion-label>
-    <ion-toggle></ion-toggle>
+    <ion-toggle [(ngModel)]="fridayToggle"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Saturday</ion-label>
-    <ion-toggle></ion-toggle>
+    <ion-toggle [(ngModel)]="saturdayToggle"></ion-toggle>
   </ion-item>
 
 </ion-list>
 <ion-grid>
-  <ion-row  class="leave-margin">
-<button ion-button>Cancel</button>
-<button ion-button (click)="submitFilter()">Submit</button>
-</ion-row>
+  <ion-row class="leave-margin">
+    <button ion-button>Cancel</button>
+    <button ion-button (click)="submitFilter()">Submit</button>
+  </ion-row>
 </ion-grid>

@@ -1,17 +1,21 @@
-import { PopoverPage } from './../popover/popover';
-import { PopoverComponent } from './../../components/popover/popover';
+import { PopoverPage } from "./../popover/popover";
+import { PopoverComponent } from "./../../components/popover/popover";
 import { Student } from "./attendance-teacher.module";
 import { CommonModule } from "@angular/common";
 import { ViewChild } from "@angular/core";
-import { Slides, ActionSheetController, PopoverController } from "ionic-angular";
+import {
+  Slides,
+  ActionSheetController,
+  PopoverController
+} from "ionic-angular";
 import { LoadingController, ModalController } from "ionic-angular";
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular";
 import { AuthProvider } from "../../providers/auth/auth";
 import { DatabaseProvider } from "../../providers/database/database";
 import { forEach } from "@firebase/util";
-import { StudentSelectorComponent } from '../../components/student-selector/student-selector';
-import { DashboardPage } from '../dashboard/dashboard';
+import { StudentSelectorComponent } from "../../components/student-selector/student-selector";
+import { DashboardPage } from "../dashboard/dashboard";
 /**
  * Generated class for the AttendanceTeacherPage page.
  *
@@ -24,12 +28,12 @@ import { DashboardPage } from '../dashboard/dashboard';
   selector: "page-attendance-teacher",
   templateUrl: "attendance-teacher.html"
 })
-
 export class AttendanceTeacherPage {
-
+  filterData: any;
   attendance = [];
   @ViewChild(Slides) slides: Slides;
   students: Array<Student> = [];
+  months : Array<string>;
   index: number;
   constructor(
     public navCtrl: NavController,
@@ -37,13 +41,10 @@ export class AttendanceTeacherPage {
     public auth: AuthProvider,
     private db: DatabaseProvider,
     public popoverCtrl: PopoverController,
-    public modalCtrl: ModalController,
+    public modalCtrl: ModalController
   ) {
     var students: Student[];
     var studentDocs = this.db.getStudentsByDivision("IXA2018");
-
-
-
 
   }
 
@@ -51,39 +52,38 @@ export class AttendanceTeacherPage {
     console.log("ionViewDidLoad AttendanceTeacherPage");
     // this.setSlideVars();
     this.students = this.getStudentData("IXA2018");
-    var studentDocs = this.db
+    var studentDocs = this.db;
     var attendanceDoc = this.db.getAttendancenyDivision("IXA2018");
+
     // console.log(this.students);
-    attendanceDoc.get().then(snapshot =>{
-      // console.log(snapshot);
-      snapshot.forEach(doc =>{
-        // console.log("--------------");
-        var test = "field1"
-        var data = doc.data();
-        // console.log(data.date);
-        // console.log(data.present);
-        var tempData = {
-          "day": data.day,
-          "date": data.date,
-          "month": data.month,
+    attendanceDoc
+      .get()
+      .then(snapshot => {
+        // console.log(snapshot);
+        snapshot.forEach(doc => {
+          // console.log("--------------");
+          var test = "field1";
+          var data = doc.data();
+          // console.log(data.date);
+          // console.log(data.present);
+          var tempData = {
+            day: data.day,
+            date: data.date,
+            month: data.month,
 
-          "absent": data.absent,
-          "present": data.present,
+            absent: data.absent,
+            present: data.present
+          };
+          this.attendance.push(tempData);
+          // console.log(tempData);
+        });
 
-
-        }
-        this.attendance.push(tempData);
-
-        // console.log(tempData);
+        // console.log(this.attendance);
       })
-
-// console.log(this.attendance);
-    })
-    .catch(err =>{
-      console.log(err);
-    })
+      .catch(err => {
+        console.log(err);
+      });
   }
-
 
   getStudentData(division: string) {
     console.log(division);
@@ -123,19 +123,25 @@ export class AttendanceTeacherPage {
     console.log("I am in parent");
     console.log(attendance);
   }
-  displayFilter(val){
+  displayFilter(val) {
     console.log("Got this from popover!");
   }
 
   presentPopover() {
-    const popover = this.popoverCtrl.create(PopoverPage, {}, {cssClass: 'my-custom-popover'});
+    // var data = this.filterData;
+
+    const popover = this.popoverCtrl.create(
+      PopoverPage,
+      {},
+      { cssClass: "my-custom-popover" }
+    );
     popover.present();
+
+    popover.onDidDismiss( (data) => {
+      console.log(data);
+      this.filterData = data;
+      console.log(this.filterData);
+    })
   }
-openModal(){
-  console.log("Open Modal clicked!!");
-  var data = { message : 'hello world' };
-    var modalPage = this.modalCtrl.create('LoginModalPage');
-    modalPage.present();
-}
 
 }
