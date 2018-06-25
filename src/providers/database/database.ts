@@ -38,11 +38,53 @@ export class DatabaseProvider {
     //  );
   }
 
-getAttendancenyDivision(division: string){
-  return this.afs.collection("attendance").ref.where("division", "==", division);
+  getAttendancenyDivision(division: string) {
+    return this.afs.collection("attendance").ref.where("division", "==", division);
+  }
 
+  // createAttendanceStudent(day: string, date: string, month: string, year: string, user_id: string, division: string, present: boolean) {
+  createAttendanceStudent(
+    details: any,
+    day: string, date: string, month: string, year: string,
+    division: string,
+  ) {
+    var batch = this.afs.firestore.batch();
+    var collectionRef = this.afs.collection("attendanceList");
 
-}
+    console.log(" i am in DB create attendance");
+    // console.log(details);
+    for (let key in details) {
+      console.log(details[key]);
+      var docId = key + "_"+ date + "-" + month + "-" + year;
+      var doc = collectionRef.doc(docId)
+      doc.set({
+        "student_id": key,
+        "present": details[key],
+        "date": date,
+        "day": day,
+        "month": month,
+        "year": year,
+        "divsion": division,
+      })
+    }
+    var attendance = {
+      // "student_id": user_id,
+      // "date": date,
+      // "day": day,
+      // "month": month,
+      // "year": year,
+      // "divsion": division,
+      // "present": present,
+    }
+    batch.commit().then(data => {
+      return data
+    })
+      .then(err => {
+        return err;
+      })
+    // return ("Successful");
+    // return this.afs.collection("attendanceList").ref.add(attendance);
+  }
 
   getStudentsByDivision(division: string) {
     return this.afs

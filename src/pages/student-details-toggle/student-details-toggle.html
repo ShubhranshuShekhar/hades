@@ -1,39 +1,21 @@
 <ion-content padding>
-    <button ion-button full (click)='addAttendance()'>Save Attendance</button>
-    <button ion-button (click)='allPresent()'>All Present</button>
-    <button ion-button  (click)='allAbsent()'>All Absent</button>
+  <button ion-button full (click)='addAttendance()'>Save Attendance</button>
+  <button ion-button (click)='allPresent()'>All Present</button>
+  <button ion-button (click)='allAbsent()'>All Absent</button>
+  <button ion-button (click)='exit()'>Exit</button>
+  <button ion-button (click)='testData()'>Test</button>
 
 
   <ion-list>
-        <div *ngFor="let student of students">
-          <ion-item class="itemClass">
-            <ion-label>{{student.id}} {{student.first_name}} {{student.last_name}}</ion-label>
-            <ion-toggle  checked="{{attendance[student.id]}}" ></ion-toggle>
-          </ion-item>
-      </div>
-      </ion-list>
-
-
-
-      <ion-list>
-        <button (click)="markTrue()" >
-          True
-        </button>
-
-        <button (click)="markFalse()" >
-            False
-
-          </button>
-          <button (click)="reloadAttendance()" >
-            Reload
-
-          </button>
-          <button (click)="submitAttendance()" >
-            Submit
-
-          </button>
-
-      </ion-list>
+    <div *ngFor="let student of students">
+      <ion-item class="itemClass">
+        <ion-label>{{student.first_name}} {{student.last_name}}</ion-label>
+        <!-- <ion-toggle checked="{{attendance[student.id]}}"></ion-toggle> -->
+        <ion-toggle [(ngModel)]="attendance[student.id]"></ion-toggle>
+        
+      </ion-item>
+    </div>
+  </ion-list>
 
 
 </ion-content>

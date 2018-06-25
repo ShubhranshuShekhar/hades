@@ -49,23 +49,39 @@ export class AttendanceTeacherPage {
   ) {
     var students: Student[];
     var studentDocs = this.db.getStudentsByDivision("IXA2018");
-  }
+    studentDocs
+      .get()
+      .then(snapshot => {
+        console.log(snapshot);
+        snapshot.forEach(doc => {
+          // console.log(doc.data().first_name);
+          let tempStudent = {
+            first_name: doc.data().first_name,
+            last_name: doc.data().last_name,
+            id: doc.data().id,
+            is_present: true
+          };
+          this.students.push(tempStudent);
+        });
+        // var temp = [doc.data().first_name, doc.data().last_name];
+        // var temp = doc.data().last_name;
 
-  ionViewDidLoad() {
-    console.log("ionViewDidLoad AttendanceTeacherPage");
-    // this.setSlideVars();
-    this.students = this.getStudentData("IXA2018");
-    var studentDocs = this.db;
-    var attendanceDoc = this.db.getAttendancenyDivision("IXA2018");
-
+        // console.log(students);
+      })
+      .catch(err => {
+        console.log("I am in error -->", err);
+      });
     // console.log(this.students);
+ 
+    var attendanceDoc = this.db.getAttendancenyDivision("IXA2018");
+    
     attendanceDoc
       .get()
       .then(snapshot => {
         // console.log(snapshot);
         snapshot.forEach(doc => {
           // console.log("--------------");
-          var test = "field1";
+          // var test = "field1";
           var data = doc.data();
           // console.log(data.date);
           // console.log(data.present);
@@ -88,38 +104,49 @@ export class AttendanceTeacherPage {
       .catch(err => {
         console.log(err);
       });
+ 
+ 
+ 
+  }
+
+  ionViewDidLoad() {
+    console.log("ionViewDidLoad AttendanceTeacherPage");
+    // this.setSlideVars();
+    // this.students = this.getStudentData("IXA2018");
+    // var studentDocs = this.db.getStudentsByDivision("IXA2018");
+   
   }
 
   getStudentData(division: string) {
     console.log(division);
     var temp: Student;
     var Student: Student[];
-    Student = [
-      {
-        first_name: "Jack",
-        last_name: "Daniels",
-        id: "jackda01",
-        is_present: true
-      },
-      {
-        first_name: "Jhonny",
-        last_name: "Wakcer",
-        id: "wacher01",
-        is_present: false
-      },
-      {
-        first_name: "Jin",
-        last_name: "Beam",
-        id: "beamjin01",
-        is_present: false
-      },
-      {
-        first_name: "Glen",
-        last_name: "Fiddicch",
-        id: "fiddigl01",
-        is_present: true
-      }
-    ];
+    // Student = [
+    //   {
+    //     first_name: "Jack",
+    //     last_name: "Daniels",
+    //     id: "jackda01",
+    //     is_present: true
+    //   },
+    //   {
+    //     first_name: "Jhonny",
+    //     last_name: "Wakcer",
+    //     id: "wacher01",
+    //     is_present: false
+    //   },
+    //   {
+    //     first_name: "Jin",
+    //     last_name: "Beam",
+    //     id: "beamjin01",
+    //     is_present: false
+    //   },
+    //   {
+    //     first_name: "Glen",
+    //     last_name: "Fiddicch",
+    //     id: "fiddigl01",
+    //     is_present: true
+    //   }
+    // ];
 
     return Student;
   }
@@ -217,6 +244,10 @@ export class AttendanceTeacherPage {
     console.log("Add attendance clicked!");
     let profileModal = this.modalCtrl.create(StudentDetailsTogglePage, {
       studentsData: this.students,
+      date : "13",
+      month: "July",
+      year: "2018",
+      day: "Monday"
     });
     profileModal.present();
   }
