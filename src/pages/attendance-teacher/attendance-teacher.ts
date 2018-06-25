@@ -16,6 +16,8 @@ import { DatabaseProvider } from "../../providers/database/database";
 import { forEach } from "@firebase/util";
 import { StudentSelectorComponent } from "../../components/student-selector/student-selector";
 import { DashboardPage } from "../dashboard/dashboard";
+import { TeststuffsPage } from "../teststuffs/teststuffs";
+import { StudentDetailsTogglePage } from "../student-details-toggle/student-details-toggle";
 /**
  * Generated class for the AttendanceTeacherPage page.
  *
@@ -33,8 +35,10 @@ export class AttendanceTeacherPage {
   attendance = [];
   @ViewChild(Slides) slides: Slides;
   students: Array<Student> = [];
-  months : Array<string>;
+  months: Array<string>;
   index: number;
+  month_view: boolean;
+  day_view: boolean;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -45,7 +49,6 @@ export class AttendanceTeacherPage {
   ) {
     var students: Student[];
     var studentDocs = this.db.getStudentsByDivision("IXA2018");
-
   }
 
   ionViewDidLoad() {
@@ -72,7 +75,9 @@ export class AttendanceTeacherPage {
             month: data.month,
 
             absent: data.absent,
-            present: data.present
+            present: data.present,
+            day_view: true,
+            month_view: true
           };
           this.attendance.push(tempData);
           // console.log(tempData);
@@ -137,11 +142,82 @@ export class AttendanceTeacherPage {
     );
     popover.present();
 
-    popover.onDidDismiss( (data) => {
-      console.log(data);
-      this.filterData = data;
-      console.log(this.filterData);
-    })
+    popover.onDidDismiss(data => {
+      if (data) {
+        this.assign_filters(data);
+      }
+      // console.log(data);
+      // this.filterData = data;
+      // console.log("@@@@@@@@@@@@@@@@@@@@@@");
+      // // console.log(this.filterData);
+    });
   }
 
+  assign_filters(inputfilters: Array<any>) {
+    console.log("******************");
+    console.log();
+    var i = 0;
+    this.attendance.forEach(data => {
+      if (inputfilters[6] == "") {
+        data.month_view = true;
+      } else if (data.month == inputfilters[6]) {
+        data.month_view = true;
+      } else {
+        data.month_view = false;
+      }
+      // console.log(inputfilters);
+      switch (data.day) {
+        case "Monday": {
+          if (inputfilters[0]) data.day_view = true;
+          else data.day_view = false;
+          break;
+        }
+
+        case "Tuesday": {
+          if (inputfilters[1]) data.day_view = true;
+          else data.day_view = false;
+          break;
+        }
+
+        case "Wednesday": {
+          if (inputfilters[2]) data.day_view = true;
+          else data.day_view = false;
+          break;
+        }
+
+        case "Thursday": {
+          if (inputfilters[3]) data.day_view = true;
+          else data.day_view = false;
+          break;
+        }
+
+        case "Friday": {
+          if (inputfilters[4]) data.day_view = true;
+          else data.day_view = false;
+          break;
+        }
+
+        case "Saturday": {
+          if (inputfilters[5]) data.day_view = true;
+          else data.day_view = false;
+          break;
+        }
+        // console.log(data.day);
+        // console.log(data.day_view);
+        // default:{
+        // data.day_view = false;}
+      }
+
+      // for(i = 0; i<5; i++)    {
+      // console.log(inputfilters[i])
+    });
+  }
+
+  addAttendance() {
+    console.log("Add attendance clicked!");
+    let profileModal = this.modalCtrl.create(StudentDetailsTogglePage, {
+      studentsData: this.students,
+    });
+    profileModal.present();
+  }
 }

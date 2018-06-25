@@ -1,3 +1,4 @@
+import { StudentDetailsTogglePage } from './../pages/student-details-toggle/student-details-toggle';
 import { TeststuffsPage } from './../pages/teststuffs/teststuffs';
 import { PopoverPage } from './../pages/popover/popover';
 import { AttendanceTeacherPage } from "../pages/attendance-teacher/attendance-teacher";
@@ -82,6 +83,7 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     LoginSliderPage,
     HomeworkStudentPage,
     DiaryPage,
+    StudentDetailsTogglePage,
 
     SortPipe
   ],
@@ -105,7 +107,7 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
 TeststuffsPage,
     // Attendance
     AttendanceTeacherPage,
-
+    StudentDetailsTogglePage,
     LoginSliderPage,
     HomeworkStudentPage,
     DiaryPage

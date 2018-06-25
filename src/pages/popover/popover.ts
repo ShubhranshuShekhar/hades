@@ -15,7 +15,6 @@ import {Observable} from 'rxjs';
   templateUrl: "popover.html"
 })
 export class PopoverPage {
-  @Output() dateFilter = new EventEmitter();
   allDaysToggle:boolean;
   mondayToggle:boolean;
   tuesdayToggle:boolean;
@@ -25,18 +24,15 @@ export class PopoverPage {
   saturdayToggle:boolean;
   months: Array<string>;
   monthSelect: any;
+  filter:  Array<boolean>;
+
   text:string;
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
     this.text = "hello";
-    this.allDaysToggle = true;
-    this.mondayToggle = true;
-    this.tuesdayToggle = true;
-    this.wednesdayToggle = true;
-    this.thursdayToggle =true;
-    this.fridayToggle = true;
-    this.saturdayToggle = true;
-    this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+    this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    this.monthSelect = "";
+    this.resetFilters();
   }
 
   ionViewDidLoad() {
@@ -45,7 +41,8 @@ export class PopoverPage {
 
   submitFilter() {
     console.log("Submit filter has been clicked!!");
-    this.dateFilter.emit(this.text);
+
+
     // console.log("All day =>" + this.allDay);
     // console.log(this.mondayToggle);
     // console.log(this.tuesdayToggle);
@@ -54,9 +51,12 @@ export class PopoverPage {
     // console.log(this.fridayToggle);
     // console.log(this.saturdayToggle);
     console.log("^^^^^^^^^^^^^^^^^^^^");
-    var filter = [this.mondayToggle, this.tuesdayToggle, this.wednesdayToggle, this.thursdayToggle, this.fridayToggle, this.saturdayToggle];
-    console.log(filter);
-    console.log(this.monthSelect);
+    this.filter = [this.mondayToggle, this.tuesdayToggle, this.wednesdayToggle, this.thursdayToggle, this.fridayToggle, this.saturdayToggle, this.monthSelect];
+
+    console.log(this.filter);
+    // console.log(this.monthSelect);
+
+    this.viewCtrl.dismiss(this.filter);
   }
   ngOnChanges() {
 
@@ -64,6 +64,17 @@ export class PopoverPage {
 
 
   // Toggle logic
+  resetFilters(){
+    this.allDaysToggle = true;
+    this.mondayToggle = true;
+    this.tuesdayToggle = true;
+    this.wednesdayToggle = true;
+    this.thursdayToggle =true;
+    this.fridayToggle = true;
+    this.saturdayToggle = true;
+    this.filter = [this.mondayToggle, this.tuesdayToggle, this.wednesdayToggle, this.thursdayToggle, this.fridayToggle, this.saturdayToggle, this.monthSelect];
+
+  }
 
   allDay(){
     // console.log(event);
@@ -85,11 +96,7 @@ export class PopoverPage {
       this.fridayToggle = true;
       this.saturdayToggle = true;
     }
-    console.log("--------------");
-    console.log(this.saturdayToggle);
   }
 
-  particularDay(event:any){
 
-  }
 }

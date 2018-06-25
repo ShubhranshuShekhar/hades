@@ -1,9 +1,17 @@
 <ion-list class="listClass">
 
+  <div *ngFor="let attendance of attendanceData">
 
-    <button ion-item *ngFor="let attendance of attendanceData" >
+      <!-- <button ion-item *ngIf="attendance.day_view == 'true' && attendance.month_view == 'true'"> -->
+      <button ion-item *ngIf="attendance.day_view && attendance.month_view">
+
         <ion-label>{{attendance.day + " " + attendance.date + "-" + attendance.month}}</ion-label>
-        <ion-label class="displayLabel"><b>{{attendance.present +"/" +  attendance.absent}}</b></ion-label>
-    </button>
+        <ion-label class="displayLabel">
+          <b>{{attendance.present +"/" + attendance.absent}}</b>
+        </ion-label>
+        <!-- <ion-label>{{attendance.month_view}}</ion-label>
+        <ion-label>{{attendance.day_view}}</ion-label> -->
+      </button>
+    </div>
 
-  </ion-list>
+</ion-list>
