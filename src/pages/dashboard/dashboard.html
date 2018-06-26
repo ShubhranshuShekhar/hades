@@ -28,28 +28,28 @@
     <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">
 
 
-      <ion-col class="dashboard-icon-col">
+      <ion-col class="dashboard-icon-col" (click)="openAttendanceTeacher()">
         <ion-row class="dashboard-icon-row">
           <ion-img class="dashboard-icons" src="../../assets/imgs/noticeboard_200.png"></ion-img>
         </ion-row>
         <ion-row style=""></ion-row>
-        <ion-row class="dashboard-icon-row2">Noticeboard</ion-row>
+        <ion-row class="dashboard-icon-row2">Attendance Teacher</ion-row>
 
       </ion-col>
 
-      <ion-col class="dashboard-icon-col">
+      <ion-col class="dashboard-icon-col" (click)="openAttendanceStudent()">
         <ion-row class="dashboard-icon-row">
           <ion-img class="dashboard-icons" src="../../assets/imgs/syllabus_200.png"></ion-img>
         </ion-row>
-        <ion-row style="justify-content: center; padding-top: 7px">Syllabus</ion-row>
+        <ion-row style="justify-content: center; padding-top: 7px">Attendance Student</ion-row>
 
       </ion-col>
 
-      <ion-col>
+      <ion-col (click)="openProfile()">
         <ion-row class="dashboard-icon-row">
           <ion-img class="dashboard-icons" src="../../assets/imgs/faculty.png"></ion-img>
         </ion-row>
-        <ion-row style="justify-content: center; padding-top: 7px">Faculty</ion-row>
+        <ion-row style="justify-content: center; padding-top: 7px">Profile</ion-row>
 
       </ion-col>
     </ion-row>

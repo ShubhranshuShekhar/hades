@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 // import { DatePipe } from '@angular/common';
 
 /**
@@ -18,12 +18,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class DateSelectorPopoverPage {
   todayToggle:boolean;
   selectedDate :any;
-  today: Date;
+  // today: Date;
+  today: String = new Date().toISOString();
   dateEnabled: boolean;
-  constructor(public navCtrl: NavController, public navParams: NavParams, ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
     this.todayToggle = true;
-    this.today = new Date();
+    // this.today = new Date();
     this.dateEnabled = true;
+    this.selectedDate = this.today;
     // this.setToday();
   }
 
@@ -43,21 +45,17 @@ export class DateSelectorPopoverPage {
   proceed(){
     console.log("Proceed clicked");
     console.log(this.selectedDate);
+    var date = String(this.selectedDate);
+    console.log(date.substring(0,10));
+    
+    
+    // this.viewCtrl.dismiss(year);
+    
     // console.log(this.setToday());
-    this.setToday();
-
-
   }
-  setToday(){
-console.log("|||||||||||||||||||||||||||||||||||||||||||");
-    //  console.log(this.datepipe.transform(this.today, 'yyyy-MM-dd'));
-    console.log(this.today);
-    var dateData = this.today.toDateString();
-    console.log(dateData);
-        var year = dateData [0];
-        var month = dateData [1];
-        var day = dateData [2];
-        var dateFormated = day + "/" + month + "/" + year;
-        console.log(dateFormated);
+
+  exit(){
+    this.viewCtrl.dismiss();
   }
+
 }

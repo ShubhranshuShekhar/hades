@@ -1,16 +1,14 @@
 webpackJsonp([17],{
 
-/***/ 805:
+/***/ 808:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AttendanceTeacherPageModule", function() { return AttendanceTeacherPageModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Student", function() { return Student; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_components_module__ = __webpack_require__(490);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__attendance_teacher__ = __webpack_require__(205);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardTeacherPageModule", function() { return DashboardTeacherPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_teacher__ = __webpack_require__(494);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,31 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var AttendanceTeacherPageModule = (function () {
-    function AttendanceTeacherPageModule() {
+var DashboardTeacherPageModule = (function () {
+    function DashboardTeacherPageModule() {
     }
-    AttendanceTeacherPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+    DashboardTeacherPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__attendance_teacher__["a" /* AttendanceTeacherPage */],
+                __WEBPACK_IMPORTED_MODULE_2__dashboard_teacher__["a" /* DashboardTeacherPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__attendance_teacher__["a" /* AttendanceTeacherPage */]),
-                __WEBPACK_IMPORTED_MODULE_0__components_components_module__["a" /* ComponentsModule */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__dashboard_teacher__["a" /* DashboardTeacherPage */]),
             ],
         })
-    ], AttendanceTeacherPageModule);
-    return AttendanceTeacherPageModule;
+    ], DashboardTeacherPageModule);
+    return DashboardTeacherPageModule;
 }());
 
-var Student = (function () {
-    function Student() {
-    }
-    return Student;
-}());
-
-//# sourceMappingURL=attendance-teacher.module.js.map
+//# sourceMappingURL=dashboard-teacher.module.js.map
 
 /***/ })
 

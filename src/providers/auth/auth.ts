@@ -115,6 +115,10 @@ export class AuthProvider {
     await this.updateUserData(user);
   }
 
+async passwordReset(useremail: string){
+  await this.afAuth.auth.sendPasswordResetEmail(useremail);
+}
+
   //// HELPERS ////
 
   async logout(): Promise<any> {

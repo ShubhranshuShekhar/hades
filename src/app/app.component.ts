@@ -66,8 +66,8 @@ export class MyApp {
             this.rootPage = DashboardPage;
           }
           if (user.role == "teacher"){
-            // this.rootPage = DashboardTeacherPage;
-            this.rootPage = AttendanceTeacherPage;
+            this.rootPage = DashboardPage;
+            // this.rootPage = AttendanceTeacherPage;
             // this.rootPage = TeststuffsPage;
           }
 

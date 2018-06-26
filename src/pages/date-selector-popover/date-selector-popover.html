@@ -1,6 +1,6 @@
 <ion-list class="list-popover">
     <ion-item class="item-leave-height">
-        <ion-label><h1>{{selectedDate}}</h1><h3>{{selectedDate | date : "EEEE"}}</h3></ion-label>
+        <ion-label><h1>{{selectedDate | date : "longDate"}}</h1><h3>{{selectedDate | date : "EEEE"}}</h3></ion-label>
       </ion-item>
   <ion-item>
     <ion-label>Today</ion-label>
@@ -16,7 +16,7 @@
 
 <ion-grid>
   <ion-row class="leave-margin">
-    <button ion-button (click)="resetFilters()">Discard</button>
+    <button ion-button (click)="exit()">Discard</button>
     <button ion-button (click)="proceed()">Proceed</button>
   </ion-row>
 </ion-grid>

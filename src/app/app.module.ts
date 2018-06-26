@@ -60,6 +60,7 @@ import { DatabaseProvider } from '../providers/database/database';
 import { FcmProvider } from '../providers/fcm/fcm';
 import { AnalyticsProvider } from '../providers/analytics/analytics';
 import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
+import { ViewProfilePage } from '../pages/view-profile/view-profile';
 
 // Add declarable classes—components, directives, and pipes—to a declarations list.
 // Declare these classes in exactly one module of the application.
@@ -76,7 +77,7 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     DashboardTeacherPage,
 
     PopoverPage,
-
+    ViewProfilePage,    
     // attendacne page
     AttendanceTeacherPage,
     DateSelectorPopoverPage,
@@ -107,6 +108,7 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     DashboardPage,
     DashboardTeacherPage,
     PopoverPage,
+    ViewProfilePage,
 TeststuffsPage,
     // Attendance
     AttendanceTeacherPage,

@@ -6,6 +6,8 @@ import {
   MenuController
 } from "ionic-angular";
 import { DiaryPage } from "../diary/diary";
+import { AttendanceTeacherPage } from "../attendance-teacher/attendance-teacher";
+import { ViewProfilePage } from "../view-profile/view-profile";
 
 /**
  * Generated class for the DashboardPage page.
@@ -42,4 +44,20 @@ export class DashboardPage {
   openPage(){
     this.navCtrl.push(DiaryPage);
   }
+  openAttendanceTeacher(){
+    console.log("Open attendance teacher method has been clicked!!");
+    this.navCtrl.push(AttendanceTeacherPage);
+  }
+  openAttendanceStudent(){
+    console.log("Attendance Student has been clicked");
+  }
+
+  openProfile(){
+    console.log("Open Profile has been clicked");
+    this.navCtrl.push(ViewProfilePage,{
+      username: "hello",
+      id: "helloid"
+    });
+  }
+
 }

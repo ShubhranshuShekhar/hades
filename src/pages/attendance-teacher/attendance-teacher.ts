@@ -41,6 +41,12 @@ export class AttendanceTeacherPage {
   index: number;
   month_view: boolean;
   day_view: boolean;
+  
+  filter_day: string;
+  filter_month: string;
+  filter_year: string;
+  filter_date: string;
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -161,26 +167,7 @@ export class AttendanceTeacherPage {
     console.log("Got this from popover!");
   }
 
-  presentPopover() {
-    // var data = this.filterData;
-
-    const popover = this.popoverCtrl.create(
-      PopoverPage,
-      {},
-      { cssClass: "my-custom-popover" }
-    );
-    popover.present();
-
-    popover.onDidDismiss(data => {
-      if (data) {
-        this.assign_filters(data);
-      }
-      // console.log(data);
-      // this.filterData = data;
-      // console.log("@@@@@@@@@@@@@@@@@@@@@@");
-      // // console.log(this.filterData);
-    });
-  }
+ 
 
   assign_filters(inputfilters: Array<any>) {
     console.log("******************");
@@ -257,12 +244,39 @@ export class AttendanceTeacherPage {
   }
 
   presentDateSelector(){
-    const popover = this.popoverCtrl.create(
+    const datePopover = this.popoverCtrl.create(
       DateSelectorPopoverPage,
       {},
       { cssClass: "my-custom-popover" }
     );
+    datePopover.present();
+    datePopover.onDidDismiss(data => {
+      if (data) {
+        console.log(data);
+        
+      }
+    });
+  }
+
+  presentPopover() {
+    // var data = this.filterData;
+
+    const popover = this.popoverCtrl.create(
+      PopoverPage,
+      {},
+      { cssClass: "my-custom-popover" }
+    );
     popover.present();
+
+    popover.onDidDismiss(data => {
+      if (data) {
+        this.assign_filters(data);
+      }
+      // console.log(data);
+      // this.filterData = data;
+      // console.log("@@@@@@@@@@@@@@@@@@@@@@");
+      // // console.log(this.filterData);
+    });
   }
 
 
