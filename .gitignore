@@ -7,7 +7,7 @@
 log.txt
 *.sublime-project
 *.sublime-workspace
-
+.sourcemaps/
 .idea/
 .vscode/
 .sass-cache/
@@ -22,7 +22,7 @@ temp/
 core/theme-builder/
 core/test-components/
 $RECYCLE.BIN/
-
+.sourcemaps/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
@@ -51,3 +51,4 @@ demos/src/**/*.css.shim.ts
 
 
 *.map
+

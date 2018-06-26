@@ -1,11 +1,12 @@
 <ion-content padding>
+
   <button ion-button full (click)='saveAttendance()'>Save Attendance</button>
   <button ion-button (click)='allPresent()'>All Present</button>
   <button ion-button (click)='allAbsent()'>All Absent</button>
   <button ion-button (click)='unsavedExit()'>Exit</button>
   <button ion-button (click)='testData()'>Test</button>
 
-
+<ng-container *ngIf = "list_display">
   <ion-list>
     <div *ngFor="let student of students">
       <ion-item class="itemClass">
@@ -16,6 +17,6 @@
       </ion-item>
     </div>
   </ion-list>
-
+</ng-container>
 
 </ion-content>

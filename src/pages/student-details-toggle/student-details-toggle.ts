@@ -1,7 +1,12 @@
-import { ToastController } from 'ionic-angular';
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
-import { DatabaseProvider, Post } from '../../providers/database/database';
+import { ToastController } from "ionic-angular";
+import { Component } from "@angular/core";
+import {
+  IonicPage,
+  NavController,
+  NavParams,
+  ViewController
+} from "ionic-angular";
+import { DatabaseProvider, Post } from "../../providers/database/database";
 
 /**
  * Generated class for the StudentDetailsTogglePage page.
@@ -12,8 +17,8 @@ import { DatabaseProvider, Post } from '../../providers/database/database';
 
 @IonicPage()
 @Component({
-  selector: 'page-student-details-toggle',
-  templateUrl: 'student-details-toggle.html',
+  selector: "page-student-details-toggle",
+  templateUrl: "student-details-toggle.html"
 })
 export class StudentDetailsTogglePage {
   students: any;
@@ -21,13 +26,17 @@ export class StudentDetailsTogglePage {
   day: string;
   month: string;
   year: string;
-not_saved_message: string;
-saved_message:string;
-error_message: string;
+  division: string;
+  not_saved_message: string;
+  saved_message: string;
+  error_message: string;
   attendance: Map<string, boolean> = new Map<string, boolean>();
   check: boolean;
   text: string;
-  todays_date: String;
+  todays_date: string;
+  map: any;
+  attendance_id: string;
+  list_display: boolean;
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -37,34 +46,42 @@ error_message: string;
   ) {
     this.not_saved_message = "Data was not saved!";
     this.saved_message = "Data was successfully saved!";
-    this.error_message = "Something went wrong, please try again!"
-
-    console.log("##############88888888888888########");
-    console.log(navParams.get('studentsData'));
-    console.log(navParams.get('date'));
-    console.log(navParams.get('month'));
-    console.log(navParams.get('year'));
-    console.log(navParams.get('day'));
-
-    this.students = navParams.get('studentsData');
+    this.error_message = "Something went wrong, please try again!";
+    this.list_display = false;
+    // console.log("##############88888888888888########");
+    // console.log(navParams.get("studentsData"));
+    this.date = navParams.get("date");
+    this.month = navParams.get("month");
+    this.year = navParams.get("year");
+    this.day = navParams.get("day");
+    this.attendance_id = navParams.get("attendance_id");
+    this.division = navParams.get("division");
+    this.students = navParams.get("studentsData");
+    // this.map = this.getAttendanceMap(this.attendance_id);
 
     if (this.students) {
       // console.log(this.students)
       this.students.forEach(student => {
         // console.log(student.id);
         this.attendance[student.id] = student.is_present;
-      })
+      });
+      // this.getAttendanceMap(this.attendance_id);
     }
-
+    this.getAttendanceMap(this.attendance_id);
+    this.list_display = true;
   }
   ngOnChanges() {
     if (this.students) {
       console.log("--------Changed Inside modal ----------");
       console.log(this.students);
     }
+    if (this.map) {
+      console.log("MAAAAAAAAAAAAAAAAAAAAAAAAAAAAP");
+      console.log(this.map);
+    }
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad StudentDetailsTogglePage');
+    console.log("ionViewDidLoad StudentDetailsTogglePage");
   }
 
   allPresent() {
@@ -77,33 +94,62 @@ error_message: string;
 
   allAbsent() {
     this.check = false;
-    console.log("Mark false button is clicked!!")
+    console.log("Mark false button is clicked!!");
     // console.log(this.attendance["fiddigl01"]);
     for (let key in this.attendance) {
       this.attendance[key] = false;
     }
-
   }
 
-testData(){
-  console.log("Test data has been clicked!")
-  for (let key in this.attendance) {
-    console.log(this.attendance[key]);
+  testData() {
+    console.log("Test data has been clicked!");
+    // this.getAttendanceMap(this.attendance_id);
+    // for (let key in this.attendance) {
+    //   console.log(this.attendance[key]);
+    // }
+
+    // this.map = this.getAttendanceMap(this.attendance_id);
+    // console.log("Map details");
+    // console.log(this.map);
   }
 
-}
+  async getAttendanceMap(attendance_id) {
+    const querySnapshot = await this.db.getAttendanceById(attendance_id).get();
+    console.log(querySnapshot);
+
+    if (querySnapshot.empty) {
+      console.log("Doc is empty");
+      // this.allPresent();
+    }
+    else {
+      querySnapshot.forEach(doc => {
+        // doc.data() is never undefined for query doc snapshots
+        // console.log(doc.data().student_id);
+        // console.log(doc.data().present);
+        this.attendance[doc.data().student_id] = doc.data().present;
+      });
+    }
+  }
 
   async saveAttendance() {
-    await this.db.createAttendanceStudent(this.attendance, "Monday", "15", "May", "2018", "IXA2018");
+    await this.db.createAttendanceStudent(
+      this.attendance,
+      this.day,
+      this.date,
+      this.month,
+      this.year,
+      this.division,
+      this.attendance_id
+    );
     console.log("Create Attendance has been clicked!!");
     this.savedExit();
   }
 
-  savedExit(){
+  savedExit() {
     this.exit();
     this.presentToast(this.saved_message);
   }
-  unsavedExit(){
+  unsavedExit() {
     this.exit();
     this.presentToast(this.not_saved_message);
   }
@@ -119,5 +165,4 @@ testData(){
     });
     toast.present();
   }
-
 }

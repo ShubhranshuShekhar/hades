@@ -41,11 +41,11 @@ export class AttendanceTeacherPage {
   index: number;
   month_view: boolean;
   day_view: boolean;
-  
-  filter_day: string;
-  filter_month: string;
-  filter_year: string;
-  filter_date: string;
+  weekdays = ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"];
+  monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "Novemeber", "December"]
+  division = "IXA2018";
+  attendance_id: string;
+  divas: any;
 
   constructor(
     public navCtrl: NavController,
@@ -56,7 +56,7 @@ export class AttendanceTeacherPage {
     public modalCtrl: ModalController
   ) {
     var students: Student[];
-    var studentDocs = this.db.getStudentsByDivision("IXA2018");
+    var studentDocs = this.db.getStudentsByDivision(this.division);
     studentDocs
       .get()
       .then(snapshot => {
@@ -129,33 +129,6 @@ export class AttendanceTeacherPage {
     console.log(division);
     var temp: Student;
     var Student: Student[];
-    // Student = [
-    //   {
-    //     first_name: "Jack",
-    //     last_name: "Daniels",
-    //     id: "jackda01",
-    //     is_present: true
-    //   },
-    //   {
-    //     first_name: "Jhonny",
-    //     last_name: "Wakcer",
-    //     id: "wacher01",
-    //     is_present: false
-    //   },
-    //   {
-    //     first_name: "Jin",
-    //     last_name: "Beam",
-    //     id: "beamjin01",
-    //     is_present: false
-    //   },
-    //   {
-    //     first_name: "Glen",
-    //     last_name: "Fiddicch",
-    //     id: "fiddigl01",
-    //     is_present: true
-    //   }
-    // ];
-
     return Student;
   }
 
@@ -167,7 +140,7 @@ export class AttendanceTeacherPage {
     console.log("Got this from popover!");
   }
 
- 
+
 
   assign_filters(inputfilters: Array<any>) {
     console.log("******************");
@@ -233,15 +206,20 @@ export class AttendanceTeacherPage {
     console.log("Add attendance clicked!");
     this.presentDateSelector();
 
-    let attendanceModal = this.modalCtrl.create(StudentDetailsTogglePage, {
-      studentsData: this.students,
-      date : "13",
-      month: "July",
-      year: "2018",
-      day: "Monday"
-    });
-    // attendanceModal.present();
+
   }
+attendanceModal(data: any){
+  let attendanceModal = this.modalCtrl.create(StudentDetailsTogglePage, {
+    studentsData: this.students,
+    date : data.date,
+    month: data.month,
+    year: data.year,
+    day: data.weekday,
+    attendance_id : this.attendance_id,
+    division: this.division,
+  });
+  attendanceModal.present();
+}
 
   presentDateSelector(){
     const datePopover = this.popoverCtrl.create(
@@ -252,8 +230,25 @@ export class AttendanceTeacherPage {
     datePopover.present();
     datePopover.onDidDismiss(data => {
       if (data) {
+
         console.log(data);
-        
+        var value = new Date(data);
+        console.log("DIVAS is:");
+        this.divas = {
+          "date" : value.getDate(),
+          "month": this.monthsArray[value.getMonth()],
+          "year" : value.getFullYear(),
+          "weekday": this.weekdays[value.getUTCDay()]
+        }
+
+        // console.log(divas.getUTCMonth());
+        // console.log();
+        // console.log();
+        this.attendance_id = this.division + "-" + this.divas.date+ "-" + this.divas.month + "-" + this.divas.year
+        console.log("Attendance ID is ");
+        console.log(this.attendance_id);
+        this.attendanceModal(this.divas);
+
       }
     });
   }
@@ -278,6 +273,9 @@ export class AttendanceTeacherPage {
       // // console.log(this.filterData);
     });
   }
+  testFunction(){
+console.log("I am in tests function!!");
 
+  }
 
 }

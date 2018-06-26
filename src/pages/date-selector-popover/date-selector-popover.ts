@@ -45,12 +45,10 @@ export class DateSelectorPopoverPage {
   proceed(){
     console.log("Proceed clicked");
     console.log(this.selectedDate);
-    var date = String(this.selectedDate);
-    console.log(date.substring(0,10));
-    
-    
-    // this.viewCtrl.dismiss(year);
-    
+    var divas = String(this.selectedDate).substring(0,10);
+    // console.log(date.substring(0,10));
+    this.viewCtrl.dismiss(divas);
+
     // console.log(this.setToday());
   }
 

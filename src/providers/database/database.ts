@@ -39,53 +39,79 @@ export class DatabaseProvider {
   }
 
   getAttendancenyDivision(division: string) {
-    return this.afs.collection("attendance").ref.where("division", "==", division);
+    return this.afs
+      .collection("attendance")
+      .ref.where("division", "==", division);
+  }
+
+  getAttendanceById(attendance_id: string) {
+    return this.afs.firestore
+      .collection("attendanceList")
+      .where("attendance_id", "==", attendance_id);
   }
 
   // createAttendanceStudent(day: string, date: string, month: string, year: string, user_id: string, division: string, present: boolean) {
   createAttendanceStudent(
     details: any,
-    day: string, date: string, month: string, year: string,
+    day: string,
+    date: string,
+    month: string,
+    year: string,
     division: string,
+    attendance_id: string
   ) {
     var batch = this.afs.firestore.batch();
     var collectionRef = this.afs.collection("attendanceList");
-
+    var presents: number = 0;
+    var absentees: number = 0;
+    var detail: any;
     console.log(" i am in DB create attendance");
     // console.log(details);
     for (let key in details) {
       console.log(details[key]);
-      var docId = key + "_"+ date + "-" + month + "-" + year;
-      var doc = collectionRef.doc(docId)
+      var docId = key + "_" + date + "-" + month + "-" + year;
+      // var attendance_id = division + "-" + date + "-" + month + "-" + year;
+      var doc = collectionRef.doc(docId);
       doc.set({
-        "student_id": key,
-        "present": details[key],
-        "date": date,
-        "day": day,
-        "month": month,
-        "year": year,
-        "divsion": division,
+        student_id: key,
+        present: details[key],
+        date: date,
+        day: day,
+        month: month,
+        year: year,
+        divsion: division,
+        attendance_id: attendance_id
+      });
+
+      if (details[key]) presents=presents+1;
+      else absentees=absentees+1;
+    }
+    batch
+      .commit()
+      .then(data => {
+        console.log("-----------------");
+        return true;
       })
-    }
-    var attendance = {
-      // "student_id": user_id,
-      // "date": date,
-      // "day": day,
-      // "month": month,
-      // "year": year,
-      // "divsion": division,
-      // "present": present,
-    }
-    batch.commit().then(data => {
-      console.log("-----------------");
-      return true;
-    })
       .catch(err => {
         console.log("Error -->" + err);
         return false;
-      })
+      });
     // return ("Successful");
     // return this.afs.collection("attendanceList").ref.add(attendance);
+    details = {
+      "absent": absentees,
+      "present": presents,
+      "year": year,
+      "month": month,
+      "division": division,
+      "day": day,
+      "date": date,
+      "attendance_id": attendance_id
+    }
+    var data = this.afs
+      .collection("attendance")
+      .doc(attendance_id)
+      .set(details);
   }
 
   getStudentsByDivision(division: string) {
