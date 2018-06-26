@@ -1,3 +1,5 @@
+import { DateSelectorPopoverPage } from './../pages/date-selector-popover/date-selector-popover';
+import { AttendanceChoiceComponent } from './../components/attendance-choice/attendance-choice';
 import { StudentDetailsTogglePage } from './../pages/student-details-toggle/student-details-toggle';
 import { TeststuffsPage } from './../pages/teststuffs/teststuffs';
 import { PopoverPage } from './../pages/popover/popover';
@@ -77,7 +79,7 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
 
     // attendacne page
     AttendanceTeacherPage,
-
+    DateSelectorPopoverPage,
     TeststuffsPage,
 
     LoginSliderPage,
@@ -94,7 +96,8 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireAuthModule,
-    ComponentsModule
+    ComponentsModule,
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -107,6 +110,7 @@ import { RemoteConfigProvider } from '../providers/remote-config/remote-config';
 TeststuffsPage,
     // Attendance
     AttendanceTeacherPage,
+    DateSelectorPopoverPage,
     StudentDetailsTogglePage,
     LoginSliderPage,
     HomeworkStudentPage,

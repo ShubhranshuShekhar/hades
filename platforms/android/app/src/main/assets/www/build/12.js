@@ -1,14 +1,15 @@
 webpackJsonp([12],{
 
-/***/ 797:
+/***/ 811:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardTeacherPageModule", function() { return DashboardTeacherPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeworkStudentPageModule", function() { return HomeworkStudentPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_teacher__ = __webpack_require__(488);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__homework_student__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_assignment_chart_assignment_chart__ = __webpack_require__(492);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +19,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DashboardTeacherPageModule = (function () {
-    function DashboardTeacherPageModule() {
+
+var HomeworkStudentPageModule = (function () {
+    function HomeworkStudentPageModule() {
     }
-    DashboardTeacherPageModule = __decorate([
+    HomeworkStudentPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__dashboard_teacher__["a" /* DashboardTeacherPage */],
+                __WEBPACK_IMPORTED_MODULE_2__homework_student__["a" /* HomeworkStudentPage */],
+                __WEBPACK_IMPORTED_MODULE_3__components_assignment_chart_assignment_chart__["a" /* AssignmentChartComponent */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__dashboard_teacher__["a" /* DashboardTeacherPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__homework_student__["a" /* HomeworkStudentPage */]),
             ],
         })
-    ], DashboardTeacherPageModule);
-    return DashboardTeacherPageModule;
+    ], HomeworkStudentPageModule);
+    return HomeworkStudentPageModule;
 }());
 
-//# sourceMappingURL=dashboard-teacher.module.js.map
+//# sourceMappingURL=homework-student.module.js.map
 
 /***/ })
 

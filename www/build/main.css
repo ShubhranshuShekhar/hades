@@ -25911,6 +25911,34 @@ heart-button ion-icon {
   padding-top: 7px;
 }
 
+.item-leave-height {
+  margin-top: 25px;
+}
+
+page-popover {
+  -webkit-align-content: center !important;
+  -ms-flex-line-pack: center !important;
+  align-content: center !important;
+  text-align: center !important;
+}
+
+.list-popover {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.popover-viewport {
+  text-align: center !important;
+}
+
+.leave-margin {
+  margin-bottom: 25px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .dashbord-content {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;

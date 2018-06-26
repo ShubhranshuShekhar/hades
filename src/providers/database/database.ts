@@ -77,10 +77,12 @@ export class DatabaseProvider {
       // "present": present,
     }
     batch.commit().then(data => {
-      return data
+      console.log("-----------------");
+      return true;
     })
-      .then(err => {
-        return err;
+      .catch(err => {
+        console.log("Error -->" + err);
+        return false;
       })
     // return ("Successful");
     // return this.afs.collection("attendanceList").ref.add(attendance);

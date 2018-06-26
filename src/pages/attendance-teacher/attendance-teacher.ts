@@ -1,3 +1,4 @@
+import { DateSelectorPopoverPage } from './../date-selector-popover/date-selector-popover';
 import { PopoverPage } from "./../popover/popover";
 import { PopoverComponent } from "./../../components/popover/popover";
 import { Student } from "./attendance-teacher.module";
@@ -18,6 +19,7 @@ import { StudentSelectorComponent } from "../../components/student-selector/stud
 import { DashboardPage } from "../dashboard/dashboard";
 import { TeststuffsPage } from "../teststuffs/teststuffs";
 import { StudentDetailsTogglePage } from "../student-details-toggle/student-details-toggle";
+import { AttendanceChoiceComponent } from "../../components/attendance-choice/attendance-choice";
 /**
  * Generated class for the AttendanceTeacherPage page.
  *
@@ -72,9 +74,9 @@ export class AttendanceTeacherPage {
         console.log("I am in error -->", err);
       });
     // console.log(this.students);
- 
+
     var attendanceDoc = this.db.getAttendancenyDivision("IXA2018");
-    
+
     attendanceDoc
       .get()
       .then(snapshot => {
@@ -104,9 +106,9 @@ export class AttendanceTeacherPage {
       .catch(err => {
         console.log(err);
       });
- 
- 
- 
+
+
+
   }
 
   ionViewDidLoad() {
@@ -114,7 +116,7 @@ export class AttendanceTeacherPage {
     // this.setSlideVars();
     // this.students = this.getStudentData("IXA2018");
     // var studentDocs = this.db.getStudentsByDivision("IXA2018");
-   
+
   }
 
   getStudentData(division: string) {
@@ -242,13 +244,26 @@ export class AttendanceTeacherPage {
 
   addAttendance() {
     console.log("Add attendance clicked!");
-    let profileModal = this.modalCtrl.create(StudentDetailsTogglePage, {
+    this.presentDateSelector();
+
+    let attendanceModal = this.modalCtrl.create(StudentDetailsTogglePage, {
       studentsData: this.students,
       date : "13",
       month: "July",
       year: "2018",
       day: "Monday"
     });
-    profileModal.present();
+    // attendanceModal.present();
   }
+
+  presentDateSelector(){
+    const popover = this.popoverCtrl.create(
+      DateSelectorPopoverPage,
+      {},
+      { cssClass: "my-custom-popover" }
+    );
+    popover.present();
+  }
+
+
 }

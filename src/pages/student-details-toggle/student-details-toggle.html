@@ -1,8 +1,8 @@
 <ion-content padding>
-  <button ion-button full (click)='addAttendance()'>Save Attendance</button>
+  <button ion-button full (click)='saveAttendance()'>Save Attendance</button>
   <button ion-button (click)='allPresent()'>All Present</button>
   <button ion-button (click)='allAbsent()'>All Absent</button>
-  <button ion-button (click)='exit()'>Exit</button>
+  <button ion-button (click)='unsavedExit()'>Exit</button>
   <button ion-button (click)='testData()'>Test</button>
 
 
@@ -12,7 +12,7 @@
         <ion-label>{{student.first_name}} {{student.last_name}}</ion-label>
         <!-- <ion-toggle checked="{{attendance[student.id]}}"></ion-toggle> -->
         <ion-toggle [(ngModel)]="attendance[student.id]"></ion-toggle>
-        
+
       </ion-item>
     </div>
   </ion-list>

@@ -10,11 +10,11 @@
           "/resources": [
             {
               "xml": "<string name=\"fb_app_id\">1647541315328951</string>",
-              "count": 3
+              "count": 4
             },
             {
               "xml": "<string name=\"fb_app_name\">Ionic Firestarter</string>",
-              "count": 3
+              "count": 4
             }
           ]
         }

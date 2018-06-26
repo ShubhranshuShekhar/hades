@@ -25,7 +25,7 @@ export class PopoverPage {
   months: Array<string>;
   monthSelect: any;
   filter:  Array<boolean>;
-
+  isEnabled: boolean;
   text:string;
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
     this.text = "hello";
@@ -65,6 +65,9 @@ export class PopoverPage {
 
   // Toggle logic
   resetFilters(){
+    this.isEnabled = true;
+    console.log("Enabled");
+    console.log(this.isEnabled);
     this.allDaysToggle = true;
     this.mondayToggle = true;
     this.tuesdayToggle = true;
@@ -75,7 +78,10 @@ export class PopoverPage {
     this.filter = [this.mondayToggle, this.tuesdayToggle, this.wednesdayToggle, this.thursdayToggle, this.fridayToggle, this.saturdayToggle, this.monthSelect];
 
   }
-
+  //  oneDay(){
+  //   this.allDaysToggle = false;
+  //   console.log("I am in one Day!");
+  //  }
   allDay(){
     // console.log(event);
     // console.log(this.allDay);
@@ -87,14 +93,20 @@ export class PopoverPage {
       this.thursdayToggle =false;
       this.fridayToggle = false;
       this.saturdayToggle = false;
+      this.isEnabled = false;
+
     }
     if (this.allDaysToggle == true){
-      this.mondayToggle = true;
-      this.tuesdayToggle = true;
-      this.wednesdayToggle = true;
-      this.thursdayToggle =true;
-      this.fridayToggle = true;
-      this.saturdayToggle = true;
+      // this.isEnabled = true;
+      // this.mondayToggle = true;
+      // this.tuesdayToggle = true;
+      // this.wednesdayToggle = true;
+      // this.thursdayToggle =true;
+      // this.fridayToggle = true;
+      // this.saturdayToggle = true;
+      this.resetFilters();
+      // this.isEnabled = true;
+
     }
   }
 

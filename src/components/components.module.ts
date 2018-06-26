@@ -19,6 +19,7 @@ import { StudentSelectorComponent } from './student-selector/student-selector';
 import { ListDisplayComponent } from './list-display/list-display';
 import { PopoverComponent } from './popover/popover';
 import { AttendanceFilterComponent } from './attendance-filter/attendance-filter';
+import { AttendanceChoiceComponent } from './attendance-choice/attendance-choice';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { AttendanceFilterComponent } from './attendance-filter/attendance-filter
     ListDisplayComponent,
     PopoverComponent,
     AttendanceFilterComponent,
+    AttendanceChoiceComponent,
         
     ],
     imports: [
@@ -66,6 +68,7 @@ import { AttendanceFilterComponent } from './attendance-filter/attendance-filter
     ListDisplayComponent,
     PopoverComponent,
     AttendanceFilterComponent,
+    AttendanceChoiceComponent,
         
     ],
     entryComponents: [

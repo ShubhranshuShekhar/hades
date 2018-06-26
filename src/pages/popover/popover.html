@@ -18,27 +18,27 @@
   </ion-item>
   <ion-item>
     <ion-label>Monday</ion-label>
-    <ion-toggle [(ngModel)]="mondayToggle"></ion-toggle>
+    <ion-toggle [(ngModel)]="mondayToggle" disabled="{{isEnabled}}"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Tuesday</ion-label>
-    <ion-toggle [(ngModel)]="tuesdayToggle" ></ion-toggle>
+    <ion-toggle [(ngModel)]="tuesdayToggle" disabled="{{isEnabled}}"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Wednesday</ion-label>
-    <ion-toggle [(ngModel)]="wednesdayToggle"></ion-toggle>
+    <ion-toggle [(ngModel)]="wednesdayToggle" disabled="{{isEnabled}}"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Thursday</ion-label>
-    <ion-toggle [(ngModel)]="thursdayToggle"></ion-toggle>
+    <ion-toggle [(ngModel)]="thursdayToggle" disabled="{{isEnabled}}"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Friday</ion-label>
-    <ion-toggle [(ngModel)]="fridayToggle"></ion-toggle>
+    <ion-toggle [(ngModel)]="fridayToggle" disabled="{{isEnabled}}"></ion-toggle>
   </ion-item>
   <ion-item>
     <ion-label>Saturday</ion-label>
-    <ion-toggle [(ngModel)]="saturdayToggle"></ion-toggle>
+    <ion-toggle [(ngModel)]="saturdayToggle" disabled="{{isEnabled}}"></ion-toggle>
   </ion-item>
 
 </ion-list>
