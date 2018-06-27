@@ -80,42 +80,46 @@ export class AttendanceTeacherPage {
         console.log("I am in error -->", err);
       });
     // console.log(this.students);
-
-    var attendanceDoc = this.db.getAttendancenyDivision("IXA2018");
-
-    attendanceDoc
-      .get()
-      .then(snapshot => {
-        // console.log(snapshot);
-        snapshot.forEach(doc => {
-          // console.log("--------------");
-          // var test = "field1";
-          var data = doc.data();
-          // console.log(data.date);
-          // console.log(data.present);
-          var tempData = {
-            day: data.day,
-            date: data.date,
-            month: data.month,
-
-            absent: data.absent,
-            present: data.present,
-            day_view: true,
-            month_view: true
-          };
-          this.attendance.push(tempData);
-          // console.log(tempData);
-        });
-
-        // console.log(this.attendance);
-      })
-      .catch(err => {
-        console.log(err);
-      });
-
+      this.generateAttendance();
+   
 
 
   }
+
+generateAttendance(){
+  var attendanceDoc = this.db.getAttendancenyDivision("IXA2018");
+  this.attendance = [];
+  attendanceDoc
+    .get()
+    .then(snapshot => {
+      // console.log(snapshot);
+      snapshot.forEach(doc => {
+        // console.log("--------------");
+        // var test = "field1";
+        var data = doc.data();
+        // console.log(data.date);
+        // console.log(data.present);
+        var tempData = {
+          day: data.day,
+          date: data.date,
+          month: data.month,
+
+          absent: data.absent,
+          present: data.present,
+          day_view: true,
+          month_view: true
+        };
+        this.attendance.push(tempData);
+        // console.log(tempData);
+      });
+
+      // console.log(this.attendance);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+
+}
 
   ionViewDidLoad() {
     console.log("ionViewDidLoad AttendanceTeacherPage");
@@ -219,6 +223,10 @@ attendanceModal(data: any){
     division: this.division,
   });
   attendanceModal.present();
+  attendanceModal.onDidDismiss(() =>{
+    this.generateAttendance();
+
+  });
 }
 
   presentDateSelector(){

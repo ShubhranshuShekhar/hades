@@ -1,6 +1,6 @@
 webpackJsonp([19],{
 
-/***/ 175:
+/***/ 174:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30,7 +30,7 @@ var TabsPage = (function () {
         return this.auth.isLoggedIn();
     };
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab tabIcon="photos" tabTitle="Home" [root]="tab1Root"></ion-tab>\n\n  <ion-tab tabIcon="add-circle" tabTitle="Upload" [root]="tab2Root"></ion-tab>\n\n  <ion-tab tabIcon="contacts" tabTitle="Users" [root]="tab3Root"></ion-tab>\n\n  <ion-tab tabIcon="contact" tabTitle="Profile" [root]="tab4Root"></ion-tab>\n\n</ion-tabs>\n\n\n\n<fcm-handler></fcm-handler>'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\code\hades\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n  <ion-tab tabIcon="photos" tabTitle="Home" [root]="tab1Root"></ion-tab>\n\n  <ion-tab tabIcon="add-circle" tabTitle="Upload" [root]="tab2Root"></ion-tab>\n\n  <ion-tab tabIcon="contacts" tabTitle="Users" [root]="tab3Root"></ion-tab>\n\n  <ion-tab tabIcon="contact" tabTitle="Profile" [root]="tab4Root"></ion-tab>\n\n</ion-tabs>\n\n\n\n<fcm-handler></fcm-handler>'/*ion-inline-end:"C:\code\hades\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_auth__["a" /* AuthProvider */]])
     ], TabsPage);
@@ -41,7 +41,7 @@ var TabsPage = (function () {
 
 /***/ }),
 
-/***/ 180:
+/***/ 179:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -250,7 +250,7 @@ var FcmProvider = (function () {
 
 /***/ }),
 
-/***/ 202:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -284,7 +284,7 @@ var DiaryPage = (function () {
     };
     DiaryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-diary',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\diary\diary.html"*/'<!--\n  Generated template for the DiaryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Diary</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="dashbord-content">\n\n\n  <!-- Contenet of dashboard will go here -->\n\n  <ion-grid style="align-items: center; ">\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n\n      <ion-col class="dashboard-icon-col">\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/noticeboard_200.png"></ion-img>\n        </ion-row>\n        <ion-row style=""></ion-row>\n        <ion-row class="dashboard-icon-row2">Noticeboard</ion-row>\n\n      </ion-col>\n\n      <ion-col class="dashboard-icon-col">\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/syllabus_200.png"></ion-img>\n        </ion-row>\n        <ion-row style="justify-content: center; padding-top: 7px">Syllabus</ion-row>\n\n      </ion-col>\n\n      <ion-col>\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/faculty.png"></ion-img>\n        </ion-row>\n        <ion-row style="justify-content: center; padding-top: 7px">Faculty</ion-row>\n\n      </ion-col>\n    </ion-row>\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n      <ion-col class="dashboard-icon-col">\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/leave.png"></ion-img>\n        </ion-row>\n        <ion-row class="dashboard-icon-row2">Leave</ion-row>\n\n      </ion-col>\n\n      <ion-col class="dashboard-icon-col">\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/extra.png"></ion-img>\n        </ion-row>\n        <ion-row style="justify-content: center; padding-top: 7px">Ex-Curricular</ion-row>\n\n      </ion-col>\n\n      <ion-col>\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/gallery.png"></ion-img>\n        </ion-row>\n        <ion-row style="justify-content: center; padding-top: 7px">Gallery</ion-row>\n\n      </ion-col>\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!-- Repeat I -->\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n      <ion-col class="dashboard-icon-col">\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/last_icon.png"></ion-img>\n        </ion-row>\n        <ion-row class="dashboard-icon-row2">Examination</ion-row>\n\n      </ion-col>\n\n      <ion-col class="dashboard-icon-col">\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/grades.png"></ion-img>\n        </ion-row>\n        <ion-row style="justify-content: center; padding-top: 7px">Grades</ion-row>\n\n      </ion-col>\n\n      <ion-col>\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/timetable.png"></ion-img>\n        </ion-row>\n        <ion-row style="justify-content: center; padding-top: 7px">Routine</ion-row>\n\n      </ion-col>\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n<!-- Repeated stuffs go here  -->\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n\n      <ion-col class="dashboard-icon-col">\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/diary.png"></ion-img>\n        </ion-row>\n        <ion-row style=""></ion-row>\n        <ion-row class="dashboard-icon-row2">Diary</ion-row>\n\n      </ion-col>\n\n      <ion-col class="dashboard-icon-col">\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/classwork.png"></ion-img>\n        </ion-row>\n        <ion-row style="justify-content: center; padding-top: 7px">Classwork</ion-row>\n\n      </ion-col>\n\n      <ion-col>\n        <ion-row class="dashboard-icon-row">\n          <ion-img class="dashboard-icons" src="../../assets/imgs/homework.png"></ion-img>\n        </ion-row>\n        <ion-row style="justify-content: center; padding-top: 7px">Homework</ion-row>\n\n      </ion-col>\n    </ion-row>\n\n\n\n\n\n\n\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\diary\diary.html"*/,
+            selector: 'page-diary',template:/*ion-inline-start:"C:\code\hades\src\pages\diary\diary.html"*/'<!--\n\n  Generated template for the DiaryPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Diary</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content class="dashbord-content">\n\n\n\n\n\n  <!-- Contenet of dashboard will go here -->\n\n\n\n  <ion-grid style="align-items: center; ">\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/noticeboard_200.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style=""></ion-row>\n\n        <ion-row class="dashboard-icon-row2">Noticeboard</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/syllabus_200.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Syllabus</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/faculty.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Faculty</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/leave.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row class="dashboard-icon-row2">Leave</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/extra.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Ex-Curricular</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/gallery.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Gallery</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!-- Repeat I -->\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/last_icon.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row class="dashboard-icon-row2">Examination</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/grades.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Grades</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/timetable.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Routine</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!-- Repeated stuffs go here  -->\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/diary.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style=""></ion-row>\n\n        <ion-row class="dashboard-icon-row2">Diary</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/classwork.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Classwork</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/homework.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Homework</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\diary\diary.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
     ], DiaryPage);
@@ -295,16 +295,16 @@ var DiaryPage = (function () {
 
 /***/ }),
 
-/***/ 203:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__diary_diary__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__attendance_teacher_attendance_teacher__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__view_profile_view_profile__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__diary_diary__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__attendance_teacher_attendance_teacher__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__view_profile_view_profile__ = __webpack_require__(207);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -357,7 +357,7 @@ var DashboardPage = (function () {
     };
     DashboardPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-dashboard",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\dashboard\dashboard.html"*/'<!--\n\n  Generated template for the DashboardPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content class="dashbord-content">\n\n\n\n\n\n  <!-- Contenet of dashboard will go here -->\n\n\n\n  <ion-grid style="align-items: center; ">\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n\n\n\n\n      <ion-col class="dashboard-icon-col" (click)="openAttendanceTeacher()">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/noticeboard_200.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style=""></ion-row>\n\n        <ion-row class="dashboard-icon-row2">Attendance Teacher</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col" (click)="openAttendanceStudent()">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/syllabus_200.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Attendance Student</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col (click)="openProfile()">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/faculty.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Profile</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/leave.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row class="dashboard-icon-row2">Leave</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/extra.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Ex-Curricular</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/gallery.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Gallery</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!-- Repeat I -->\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/last_icon.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row class="dashboard-icon-row2">Examination</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/grades.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Grades</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/timetable.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Routine</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!-- Repeated stuffs go here  -->\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/diary.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style=""></ion-row>\n\n        <ion-row class="dashboard-icon-row2">Diary</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/classwork.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Classwork</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/homework.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Homework</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\dashboard\dashboard.html"*/
+            selector: "page-dashboard",template:/*ion-inline-start:"C:\code\hades\src\pages\dashboard\dashboard.html"*/'<!--\n\n  Generated template for the DashboardPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content class="dashbord-content">\n\n\n\n\n\n  <!-- Contenet of dashboard will go here -->\n\n\n\n  <ion-grid style="align-items: center; ">\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n\n\n\n\n      <ion-col class="dashboard-icon-col" (click)="openAttendanceTeacher()">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/noticeboard_200.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style=""></ion-row>\n\n        <ion-row class="dashboard-icon-row2">Attendance Teacher</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col" (click)="openAttendanceStudent()">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/syllabus_200.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Attendance Student</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col (click)="openProfile()">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/faculty.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Profile</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/leave.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row class="dashboard-icon-row2">Leave</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/extra.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Ex-Curricular</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/gallery.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Gallery</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!-- Repeat I -->\n\n\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/last_icon.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row class="dashboard-icon-row2">Examination</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/grades.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Grades</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/timetable.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Routine</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!-- Repeated stuffs go here  -->\n\n\n\n\n\n    <ion-row style="padding-top: 23px; border-bottom: 2px inset black;">\n\n\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/diary.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style=""></ion-row>\n\n        <ion-row class="dashboard-icon-row2">Diary</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col class="dashboard-icon-col">\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/classwork.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Classwork</ion-row>\n\n\n\n      </ion-col>\n\n\n\n      <ion-col>\n\n        <ion-row class="dashboard-icon-row">\n\n          <ion-img class="dashboard-icons" src="../../assets/imgs/homework.png"></ion-img>\n\n        </ion-row>\n\n        <ion-row style="justify-content: center; padding-top: 7px">Homework</ion-row>\n\n\n\n      </ion-col>\n\n    </ion-row>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\dashboard\dashboard.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
@@ -370,7 +370,7 @@ var DashboardPage = (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -433,7 +433,7 @@ var DateSelectorPopoverPage = (function () {
     };
     DateSelectorPopoverPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-date-selector-popover',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\date-selector-popover\date-selector-popover.html"*/'<ion-list class="list-popover">\n\n    <ion-item class="item-leave-height">\n\n        <ion-label><h1>{{selectedDate | date : "longDate"}}</h1><h3>{{selectedDate | date : "EEEE"}}</h3></ion-label>\n\n      </ion-item>\n\n  <ion-item>\n\n    <ion-label>Today</ion-label>\n\n    <ion-toggle [(ngModel)]="todayToggle" (ionChange)="todayCheck($event)"></ion-toggle>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label>Select Date</ion-label>\n\n    <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="selectedDate" disabled="{{dateEnabled}}"></ion-datetime>\n\n  </ion-item>\n\n\n\n</ion-list>\n\n\n\n<ion-grid>\n\n  <ion-row class="leave-margin">\n\n    <button ion-button (click)="exit()">Discard</button>\n\n    <button ion-button (click)="proceed()">Proceed</button>\n\n  </ion-row>\n\n</ion-grid>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\date-selector-popover\date-selector-popover.html"*/,
+            selector: 'page-date-selector-popover',template:/*ion-inline-start:"C:\code\hades\src\pages\date-selector-popover\date-selector-popover.html"*/'<ion-list class="list-popover">\n\n    <ion-item class="item-leave-height">\n\n        <ion-label><h1>{{selectedDate | date : "longDate"}}</h1><h3>{{selectedDate | date : "EEEE"}}</h3></ion-label>\n\n      </ion-item>\n\n  <ion-item>\n\n    <ion-label>Today</ion-label>\n\n    <ion-toggle [(ngModel)]="todayToggle" (ionChange)="todayCheck($event)"></ion-toggle>\n\n  </ion-item>\n\n\n\n  <ion-item>\n\n    <ion-label>Select Date</ion-label>\n\n    <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="selectedDate" disabled="{{dateEnabled}}"></ion-datetime>\n\n  </ion-item>\n\n\n\n</ion-list>\n\n\n\n<ion-grid>\n\n  <ion-row class="leave-margin">\n\n    <button ion-button (click)="exit()">Discard</button>\n\n    <button ion-button (click)="proceed()">Proceed</button>\n\n  </ion-row>\n\n</ion-grid>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\date-selector-popover\date-selector-popover.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */]])
     ], DateSelectorPopoverPage);
@@ -444,18 +444,18 @@ var DateSelectorPopoverPage = (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AttendanceTeacherPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__date_selector_popover_date_selector_popover__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__popover_popover__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__date_selector_popover_date_selector_popover__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__popover_popover__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_database_database__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__student_details_toggle_student_details_toggle__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__student_details_toggle_student_details_toggle__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -492,8 +492,11 @@ var AttendanceTeacherPage = (function () {
         this.modalCtrl = modalCtrl;
         this.attendance = [];
         this.students = [];
+        this.weekdays = ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"];
+        this.monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "Novemeber", "December"];
+        this.division = "IXA2018";
         var students;
-        var studentDocs = this.db.getStudentsByDivision("IXA2018");
+        var studentDocs = this.db.getStudentsByDivision(this.division);
         studentDocs
             .get()
             .then(function (snapshot) {
@@ -516,7 +519,12 @@ var AttendanceTeacherPage = (function () {
             console.log("I am in error -->", err);
         });
         // console.log(this.students);
+        this.generateAttendance();
+    }
+    AttendanceTeacherPage.prototype.generateAttendance = function () {
+        var _this = this;
         var attendanceDoc = this.db.getAttendancenyDivision("IXA2018");
+        this.attendance = [];
         attendanceDoc
             .get()
             .then(function (snapshot) {
@@ -544,7 +552,7 @@ var AttendanceTeacherPage = (function () {
             .catch(function (err) {
             console.log(err);
         });
-    }
+    };
     AttendanceTeacherPage.prototype.ionViewDidLoad = function () {
         console.log("ionViewDidLoad AttendanceTeacherPage");
         // this.setSlideVars();
@@ -555,32 +563,6 @@ var AttendanceTeacherPage = (function () {
         console.log(division);
         var temp;
         var Student;
-        // Student = [
-        //   {
-        //     first_name: "Jack",
-        //     last_name: "Daniels",
-        //     id: "jackda01",
-        //     is_present: true
-        //   },
-        //   {
-        //     first_name: "Jhonny",
-        //     last_name: "Wakcer",
-        //     id: "wacher01",
-        //     is_present: false
-        //   },
-        //   {
-        //     first_name: "Jin",
-        //     last_name: "Beam",
-        //     id: "beamjin01",
-        //     is_present: false
-        //   },
-        //   {
-        //     first_name: "Glen",
-        //     last_name: "Fiddicch",
-        //     id: "fiddigl01",
-        //     is_present: true
-        //   }
-        // ];
         return Student;
     };
     AttendanceTeacherPage.prototype.displayAttendance = function (attendance) {
@@ -656,21 +638,45 @@ var AttendanceTeacherPage = (function () {
     AttendanceTeacherPage.prototype.addAttendance = function () {
         console.log("Add attendance clicked!");
         this.presentDateSelector();
+    };
+    AttendanceTeacherPage.prototype.attendanceModal = function (data) {
+        var _this = this;
         var attendanceModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_6__student_details_toggle_student_details_toggle__["a" /* StudentDetailsTogglePage */], {
             studentsData: this.students,
-            date: "13",
-            month: "July",
-            year: "2018",
-            day: "Monday"
+            date: data.date,
+            month: data.month,
+            year: data.year,
+            day: data.weekday,
+            attendance_id: this.attendance_id,
+            division: this.division,
         });
-        // attendanceModal.present();
+        attendanceModal.present();
+        attendanceModal.onDidDismiss(function () {
+            _this.generateAttendance();
+        });
     };
     AttendanceTeacherPage.prototype.presentDateSelector = function () {
+        var _this = this;
         var datePopover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_0__date_selector_popover_date_selector_popover__["a" /* DateSelectorPopoverPage */], {}, { cssClass: "my-custom-popover" });
         datePopover.present();
         datePopover.onDidDismiss(function (data) {
             if (data) {
                 console.log(data);
+                var value = new Date(data);
+                console.log("DIVAS is:");
+                _this.divas = {
+                    "date": value.getDate(),
+                    "month": _this.monthsArray[value.getMonth()],
+                    "year": value.getFullYear(),
+                    "weekday": _this.weekdays[value.getUTCDay()]
+                };
+                // console.log(divas.getUTCMonth());
+                // console.log();
+                // console.log();
+                _this.attendance_id = _this.division + "-" + _this.divas.date + "-" + _this.divas.month + "-" + _this.divas.year;
+                console.log("Attendance ID is ");
+                console.log(_this.attendance_id);
+                _this.attendanceModal(_this.divas);
             }
         });
     };
@@ -689,29 +695,28 @@ var AttendanceTeacherPage = (function () {
             // // console.log(this.filterData);
         });
     };
+    AttendanceTeacherPage.prototype.testFunction = function () {
+        console.log("I am in tests function!!");
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["n" /* Slides */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["n" /* Slides */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["n" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["n" /* Slides */]) === "function" && _a || Object)
     ], AttendanceTeacherPage.prototype, "slides", void 0);
     AttendanceTeacherPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({
-            selector: "page-attendance-teacher",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\attendance-teacher\attendance-teacher.html"*/'<!--\n  Generated template for the AttendanceTeacherPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!-- <ion-header> -->\n\n  <!-- <ion-navbar>\n    <ion-title>attendance-teacher</ion-title>\n\n  </ion-navbar> -->\n  <!-- <ion-label>Attendance</ion-label> -->\n  <!-- <button ion-button icon-only (click)="presentPopover($event)">\n      <ion-icon name="more"></ion-icon>\n    </button>\n</ion-header> -->\n\n<ion-header>\n    <ion-navbar>\n      <ion-title>Attendance</ion-title>\n      <ion-buttons end>\n        <button ion-button icon-only (click)="presentPopover($event)">\n          <ion-icon name="more"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n  </ion-header>\n\n\n<ion-content padding>\n    <button ion-button full (click)=\'addAttendance()\'>Add Attendance</button>\n    <!-- <button ion-button full (click)=\'presentPopover()\'>Add Filters</button> -->\n    <button ion-button full (click)=\'testFunction()\'>Add Filters</button>\n\n  <list-display [attendanceData] = "attendance" class="listDisplay"></list-display>\n\n\n\n  </ion-content>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\attendance-teacher\attendance-teacher.html"*/
+            selector: "page-attendance-teacher",template:/*ion-inline-start:"C:\code\hades\src\pages\attendance-teacher\attendance-teacher.html"*/'<!--\n\n  Generated template for the AttendanceTeacherPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<!-- <ion-header> -->\n\n\n\n  <!-- <ion-navbar>\n\n    <ion-title>attendance-teacher</ion-title>\n\n\n\n  </ion-navbar> -->\n\n  <!-- <ion-label>Attendance</ion-label> -->\n\n  <!-- <button ion-button icon-only (click)="presentPopover($event)">\n\n      <ion-icon name="more"></ion-icon>\n\n    </button>\n\n</ion-header> -->\n\n\n\n<ion-header>\n\n    <ion-navbar>\n\n      <ion-title>Attendance</ion-title>\n\n      <ion-buttons end>\n\n        <button ion-button icon-only (click)="presentPopover($event)">\n\n          <ion-icon name="more"></ion-icon>\n\n        </button>\n\n      </ion-buttons>\n\n    </ion-navbar>\n\n  </ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <button ion-button full (click)=\'addAttendance()\'>Add Attendance</button>\n\n    <!-- <button ion-button full (click)=\'presentPopover()\'>Add Filters</button> -->\n\n    <button ion-button full (click)=\'testFunction()\'>Add Filters</button>\n\n\n\n  <list-display [attendanceData] = "attendance" class="listDisplay"></list-display>\n\n\n\n\n\n\n\n  </ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\attendance-teacher\attendance-teacher.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__providers_database_database__["a" /* DatabaseProvider */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* PopoverController */],
-            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* ModalController */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__providers_database_database__["a" /* DatabaseProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_database_database__["a" /* DatabaseProvider */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* PopoverController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* ModalController */]) === "function" && _g || Object])
     ], AttendanceTeacherPage);
     return AttendanceTeacherPage;
+    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=attendance-teacher.js.map
 
 /***/ }),
 
-/***/ 206:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -809,7 +814,7 @@ var PopoverPage = (function () {
     };
     PopoverPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-popover",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\popover\popover.html"*/'<ion-list class="list-popover">\n  <!-- <ion-list-header>\n        Filters\n      </ion-list-header> -->\n  <ion-item class="item-leave-height">\n    <ion-label>Month</ion-label>\n    <ion-select [(ngModel)]="monthSelect">\n      <ion-option *ngFor="let month of months">{{month}}</ion-option>\n    </ion-select>\n  </ion-item>\n  <!-- <ion-item-divider>\n        Item Divider\n      </ion-item-divider> -->\n  <!-- <ion-label>Days</ion-label> -->\n  <ion-item>\n    <ion-label>All Days</ion-label>\n    <ion-toggle [(ngModel)]="allDaysToggle" (ionChange)="allDay($event)"></ion-toggle>\n  </ion-item>\n  <ion-item>\n    <ion-label>Monday</ion-label>\n    <ion-toggle [(ngModel)]="mondayToggle" disabled="{{isEnabled}}"></ion-toggle>\n  </ion-item>\n  <ion-item>\n    <ion-label>Tuesday</ion-label>\n    <ion-toggle [(ngModel)]="tuesdayToggle" disabled="{{isEnabled}}"></ion-toggle>\n  </ion-item>\n  <ion-item>\n    <ion-label>Wednesday</ion-label>\n    <ion-toggle [(ngModel)]="wednesdayToggle" disabled="{{isEnabled}}"></ion-toggle>\n  </ion-item>\n  <ion-item>\n    <ion-label>Thursday</ion-label>\n    <ion-toggle [(ngModel)]="thursdayToggle" disabled="{{isEnabled}}"></ion-toggle>\n  </ion-item>\n  <ion-item>\n    <ion-label>Friday</ion-label>\n    <ion-toggle [(ngModel)]="fridayToggle" disabled="{{isEnabled}}"></ion-toggle>\n  </ion-item>\n  <ion-item>\n    <ion-label>Saturday</ion-label>\n    <ion-toggle [(ngModel)]="saturdayToggle" disabled="{{isEnabled}}"></ion-toggle>\n  </ion-item>\n\n</ion-list>\n<ion-grid>\n  <ion-row class="leave-margin">\n    <button ion-button (click)="resetFilters()">Reset</button>\n    <button ion-button (click)="submitFilter()">Submit</button>\n  </ion-row>\n</ion-grid>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\popover\popover.html"*/
+            selector: "page-popover",template:/*ion-inline-start:"C:\code\hades\src\pages\popover\popover.html"*/'<ion-list class="list-popover">\n\n  <!-- <ion-list-header>\n\n        Filters\n\n      </ion-list-header> -->\n\n  <ion-item class="item-leave-height">\n\n    <ion-label>Month</ion-label>\n\n    <ion-select [(ngModel)]="monthSelect">\n\n      <ion-option *ngFor="let month of months">{{month}}</ion-option>\n\n    </ion-select>\n\n  </ion-item>\n\n  <!-- <ion-item-divider>\n\n        Item Divider\n\n      </ion-item-divider> -->\n\n  <!-- <ion-label>Days</ion-label> -->\n\n  <ion-item>\n\n    <ion-label>All Days</ion-label>\n\n    <ion-toggle [(ngModel)]="allDaysToggle" (ionChange)="allDay($event)"></ion-toggle>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Monday</ion-label>\n\n    <ion-toggle [(ngModel)]="mondayToggle" disabled="{{isEnabled}}"></ion-toggle>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Tuesday</ion-label>\n\n    <ion-toggle [(ngModel)]="tuesdayToggle" disabled="{{isEnabled}}"></ion-toggle>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Wednesday</ion-label>\n\n    <ion-toggle [(ngModel)]="wednesdayToggle" disabled="{{isEnabled}}"></ion-toggle>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Thursday</ion-label>\n\n    <ion-toggle [(ngModel)]="thursdayToggle" disabled="{{isEnabled}}"></ion-toggle>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Friday</ion-label>\n\n    <ion-toggle [(ngModel)]="fridayToggle" disabled="{{isEnabled}}"></ion-toggle>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Saturday</ion-label>\n\n    <ion-toggle [(ngModel)]="saturdayToggle" disabled="{{isEnabled}}"></ion-toggle>\n\n  </ion-item>\n\n\n\n</ion-list>\n\n<ion-grid>\n\n  <ion-row class="leave-margin">\n\n    <button ion-button (click)="resetFilters()">Reset</button>\n\n    <button ion-button (click)="submitFilter()">Submit</button>\n\n  </ion-row>\n\n</ion-grid>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\popover\popover.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ViewController */]])
     ], PopoverPage);
@@ -820,7 +825,7 @@ var PopoverPage = (function () {
 
 /***/ }),
 
-/***/ 207:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -894,29 +899,40 @@ var StudentDetailsTogglePage = (function () {
         this.not_saved_message = "Data was not saved!";
         this.saved_message = "Data was successfully saved!";
         this.error_message = "Something went wrong, please try again!";
-        console.log("##############88888888888888########");
-        console.log(navParams.get('studentsData'));
-        console.log(navParams.get('date'));
-        console.log(navParams.get('month'));
-        console.log(navParams.get('year'));
-        console.log(navParams.get('day'));
-        this.students = navParams.get('studentsData');
+        this.list_display = false;
+        // console.log("##############88888888888888########");
+        // console.log(navParams.get("studentsData"));
+        this.date = navParams.get("date");
+        this.month = navParams.get("month");
+        this.year = navParams.get("year");
+        this.day = navParams.get("day");
+        this.attendance_id = navParams.get("attendance_id");
+        this.division = navParams.get("division");
+        this.students = navParams.get("studentsData");
+        // this.map = this.getAttendanceMap(this.attendance_id);
         if (this.students) {
             // console.log(this.students)
             this.students.forEach(function (student) {
                 // console.log(student.id);
                 _this.attendance[student.id] = student.is_present;
             });
+            // this.getAttendanceMap(this.attendance_id);
         }
+        this.getAttendanceMap(this.attendance_id);
+        this.list_display = true;
     }
     StudentDetailsTogglePage.prototype.ngOnChanges = function () {
         if (this.students) {
             console.log("--------Changed Inside modal ----------");
             console.log(this.students);
         }
+        if (this.map) {
+            console.log("MAAAAAAAAAAAAAAAAAAAAAAAAAAAAP");
+            console.log(this.map);
+        }
     };
     StudentDetailsTogglePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad StudentDetailsTogglePage');
+        console.log("ionViewDidLoad StudentDetailsTogglePage");
     };
     StudentDetailsTogglePage.prototype.allPresent = function () {
         this.check = true;
@@ -935,15 +951,46 @@ var StudentDetailsTogglePage = (function () {
     };
     StudentDetailsTogglePage.prototype.testData = function () {
         console.log("Test data has been clicked!");
-        for (var key in this.attendance) {
-            console.log(this.attendance[key]);
-        }
+        // this.getAttendanceMap(this.attendance_id);
+        // for (let key in this.attendance) {
+        //   console.log(this.attendance[key]);
+        // }
+        // this.map = this.getAttendanceMap(this.attendance_id);
+        // console.log("Map details");
+        // console.log(this.map);
+    };
+    StudentDetailsTogglePage.prototype.getAttendanceMap = function (attendance_id) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            var querySnapshot;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.db.getAttendanceById(attendance_id).get()];
+                    case 1:
+                        querySnapshot = _a.sent();
+                        console.log(querySnapshot);
+                        if (querySnapshot.empty) {
+                            console.log("Doc is empty");
+                            // this.allPresent();
+                        }
+                        else {
+                            querySnapshot.forEach(function (doc) {
+                                // doc.data() is never undefined for query doc snapshots
+                                // console.log(doc.data().student_id);
+                                // console.log(doc.data().present);
+                                _this.attendance[doc.data().student_id] = doc.data().present;
+                            });
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
     StudentDetailsTogglePage.prototype.saveAttendance = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.db.createAttendanceStudent(this.attendance, "Monday", "15", "May", "2018", "IXA2018")];
+                    case 0: return [4 /*yield*/, this.db.createAttendanceStudent(this.attendance, this.day, this.date, this.month, this.year, this.division, this.attendance_id)];
                     case 1:
                         _a.sent();
                         console.log("Create Attendance has been clicked!!");
@@ -973,7 +1020,7 @@ var StudentDetailsTogglePage = (function () {
     };
     StudentDetailsTogglePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-student-details-toggle',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\student-details-toggle\student-details-toggle.html"*/'<ion-content padding>\n\n  <button ion-button full (click)=\'saveAttendance()\'>Save Attendance</button>\n  <button ion-button (click)=\'allPresent()\'>All Present</button>\n  <button ion-button (click)=\'allAbsent()\'>All Absent</button>\n  <button ion-button (click)=\'unsavedExit()\'>Exit</button>\n  <button ion-button (click)=\'testData()\'>Test</button>\n\n<ng-container *ngIf = "list_display">\n  <ion-list>\n    <div *ngFor="let student of students">\n      <ion-item class="itemClass">\n        <ion-label>{{student.first_name}} {{student.last_name}}</ion-label>\n        <!-- <ion-toggle checked="{{attendance[student.id]}}"></ion-toggle> -->\n        <ion-toggle [(ngModel)]="attendance[student.id]"></ion-toggle>\n\n      </ion-item>\n    </div>\n  </ion-list>\n</ng-container>\n\n</ion-content>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\student-details-toggle\student-details-toggle.html"*/,
+            selector: "page-student-details-toggle",template:/*ion-inline-start:"C:\code\hades\src\pages\student-details-toggle\student-details-toggle.html"*/'<ion-content padding>\n\n\n\n  <button ion-button full (click)=\'saveAttendance()\'>Save Attendance</button>\n\n  <button ion-button (click)=\'allPresent()\'>All Present</button>\n\n  <button ion-button (click)=\'allAbsent()\'>All Absent</button>\n\n  <button ion-button (click)=\'unsavedExit()\'>Exit</button>\n\n  <button ion-button (click)=\'testData()\'>Test</button>\n\n\n\n<ng-container *ngIf = "list_display">\n\n  <ion-list>\n\n    <div *ngFor="let student of students">\n\n      <ion-item class="itemClass">\n\n        <ion-label>{{student.first_name}} {{student.last_name}}</ion-label>\n\n        <!-- <ion-toggle checked="{{attendance[student.id]}}"></ion-toggle> -->\n\n        <ion-toggle [(ngModel)]="attendance[student.id]"></ion-toggle>\n\n\n\n      </ion-item>\n\n    </div>\n\n  </ion-list>\n\n</ng-container>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\student-details-toggle\student-details-toggle.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavParams */],
@@ -988,7 +1035,7 @@ var StudentDetailsTogglePage = (function () {
 
 /***/ }),
 
-/***/ 208:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1037,7 +1084,7 @@ var ViewProfilePage = (function () {
     };
     ViewProfilePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-view-profile',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\view-profile\view-profile.html"*/'<!--\n\n  Generated template for the ViewProfilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>Profile</ion-title>\n\n    <!-- <ion-buttons end>\n\n      <button ion-button icon-only (click)="presentPopover($event)">\n\n        <ion-icon name="more"></ion-icon>\n\n      </button>\n\n    </ion-buttons> -->\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n  <!-- <ng-container *ngIf="auth.user"> -->\n\n  <ng-container *ngIf="auth.user | async as user">\n\n\n\n    <!-- <img [src]="user.photoURL"> -->\n\n    <h2>{{ user.displayName }} </h2>\n\n    <h2>{{ user.role }} </h2>\n\n    <h2>{{ user.email }} </h2>\n\n    <ion-grid class="profile_grid">\n\n      <ion-row>\n\n        <ion-img class="profile_img" src="../../assets/imgs/student_home.png"></ion-img>\n\n      </ion-row>\n\n      <ion-row>\n\n        <h1>Some test text!!</h1>\n\n        <h1>{{displayname}}</h1>\n\n        <h2></h2>\n\n      </ion-row>\n\n    </ion-grid>\n\n\n\n    \n\n  </ng-container>\n\n</ion-content>'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\view-profile\view-profile.html"*/,
+            selector: 'page-view-profile',template:/*ion-inline-start:"C:\code\hades\src\pages\view-profile\view-profile.html"*/'<!--\n  Generated template for the ViewProfilePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n  <ion-navbar>\n    <ion-title>Profile</ion-title>\n    <!-- <ion-buttons end>\n      <button ion-button icon-only (click)="presentPopover($event)">\n        <ion-icon name="more"></ion-icon>\n      </button>\n    </ion-buttons> -->\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n  <!-- <ng-container *ngIf="auth.user"> -->\n  <ng-container *ngIf="auth.user | async as user">\n\n    <!-- <img [src]="user.photoURL"> -->\n    <h2>{{ user.displayName }} </h2>\n    <h2>{{ user.role }} </h2>\n    <h2>{{ user.email }} </h2>\n    <ion-grid class="profile_grid">\n      <ion-row>\n        <ion-img class="profile_img" src="../../assets/imgs/student_home.png"></ion-img>\n      </ion-row>\n      <ion-row>\n        <h1>Some test text!!</h1>\n        <h1>{{displayname}}</h1>\n        <h2></h2>\n      </ion-row>\n    </ion-grid>\n\n    \n  </ng-container>\n</ion-content>'/*ion-inline-end:"C:\code\hades\src\pages\view-profile\view-profile.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */]])
     ], ViewProfilePage);
@@ -1048,7 +1095,7 @@ var ViewProfilePage = (function () {
 
 /***/ }),
 
-/***/ 209:
+/***/ 208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1135,7 +1182,7 @@ var HomeworkStudentPage = (function () {
     ], HomeworkStudentPage.prototype, "barCanvas", void 0);
     HomeworkStudentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-homework-student',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\homework-student\homework-student.html"*/'<!--\n  Generated template for the HomeworkStudentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Homework</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n\n\n\n  <ion-grid>\n    <ion-row justify-content-center align-items-bottom style="height: 30%;">\n      <canvas #barCanvas></canvas>\n    </ion-row>\n    <ion-row style="width: 100%">\n      <!-- <ion-list inset>\n        <ion-buttons>This is a button</ion-buttons>\n        <ion-item>Something goes here</ion-item>\n        <p>Write table of 19</p>\n        <p>test 1</p>\n        <p>test 1</p>\n        <p>test 1</p>\n        <p>test 1test 1test 1test 1test 1</p>\n\n        </ion-list> -->\n      <ion-list style="width: 100%">\n        <ion-item-group>\n          <ion-item-divider color="light">April</ion-item-divider>\n          <ion-row class="assignments" (tap)="openModal()">\n            <ion-col col-1 class="color-col"></ion-col>\n            <ion-col col-11>\n              <ion-item class="assignment-list">\n                <h2>Write states and capital of india</h2>\n                <p>\n                  <b>Tuesday, 20th May\n                    <!-- <span style="color: plum">New</span> -->\n                  </b>\n                </p>\n                <!-- <button ion-button clear item-end>View</button> -->\n              </ion-item>\n            </ion-col>\n          </ion-row>\n\n<!-- Delete from here -->\n<ion-row class="assignments" (tap)="openModal()">\n    <ion-col col-1 class="color-col" style="background-color: palevioletred !important"></ion-col>\n    <ion-col col-11>\n      <ion-item class="assignment-list">\n        <h2>Write states and capital of india</h2>\n        <p>\n          <b>Tuesday, 20th May\n            <!-- <span style="color: plum">New</span> -->\n          </b>\n        </p>\n        <!-- <button ion-button clear item-end>View</button> -->\n      </ion-item>\n    </ion-col>\n  </ion-row>\n  <ion-row class="assignments" (tap)="openModal()">\n      <ion-col col-1 class="color-col"></ion-col>\n      <ion-col col-11>\n        <ion-item class="assignment-list">\n          <h2>Write states and capital of india</h2>\n          <p>\n            <b>Tuesday, 20th May\n              <!-- <span style="color: plum">New</span> -->\n            </b>\n          </p>\n          <!-- <button ion-button clear item-end>View</button> -->\n        </ion-item>\n      </ion-col>\n    </ion-row>\n    <ion-row class="assignments" (tap)="openModal()">\n        <ion-col col-1 class="color-col"></ion-col>\n        <ion-col col-11>\n          <ion-item class="assignment-list">\n            <h2>Write states and capital of india</h2>\n            <p>\n              <b>Tuesday, 20th May\n                <!-- <span style="color: plum">New</span> -->\n              </b>\n            </p>\n            <!-- <button ion-button clear item-end>View</button> -->\n          </ion-item>\n        </ion-col>\n      </ion-row>\n      <ion-row class="assignments" (tap)="openModal()">\n          <ion-col col-1 class="color-col"></ion-col>\n          <ion-col col-11>\n            <ion-item class="assignment-list">\n              <h2>Write states and capital of india</h2>\n              <p>\n                <b>Tuesday, 20th May\n                  <!-- <span style="color: plum">New</span> -->\n                </b>\n              </p>\n              <!-- <button ion-button clear item-end>View</button> -->\n            </ion-item>\n          </ion-col>\n        </ion-row>\n\n        <ion-row class="assignments" (tap)="openModal()">\n            <ion-col col-1 class="color-col"></ion-col>\n            <ion-col col-11>\n              <ion-item class="assignment-list">\n                <h2>Write states and capital of india</h2>\n                <p>\n                  <b>Tuesday, 20th May\n                    <!-- <span style="color: plum">New</span> -->\n                  </b>\n                </p>\n                <!-- <button ion-button clear item-end>View</button> -->\n              </ion-item>\n            </ion-col>\n          </ion-row>\n          <ion-row class="assignments" (tap)="openModal()">\n              <ion-col col-1 class="color-col"></ion-col>\n              <ion-col col-11>\n                <ion-item class="assignment-list">\n                  <h2>Write states and capital of india</h2>\n                  <p>\n                    <b>Tuesday, 20th May\n                      <!-- <span style="color: plum">New</span> -->\n                    </b>\n                  </p>\n                  <!-- <button ion-button clear item-end>View</button> -->\n                </ion-item>\n              </ion-col>\n            </ion-row>\n            <ion-row class="assignments" (tap)="openModal()">\n                <ion-col col-1 class="color-col"></ion-col>\n                <ion-col col-11>\n                  <ion-item class="assignment-list">\n                    <h2>Write states and capital of india</h2>\n                    <p>\n                      <b>Tuesday, 20th May\n                        <!-- <span style="color: plum">New</span> -->\n                      </b>\n                    </p>\n                    <!-- <button ion-button clear item-end>View</button> -->\n                  </ion-item>\n                </ion-col>\n              </ion-row>\n              <ion-row class="assignments" (tap)="openModal()">\n                  <ion-col col-1 class="color-col"></ion-col>\n                  <ion-col col-11>\n                    <ion-item class="assignment-list">\n                      <h2>Write states and capital of india</h2>\n                      <p>\n                        <b>Tuesday, 20th May\n                          <!-- <span style="color: plum">New</span> -->\n                        </b>\n                      </p>\n                      <!-- <button ion-button clear item-end>View</button> -->\n                    </ion-item>\n                  </ion-col>\n                </ion-row>\n                <ion-row class="assignments" (tap)="openModal()">\n                    <ion-col col-1 class="color-col"></ion-col>\n                    <ion-col col-11>\n                      <ion-item class="assignment-list">\n                        <h2>Write states and capital of india</h2>\n                        <p>\n                          <b>Tuesday, 20th May\n                            <!-- <span style="color: plum">New</span> -->\n                          </b>\n                        </p>\n                        <!-- <button ion-button clear item-end>View</button> -->\n                      </ion-item>\n                    </ion-col>\n                  </ion-row>\n                  <ion-row class="assignments" (tap)="openModal()">\n                      <ion-col col-1 class="color-col"></ion-col>\n                      <ion-col col-11>\n                        <ion-item class="assignment-list">\n                          <h2>Write states and capital of india</h2>\n                          <p>\n                            <b>Tuesday, 20th May\n                              <!-- <span style="color: plum">New</span> -->\n                            </b>\n                          </p>\n                          <!-- <button ion-button clear item-end>View</button> -->\n                        </ion-item>\n                      </ion-col>\n                    </ion-row>\n                    <ion-row class="assignments" (tap)="openModal()">\n                        <ion-col col-1 class="color-col"></ion-col>\n                        <ion-col col-11>\n                          <ion-item class="assignment-list">\n                            <h2>Write states and capital of india</h2>\n                            <p>\n                              <b>Tuesday, 20th May\n                                <!-- <span style="color: plum">New</span> -->\n                              </b>\n                            </p>\n                            <!-- <button ion-button clear item-end>View</button> -->\n                          </ion-item>\n                        </ion-col>\n                      </ion-row>\n\n\n<!-- Till here -->\n\n        </ion-item-group>\n      </ion-list>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\homework-student\homework-student.html"*/,
+            selector: 'page-homework-student',template:/*ion-inline-start:"C:\code\hades\src\pages\homework-student\homework-student.html"*/'<!--\n\n  Generated template for the HomeworkStudentPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Homework</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n\n\n\n\n\n\n  <ion-grid>\n\n    <ion-row justify-content-center align-items-bottom style="height: 30%;">\n\n      <canvas #barCanvas></canvas>\n\n    </ion-row>\n\n    <ion-row style="width: 100%">\n\n      <!-- <ion-list inset>\n\n        <ion-buttons>This is a button</ion-buttons>\n\n        <ion-item>Something goes here</ion-item>\n\n        <p>Write table of 19</p>\n\n        <p>test 1</p>\n\n        <p>test 1</p>\n\n        <p>test 1</p>\n\n        <p>test 1test 1test 1test 1test 1</p>\n\n\n\n        </ion-list> -->\n\n      <ion-list style="width: 100%">\n\n        <ion-item-group>\n\n          <ion-item-divider color="light">April</ion-item-divider>\n\n          <ion-row class="assignments" (tap)="openModal()">\n\n            <ion-col col-1 class="color-col"></ion-col>\n\n            <ion-col col-11>\n\n              <ion-item class="assignment-list">\n\n                <h2>Write states and capital of india</h2>\n\n                <p>\n\n                  <b>Tuesday, 20th May\n\n                    <!-- <span style="color: plum">New</span> -->\n\n                  </b>\n\n                </p>\n\n                <!-- <button ion-button clear item-end>View</button> -->\n\n              </ion-item>\n\n            </ion-col>\n\n          </ion-row>\n\n\n\n<!-- Delete from here -->\n\n<ion-row class="assignments" (tap)="openModal()">\n\n    <ion-col col-1 class="color-col" style="background-color: palevioletred !important"></ion-col>\n\n    <ion-col col-11>\n\n      <ion-item class="assignment-list">\n\n        <h2>Write states and capital of india</h2>\n\n        <p>\n\n          <b>Tuesday, 20th May\n\n            <!-- <span style="color: plum">New</span> -->\n\n          </b>\n\n        </p>\n\n        <!-- <button ion-button clear item-end>View</button> -->\n\n      </ion-item>\n\n    </ion-col>\n\n  </ion-row>\n\n  <ion-row class="assignments" (tap)="openModal()">\n\n      <ion-col col-1 class="color-col"></ion-col>\n\n      <ion-col col-11>\n\n        <ion-item class="assignment-list">\n\n          <h2>Write states and capital of india</h2>\n\n          <p>\n\n            <b>Tuesday, 20th May\n\n              <!-- <span style="color: plum">New</span> -->\n\n            </b>\n\n          </p>\n\n          <!-- <button ion-button clear item-end>View</button> -->\n\n        </ion-item>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row class="assignments" (tap)="openModal()">\n\n        <ion-col col-1 class="color-col"></ion-col>\n\n        <ion-col col-11>\n\n          <ion-item class="assignment-list">\n\n            <h2>Write states and capital of india</h2>\n\n            <p>\n\n              <b>Tuesday, 20th May\n\n                <!-- <span style="color: plum">New</span> -->\n\n              </b>\n\n            </p>\n\n            <!-- <button ion-button clear item-end>View</button> -->\n\n          </ion-item>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row class="assignments" (tap)="openModal()">\n\n          <ion-col col-1 class="color-col"></ion-col>\n\n          <ion-col col-11>\n\n            <ion-item class="assignment-list">\n\n              <h2>Write states and capital of india</h2>\n\n              <p>\n\n                <b>Tuesday, 20th May\n\n                  <!-- <span style="color: plum">New</span> -->\n\n                </b>\n\n              </p>\n\n              <!-- <button ion-button clear item-end>View</button> -->\n\n            </ion-item>\n\n          </ion-col>\n\n        </ion-row>\n\n\n\n        <ion-row class="assignments" (tap)="openModal()">\n\n            <ion-col col-1 class="color-col"></ion-col>\n\n            <ion-col col-11>\n\n              <ion-item class="assignment-list">\n\n                <h2>Write states and capital of india</h2>\n\n                <p>\n\n                  <b>Tuesday, 20th May\n\n                    <!-- <span style="color: plum">New</span> -->\n\n                  </b>\n\n                </p>\n\n                <!-- <button ion-button clear item-end>View</button> -->\n\n              </ion-item>\n\n            </ion-col>\n\n          </ion-row>\n\n          <ion-row class="assignments" (tap)="openModal()">\n\n              <ion-col col-1 class="color-col"></ion-col>\n\n              <ion-col col-11>\n\n                <ion-item class="assignment-list">\n\n                  <h2>Write states and capital of india</h2>\n\n                  <p>\n\n                    <b>Tuesday, 20th May\n\n                      <!-- <span style="color: plum">New</span> -->\n\n                    </b>\n\n                  </p>\n\n                  <!-- <button ion-button clear item-end>View</button> -->\n\n                </ion-item>\n\n              </ion-col>\n\n            </ion-row>\n\n            <ion-row class="assignments" (tap)="openModal()">\n\n                <ion-col col-1 class="color-col"></ion-col>\n\n                <ion-col col-11>\n\n                  <ion-item class="assignment-list">\n\n                    <h2>Write states and capital of india</h2>\n\n                    <p>\n\n                      <b>Tuesday, 20th May\n\n                        <!-- <span style="color: plum">New</span> -->\n\n                      </b>\n\n                    </p>\n\n                    <!-- <button ion-button clear item-end>View</button> -->\n\n                  </ion-item>\n\n                </ion-col>\n\n              </ion-row>\n\n              <ion-row class="assignments" (tap)="openModal()">\n\n                  <ion-col col-1 class="color-col"></ion-col>\n\n                  <ion-col col-11>\n\n                    <ion-item class="assignment-list">\n\n                      <h2>Write states and capital of india</h2>\n\n                      <p>\n\n                        <b>Tuesday, 20th May\n\n                          <!-- <span style="color: plum">New</span> -->\n\n                        </b>\n\n                      </p>\n\n                      <!-- <button ion-button clear item-end>View</button> -->\n\n                    </ion-item>\n\n                  </ion-col>\n\n                </ion-row>\n\n                <ion-row class="assignments" (tap)="openModal()">\n\n                    <ion-col col-1 class="color-col"></ion-col>\n\n                    <ion-col col-11>\n\n                      <ion-item class="assignment-list">\n\n                        <h2>Write states and capital of india</h2>\n\n                        <p>\n\n                          <b>Tuesday, 20th May\n\n                            <!-- <span style="color: plum">New</span> -->\n\n                          </b>\n\n                        </p>\n\n                        <!-- <button ion-button clear item-end>View</button> -->\n\n                      </ion-item>\n\n                    </ion-col>\n\n                  </ion-row>\n\n                  <ion-row class="assignments" (tap)="openModal()">\n\n                      <ion-col col-1 class="color-col"></ion-col>\n\n                      <ion-col col-11>\n\n                        <ion-item class="assignment-list">\n\n                          <h2>Write states and capital of india</h2>\n\n                          <p>\n\n                            <b>Tuesday, 20th May\n\n                              <!-- <span style="color: plum">New</span> -->\n\n                            </b>\n\n                          </p>\n\n                          <!-- <button ion-button clear item-end>View</button> -->\n\n                        </ion-item>\n\n                      </ion-col>\n\n                    </ion-row>\n\n                    <ion-row class="assignments" (tap)="openModal()">\n\n                        <ion-col col-1 class="color-col"></ion-col>\n\n                        <ion-col col-11>\n\n                          <ion-item class="assignment-list">\n\n                            <h2>Write states and capital of india</h2>\n\n                            <p>\n\n                              <b>Tuesday, 20th May\n\n                                <!-- <span style="color: plum">New</span> -->\n\n                              </b>\n\n                            </p>\n\n                            <!-- <button ion-button clear item-end>View</button> -->\n\n                          </ion-item>\n\n                        </ion-col>\n\n                      </ion-row>\n\n\n\n\n\n<!-- Till here -->\n\n\n\n        </ion-item-group>\n\n      </ion-list>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\homework-student\homework-student.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavParams */],
@@ -1148,7 +1195,7 @@ var HomeworkStudentPage = (function () {
 
 /***/ }),
 
-/***/ 210:
+/***/ 209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1182,7 +1229,7 @@ var LoginSliderPage = (function () {
     };
     LoginSliderPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login-slider',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\login-slider\login-slider.html"*/'<!-- Lets us put some sliders here -->\n\n<ion-content padding class="login-slider-main">\n  <ion-grid style="height: 100%">\n    <ion-row justify-content-center align-items-bottom style="height: 80%;">\n      <ion-slides pager="true">\n        <ion-slide>\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/rocket_200.png"></ion-img>\n          <p>Some fucking text goes here!!</p>\n        </ion-slide>\n        <ion-slide>\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/chemistry_200.png"></ion-img>\n          <p>Another fucking test</p>\n        </ion-slide>\n        <ion-slide>\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/last_icon_200.png"></ion-img>\n          <p>How your child becoms superhero using this app!!</p>\n        </ion-slide>\n      </ion-slides>\n      <email-login></email-login>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\login-slider\login-slider.html"*/,
+            selector: 'page-login-slider',template:/*ion-inline-start:"C:\code\hades\src\pages\login-slider\login-slider.html"*/'<!-- Lets us put some sliders here -->\n\n\n\n<ion-content padding class="login-slider-main">\n\n  <ion-grid style="height: 100%">\n\n    <ion-row justify-content-center align-items-bottom style="height: 80%;">\n\n      <ion-slides pager="true">\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/rocket_200.png"></ion-img>\n\n          <p>Some fucking text goes here!!</p>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/chemistry_200.png"></ion-img>\n\n          <p>Another fucking test</p>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/last_icon_200.png"></ion-img>\n\n          <p>How your child becoms superhero using this app!!</p>\n\n        </ion-slide>\n\n      </ion-slides>\n\n      <email-login></email-login>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\login-slider\login-slider.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
     ], LoginSliderPage);
@@ -1193,7 +1240,7 @@ var LoginSliderPage = (function () {
 
 /***/ }),
 
-/***/ 211:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1251,7 +1298,7 @@ var AnalyticsProvider = (function () {
 
 /***/ }),
 
-/***/ 212:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1367,7 +1414,7 @@ var RemoteConfigProvider = (function () {
 
 /***/ }),
 
-/***/ 223:
+/***/ 222:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -1380,56 +1427,56 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 223;
+webpackEmptyAsyncContext.id = 222;
 
 /***/ }),
 
-/***/ 268:
+/***/ 267:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/assignment-modal/assignment-modal.module": [
-		805,
+		806,
 		7
 	],
 	"../pages/attendance-teacher/attendance-teacher.module": [
-		806,
+		807,
 		18
 	],
 	"../pages/dashboard-teacher/dashboard-teacher.module": [
-		807,
+		808,
 		17
 	],
 	"../pages/dashboard/dashboard.module": [
-		808,
+		809,
 		16
 	],
 	"../pages/date-selector-popover/date-selector-popover.module": [
-		809,
+		810,
 		15
 	],
 	"../pages/diary/diary.module": [
-		810,
+		811,
 		14
 	],
 	"../pages/home/home.module": [
-		811,
+		812,
 		6
 	],
 	"../pages/homework-student/homework-student.module": [
-		812,
+		813,
 		13
 	],
 	"../pages/login-modal/login-modal.module": [
-		813,
+		814,
 		5
 	],
 	"../pages/login-slider/login-slider.module": [
-		814,
+		815,
 		12
 	],
 	"../pages/popover/popover.module": [
-		815,
+		817,
 		11
 	],
 	"../pages/posts-create/posts-create.module": [
@@ -1437,31 +1484,31 @@ var map = {
 		4
 	],
 	"../pages/profile-edit/profile-edit.module": [
-		817,
+		818,
 		3
 	],
 	"../pages/profile/profile.module": [
-		818,
+		819,
 		2
 	],
 	"../pages/student-details-toggle/student-details-toggle.module": [
-		819,
+		820,
 		10
 	],
 	"../pages/teststuffs/teststuffs.module": [
-		820,
+		821,
 		9
 	],
 	"../pages/user-posts/user-posts.module": [
-		821,
+		822,
 		1
 	],
 	"../pages/users/users.module": [
-		822,
+		823,
 		0
 	],
 	"../pages/view-profile/view-profile.module": [
-		823,
+		824,
 		8
 	]
 };
@@ -1476,7 +1523,7 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 268;
+webpackAsyncContext.id = 267;
 module.exports = webpackAsyncContext;
 
 /***/ }),
@@ -1509,7 +1556,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\login\login.html"*/'\n\n\n\n\n\n<ion-content padding class="login-content">\n\n  <ion-grid style="height: 100%">\n\n    <ion-row justify-content-center align-items-bottom style="height: 70%;">\n\n<!-- <ion-col col-12 justify-content-center style="align-content: center"> -->\n\n      <ion-img style="background: transparent !important; position: absolute; bottom:35%" width="200" height="200" src="../../assets/imgs/school_logo_2.png"></ion-img>\n\n      <!-- <ion-col col-6>This column will take 6 columns</ion-col> -->\n\n    <!-- </ion-col> -->\n\n\n\n\n\n\n\n    </ion-row>\n\n    <ion-row justify-content-center align-items-top style="height: 30%; ">\n\n        <email-login></email-login>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\code\hades\src\pages\login\login.html"*/'\n\n\n\n\n\n<ion-content padding class="login-content">\n\n  <ion-grid style="height: 100%">\n\n    <ion-row justify-content-center align-items-bottom style="height: 70%;">\n\n<!-- <ion-col col-12 justify-content-center style="align-content: center"> -->\n\n      <ion-img style="background: transparent !important; position: absolute; bottom:35%" width="200" height="200" src="../../assets/imgs/school_logo_2.png"></ion-img>\n\n      <!-- <ion-col col-6>This column will take 6 columns</ion-col> -->\n\n    <!-- </ion-col> -->\n\n\n\n\n\n\n\n    </ion-row>\n\n    <ion-row justify-content-center align-items-top style="height: 30%; ">\n\n        <email-login></email-login>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
     ], LoginPage);
@@ -1527,16 +1574,16 @@ var LoginPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_firestore__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase_app__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_facebook__ = __webpack_require__(305);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_chance__ = __webpack_require__(703);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_chance__ = __webpack_require__(704);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_chance___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_chance__);
 // This is the auth provider
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1788,23 +1835,23 @@ var AuthProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facebook_login_facebook_login__ = __webpack_require__(525);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__anonymous_login_anonymous_login__ = __webpack_require__(708);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_logout_user_logout__ = __webpack_require__(709);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__post_feed_post_feed__ = __webpack_require__(710);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__heart_button_heart_button__ = __webpack_require__(711);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__user_relationship_user_relationship__ = __webpack_require__(712);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__image_upload_image_upload__ = __webpack_require__(713);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__fcm_handler_fcm_handler__ = __webpack_require__(732);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__fcm_topic_fcm_topic__ = __webpack_require__(733);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facebook_login_facebook_login__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__anonymous_login_anonymous_login__ = __webpack_require__(709);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_logout_user_logout__ = __webpack_require__(710);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__post_feed_post_feed__ = __webpack_require__(711);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__heart_button_heart_button__ = __webpack_require__(712);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__user_relationship_user_relationship__ = __webpack_require__(713);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__image_upload_image_upload__ = __webpack_require__(714);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__fcm_handler_fcm_handler__ = __webpack_require__(733);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__fcm_topic_fcm_topic__ = __webpack_require__(734);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__email_login_email_login__ = __webpack_require__(492);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__assignment_chart_assignment_chart__ = __webpack_require__(493);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__add_attendance_add_attendance__ = __webpack_require__(780);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__student_selector_student_selector__ = __webpack_require__(781);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__list_display_list_display__ = __webpack_require__(782);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__popover_popover__ = __webpack_require__(783);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__attendance_filter_attendance_filter__ = __webpack_require__(784);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__attendance_choice_attendance_choice__ = __webpack_require__(785);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__add_attendance_add_attendance__ = __webpack_require__(781);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__student_selector_student_selector__ = __webpack_require__(782);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__list_display_list_display__ = __webpack_require__(783);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__popover_popover__ = __webpack_require__(784);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__attendance_filter_attendance_filter__ = __webpack_require__(785);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__attendance_choice_attendance_choice__ = __webpack_require__(786);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1979,7 +2026,7 @@ var EmailLoginComponent = (function () {
     };
     EmailLoginComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "email-login",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\email-login\email-login.html"*/'<button ion-button icon-left full color="light" (tap)="openModal()">\n\n    <ion-icon name="lock" style="padding-right: 13px"></ion-icon>\n\n\n\n    Login\n\n  </button>\n\n\n\n  <!-- <button ion-button (click)="openModal()">Open Modal</button> -->\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\email-login\email-login.html"*/
+            selector: "email-login",template:/*ion-inline-start:"C:\code\hades\src\components\email-login\email-login.html"*/'<button ion-button icon-left full color="light" (tap)="openModal()">\n\n    <ion-icon name="lock" style="padding-right: 13px"></ion-icon>\n\n\n\n    Login\n\n  </button>\n\n\n\n  <!-- <button ion-button (click)="openModal()">Open Modal</button> -->\n\n'/*ion-inline-end:"C:\code\hades\src\components\email-login\email-login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* NavController */],
@@ -2069,7 +2116,7 @@ var AssignmentChartComponent = (function () {
     ], AssignmentChartComponent.prototype, "barCanvas", void 0);
     AssignmentChartComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "assignment-chart",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\assignment-chart\assignment-chart.html"*/'<!-- Generated template for the AssignmentChartComponent component -->\n<div>\n  <p>hello i am here</p>\n<canvas #barCanvas1></canvas>\n</div>\n\n\n\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\assignment-chart\assignment-chart.html"*/
+            selector: "assignment-chart",template:/*ion-inline-start:"C:\code\hades\src\components\assignment-chart\assignment-chart.html"*/'<!-- Generated template for the AssignmentChartComponent component -->\n\n<div>\n\n  <p>hello i am here</p>\n\n<canvas #barCanvas1></canvas>\n\n</div>\n\n\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\code\hades\src\components\assignment-chart\assignment-chart.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], AssignmentChartComponent);
@@ -2114,7 +2161,7 @@ var DashboardTeacherPage = (function () {
     };
     DashboardTeacherPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-dashboard-teacher',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\dashboard-teacher\dashboard-teacher.html"*/'<!--\n  Generated template for the DashboardTeacherPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>dashboard-teacher</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\dashboard-teacher\dashboard-teacher.html"*/,
+            selector: 'page-dashboard-teacher',template:/*ion-inline-start:"C:\code\hades\src\pages\dashboard-teacher\dashboard-teacher.html"*/'<!--\n\n  Generated template for the DashboardTeacherPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>dashboard-teacher</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\code\hades\src\pages\dashboard-teacher\dashboard-teacher.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
     ], DashboardTeacherPage);
@@ -2159,7 +2206,7 @@ var TeststuffsPage = (function () {
     };
     TeststuffsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-teststuffs',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\pages\teststuffs\teststuffs.html"*/'<ion-content padding>\n  <ion-grid>\n    <ion-row>\n  <button class="calendar_plan" style="width: 100% !important">\n    <div class="cl_plan">\n      <div class="cl_title">Today</div>\n      <div class="cl_copy">22nd  April  2018</div>\n      <div class="cl_add">\n        <i class="fas fa-plus"></i>\n      </div>\n    </div>\n  </button>\n</ion-row>\n</ion-grid>\n</ion-content>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\pages\teststuffs\teststuffs.html"*/,
+            selector: 'page-teststuffs',template:/*ion-inline-start:"C:\code\hades\src\pages\teststuffs\teststuffs.html"*/'<ion-content padding>\n\n  <ion-grid>\n\n    <ion-row>\n\n  <button class="calendar_plan" style="width: 100% !important">\n\n    <div class="cl_plan">\n\n      <div class="cl_title">Today</div>\n\n      <div class="cl_copy">22nd  April  2018</div>\n\n      <div class="cl_add">\n\n        <i class="fas fa-plus"></i>\n\n      </div>\n\n    </div>\n\n  </button>\n\n</ion-row>\n\n</ion-grid>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\code\hades\src\pages\teststuffs\teststuffs.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
     ], TeststuffsPage);
@@ -2176,7 +2223,7 @@ var TeststuffsPage = (function () {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(498);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(506);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -2184,26 +2231,26 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 504:
+/***/ 506:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_date_selector_popover_date_selector_popover__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_student_details_toggle_student_details_toggle__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_date_selector_popover_date_selector_popover__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_student_details_toggle_student_details_toggle__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_teststuffs_teststuffs__ = __webpack_require__(496);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_popover_popover__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_attendance_teacher_attendance_teacher__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_diary_diary__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_homework_student_homework_student__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_slider_login_slider__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_popover_popover__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_attendance_teacher_attendance_teacher__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_diary_diary__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_homework_student_homework_student__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_slider_login_slider__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_dashboard_teacher_dashboard_teacher__ = __webpack_require__(494);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_platform_browser__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__(803);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_tabs_tabs__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_tabs_tabs__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_login_login__ = __webpack_require__(308);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_status_bar__ = __webpack_require__(489);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_splash_screen__ = __webpack_require__(490);
@@ -2211,18 +2258,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angularfire2_firestore__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angularfire2_storage__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angularfire2_auth__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pipes_sort_sort__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angularfire2_auth__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pipes_sort_sort__ = __webpack_require__(805);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_firebase__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_facebook__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_camera__ = __webpack_require__(309);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_admob_free__ = __webpack_require__(495);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_components_module__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_database_database__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_fcm_fcm__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_analytics_analytics__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__providers_remote_config_remote_config__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_view_profile_view_profile__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_fcm_fcm__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_analytics_analytics__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__providers_remote_config_remote_config__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_view_profile_view_profile__ = __webpack_require__(207);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2319,8 +2366,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/homework-student/homework-student.module#HomeworkStudentPageModule', name: 'HomeworkStudentPage', segment: 'homework-student', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login-modal/login-modal.module#LoginModalPageModule', name: 'LoginModalPage', segment: 'login-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login-slider/login-slider.module#LoginSliderPageModule', name: 'LoginSliderPage', segment: 'login-slider', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/popover/popover.module#PopoverPageModule', name: 'PopoverPage', segment: 'popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/posts-create/posts-create.module#PostsCreatePageModule', name: 'PostsCreatePage', segment: 'posts-create', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/popover/popover.module#PopoverPageModule', name: 'PopoverPage', segment: 'popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile-edit/profile-edit.module#ProfileEditPageModule', name: 'ProfileEditPage', segment: 'profile-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/student-details-toggle/student-details-toggle.module#StudentDetailsTogglePageModule', name: 'StudentDetailsTogglePage', segment: 'student-details-toggle', priority: 'low', defaultHistory: [] },
@@ -2377,7 +2424,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 525:
+/***/ 527:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2385,7 +2432,7 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_auth_auth__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_tabs_tabs__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_tabs_tabs__ = __webpack_require__(174);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2456,7 +2503,7 @@ var FacebookLoginComponent = (function () {
     };
     FacebookLoginComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'facebook-login',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\facebook-login\facebook-login.html"*/'<button ion-button icon-left full (tap)="login()">\n\n  <ion-icon name="logo-facebook"></ion-icon>\n\n  \n\n  Login with Facebook\n\n</button>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\facebook-login\facebook-login.html"*/
+            selector: 'facebook-login',template:/*ion-inline-start:"C:\code\hades\src\components\facebook-login\facebook-login.html"*/'<button ion-button icon-left full (tap)="login()">\n\n  <ion-icon name="logo-facebook"></ion-icon>\n\n  \n\n  Login with Facebook\n\n</button>\n\n'/*ion-inline-end:"C:\code\hades\src\components\facebook-login\facebook-login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* NavController */]])
@@ -2474,7 +2521,7 @@ var FacebookLoginComponent = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DatabaseProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase_app__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase_app__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_firebase_app__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_firestore__ = __webpack_require__(93);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
@@ -2511,30 +2558,47 @@ var DatabaseProvider = (function () {
         //  );
     };
     DatabaseProvider.prototype.getAttendancenyDivision = function (division) {
-        return this.afs.collection("attendance").ref.where("division", "==", division);
+        return this.afs
+            .collection("attendance")
+            .ref.where("division", "==", division);
+    };
+    DatabaseProvider.prototype.getAttendanceById = function (attendance_id) {
+        return this.afs.firestore
+            .collection("attendanceList")
+            .where("attendance_id", "==", attendance_id);
     };
     // createAttendanceStudent(day: string, date: string, month: string, year: string, user_id: string, division: string, present: boolean) {
-    DatabaseProvider.prototype.createAttendanceStudent = function (details, day, date, month, year, division) {
+    DatabaseProvider.prototype.createAttendanceStudent = function (details, day, date, month, year, division, attendance_id) {
         var batch = this.afs.firestore.batch();
         var collectionRef = this.afs.collection("attendanceList");
+        var presents = 0;
+        var absentees = 0;
+        var detail;
         console.log(" i am in DB create attendance");
         // console.log(details);
         for (var key in details) {
             console.log(details[key]);
             var docId = key + "_" + date + "-" + month + "-" + year;
+            // var attendance_id = division + "-" + date + "-" + month + "-" + year;
             var doc = collectionRef.doc(docId);
             doc.set({
-                "student_id": key,
-                "present": details[key],
-                "date": date,
-                "day": day,
-                "month": month,
-                "year": year,
-                "divsion": division,
+                student_id: key,
+                present: details[key],
+                date: date,
+                day: day,
+                month: month,
+                year: year,
+                divsion: division,
+                attendance_id: attendance_id
             });
+            if (details[key])
+                presents = presents + 1;
+            else
+                absentees = absentees + 1;
         }
-        var attendance = {};
-        batch.commit().then(function (data) {
+        batch
+            .commit()
+            .then(function (data) {
             console.log("-----------------");
             return true;
         })
@@ -2544,6 +2608,20 @@ var DatabaseProvider = (function () {
         });
         // return ("Successful");
         // return this.afs.collection("attendanceList").ref.add(attendance);
+        details = {
+            "absent": absentees,
+            "present": presents,
+            "year": year,
+            "month": month,
+            "division": division,
+            "day": day,
+            "date": date,
+            "attendance_id": attendance_id
+        };
+        var data = this.afs
+            .collection("attendance")
+            .doc(attendance_id)
+            .set(details);
     };
     DatabaseProvider.prototype.getStudentsByDivision = function (division) {
         return this.afs
@@ -2628,7 +2706,7 @@ var DatabaseProvider = (function () {
 
 /***/ }),
 
-/***/ 708:
+/***/ 709:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2636,7 +2714,7 @@ var DatabaseProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_auth_auth__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_tabs_tabs__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_tabs_tabs__ = __webpack_require__(174);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2716,7 +2794,7 @@ var AnonymousLoginComponent = (function () {
     };
     AnonymousLoginComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'anonymous-login',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\anonymous-login\anonymous-login.html"*/'<button ion-button icon-left full color="light" (tap)="login()">\n\n  <ion-icon name="eye-off"></ion-icon>\n\n  \n\n  Login Anonymously\n\n</button>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\anonymous-login\anonymous-login.html"*/
+            selector: 'anonymous-login',template:/*ion-inline-start:"C:\code\hades\src\components\anonymous-login\anonymous-login.html"*/'<button ion-button icon-left full color="light" (tap)="login()">\n\n  <ion-icon name="eye-off"></ion-icon>\n\n  \n\n  Login Anonymously\n\n</button>\n\n'/*ion-inline-end:"C:\code\hades\src\components\anonymous-login\anonymous-login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* NavController */],
@@ -2729,7 +2807,7 @@ var AnonymousLoginComponent = (function () {
 
 /***/ }),
 
-/***/ 709:
+/***/ 710:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2808,7 +2886,7 @@ var UserLogoutComponent = (function () {
     };
     UserLogoutComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'user-logout',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\user-logout\user-logout.html"*/'<button ion-button color="light" (tap)="logout()">\n\n  Logout\n\n</button>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\user-logout\user-logout.html"*/
+            selector: 'user-logout',template:/*ion-inline-start:"C:\code\hades\src\components\user-logout\user-logout.html"*/'<button ion-button color="light" (tap)="logout()">\n\n  Logout\n\n</button>\n\n'/*ion-inline-end:"C:\code\hades\src\components\user-logout\user-logout.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_auth_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* NavController */]])
@@ -2820,7 +2898,7 @@ var UserLogoutComponent = (function () {
 
 /***/ }),
 
-/***/ 710:
+/***/ 711:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2870,7 +2948,7 @@ var PostFeedComponent = (function () {
     ], PostFeedComponent.prototype, "userId", void 0);
     PostFeedComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'post-feed',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\post-feed\post-feed.html"*/'<ng-container *ngIf="(auth.user | async) || {} as user">\n\n\n\n\n\n  <ion-card *ngFor="let post of posts | async; trackBy: trackByFn">\n\n    <img [src]="post.img || \'https://goo.gl/n62NG4\'" onError="this.src=\'https://goo.gl/LJagAi\'">\n\n    <ion-card-content>\n\n      {{ post.content }}\n\n\n\n      <hr>\n\n\n\n      <heart-button [userId]="user.uid" [post]="post"></heart-button>\n\n      \n\n    </ion-card-content>\n\n\n\n  </ion-card>\n\n\n\n</ng-container>'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\post-feed\post-feed.html"*/
+            selector: 'post-feed',template:/*ion-inline-start:"C:\code\hades\src\components\post-feed\post-feed.html"*/'<ng-container *ngIf="(auth.user | async) || {} as user">\n\n\n\n\n\n  <ion-card *ngFor="let post of posts | async; trackBy: trackByFn">\n\n    <img [src]="post.img || \'https://goo.gl/n62NG4\'" onError="this.src=\'https://goo.gl/LJagAi\'">\n\n    <ion-card-content>\n\n      {{ post.content }}\n\n\n\n      <hr>\n\n\n\n      <heart-button [userId]="user.uid" [post]="post"></heart-button>\n\n      \n\n    </ion-card-content>\n\n\n\n  </ion-card>\n\n\n\n</ng-container>'/*ion-inline-end:"C:\code\hades\src\components\post-feed\post-feed.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_database_database__["a" /* DatabaseProvider */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__["a" /* AuthProvider */]])
     ], PostFeedComponent);
@@ -2881,7 +2959,7 @@ var PostFeedComponent = (function () {
 
 /***/ }),
 
-/***/ 711:
+/***/ 712:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2927,7 +3005,7 @@ var HeartButtonComponent = (function () {
     ], HeartButtonComponent.prototype, "post", void 0);
     HeartButtonComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'heart-button',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\heart-button\heart-button.html"*/'\n\n\n\n<ion-icon name="heart-outline" \n\n          *ngIf="!isHearted"\n\n          (tap)="db.createHeart(userId, post)">\n\n        \n\n</ion-icon>     \n\n\n\n<ion-icon name="heart"\n\n          *ngIf="isHearted" \n\n          (tap)="db.removeHeart(userId, post)">\n\n        \n\n</ion-icon>\n\n\n\n\n\n{{ heartCount }}\n\n\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\heart-button\heart-button.html"*/
+            selector: 'heart-button',template:/*ion-inline-start:"C:\code\hades\src\components\heart-button\heart-button.html"*/'\n\n\n\n<ion-icon name="heart-outline" \n\n          *ngIf="!isHearted"\n\n          (tap)="db.createHeart(userId, post)">\n\n        \n\n</ion-icon>     \n\n\n\n<ion-icon name="heart"\n\n          *ngIf="isHearted" \n\n          (tap)="db.removeHeart(userId, post)">\n\n        \n\n</ion-icon>\n\n\n\n\n\n{{ heartCount }}\n\n\n\n'/*ion-inline-end:"C:\code\hades\src\components\heart-button\heart-button.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_database_database__["a" /* DatabaseProvider */]])
     ], HeartButtonComponent);
@@ -2938,7 +3016,7 @@ var HeartButtonComponent = (function () {
 
 /***/ }),
 
-/***/ 712:
+/***/ 713:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2974,7 +3052,7 @@ var UserRelationshipComponent = (function () {
     ], UserRelationshipComponent.prototype, "followId", void 0);
     UserRelationshipComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'user-relationship',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\user-relationship\user-relationship.html"*/'\n\n<ng-container *ngIf="isFollowing | async; then unfollow else follow">\n\n  <!-- button appears here -->\n\n</ng-container>\n\n\n\n<ng-template #unfollow>\n\n  <button ion-button round \n\n          (tap)="db.unfollow(currentUserId, followId)">\n\n\n\n    Unfollow\n\n  </button>\n\n</ng-template>\n\n\n\n\n\n<ng-template #follow>\n\n  <button ion-button round outline\n\n          (tap)="db.follow(currentUserId, followId)"\n\n          [disabled]="isOwner">\n\n\n\n      Follow\n\n  </button>\n\n</ng-template>\n\n\n\n\n\n\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\user-relationship\user-relationship.html"*/
+            selector: 'user-relationship',template:/*ion-inline-start:"C:\code\hades\src\components\user-relationship\user-relationship.html"*/'\n\n<ng-container *ngIf="isFollowing | async; then unfollow else follow">\n\n  <!-- button appears here -->\n\n</ng-container>\n\n\n\n<ng-template #unfollow>\n\n  <button ion-button round \n\n          (tap)="db.unfollow(currentUserId, followId)">\n\n\n\n    Unfollow\n\n  </button>\n\n</ng-template>\n\n\n\n\n\n<ng-template #follow>\n\n  <button ion-button round outline\n\n          (tap)="db.follow(currentUserId, followId)"\n\n          [disabled]="isOwner">\n\n\n\n      Follow\n\n  </button>\n\n</ng-template>\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\code\hades\src\components\user-relationship\user-relationship.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_database_database__["a" /* DatabaseProvider */]])
     ], UserRelationshipComponent);
@@ -2985,7 +3063,7 @@ var UserRelationshipComponent = (function () {
 
 /***/ }),
 
-/***/ 713:
+/***/ 714:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3109,7 +3187,7 @@ var ImageUploadComponent = (function () {
     ], ImageUploadComponent.prototype, "uploadFinished", void 0);
     ImageUploadComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "image-upload",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\image-upload\image-upload.html"*/'<button ion-fab mini (tap)="captureAndUpload()">\n\n  <ion-icon name="camera"></ion-icon>\n\n</button>'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\image-upload\image-upload.html"*/
+            selector: "image-upload",template:/*ion-inline-start:"C:\code\hades\src\components\image-upload\image-upload.html"*/'<button ion-fab mini (tap)="captureAndUpload()">\n\n  <ion-icon name="camera"></ion-icon>\n\n</button>'/*ion-inline-end:"C:\code\hades\src\components\image-upload\image-upload.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_angularfire2_storage__["a" /* AngularFireStorage */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* ModalController */],
@@ -3141,13 +3219,13 @@ var UploadModal = (function () {
 
 /***/ }),
 
-/***/ 732:
+/***/ 733:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FcmHandlerComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_fcm_fcm__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_fcm_fcm__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__);
@@ -3192,7 +3270,7 @@ var FcmHandlerComponent = (function () {
     };
     FcmHandlerComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "fcm-handler",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\fcm-handler\fcm-handler.html"*/'<!-- Generated template for the FcmHandlerComponent component -->\n\n<div>\n\n  {{text}}\n\n</div>\n\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\fcm-handler\fcm-handler.html"*/
+            selector: "fcm-handler",template:/*ion-inline-start:"C:\code\hades\src\components\fcm-handler\fcm-handler.html"*/'<!-- Generated template for the FcmHandlerComponent component -->\n\n<div>\n\n  {{text}}\n\n</div>\n\n'/*ion-inline-end:"C:\code\hades\src\components\fcm-handler\fcm-handler.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_fcm_fcm__["a" /* FcmProvider */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["o" /* ToastController */]])
     ], FcmHandlerComponent);
@@ -3203,13 +3281,13 @@ var FcmHandlerComponent = (function () {
 
 /***/ }),
 
-/***/ 733:
+/***/ 734:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FcmTopicComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_fcm_fcm__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_fcm_fcm__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(8);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3252,7 +3330,7 @@ var FcmTopicComponent = (function () {
     ], FcmTopicComponent.prototype, "topic", void 0);
     FcmTopicComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'fcm-topic',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\fcm-topic\fcm-topic.html"*/'<ng-container *ngIf="isSupportedPlatform; else notSupported">\n\n\n\n<button ion-button color="secondary" \n\n        *ngIf="!isSubscribed" \n\n        (tap)="fcm.subscribeTo(topic)">\n\n\n\n  Get {{ topic }} notifications\n\n</button>\n\n\n\n<button ion-button color="danger" \n\n        *ngIf="isSubscribed" \n\n        (tap)="fcm.unsubscribeFrom(topic)">\n\n\n\n  End {{ topic }} notifications \n\n</button>\n\n\n\n</ng-container>\n\n\n\n\n\n<ng-template #notSupported>\n\n  <em>You must be on a native device to subscribe to topic notifications</em>\n\n</ng-template>'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\fcm-topic\fcm-topic.html"*/
+            selector: 'fcm-topic',template:/*ion-inline-start:"C:\code\hades\src\components\fcm-topic\fcm-topic.html"*/'<ng-container *ngIf="isSupportedPlatform; else notSupported">\n\n\n\n<button ion-button color="secondary" \n\n        *ngIf="!isSubscribed" \n\n        (tap)="fcm.subscribeTo(topic)">\n\n\n\n  Get {{ topic }} notifications\n\n</button>\n\n\n\n<button ion-button color="danger" \n\n        *ngIf="isSubscribed" \n\n        (tap)="fcm.unsubscribeFrom(topic)">\n\n\n\n  End {{ topic }} notifications \n\n</button>\n\n\n\n</ng-container>\n\n\n\n\n\n<ng-template #notSupported>\n\n  <em>You must be on a native device to subscribe to topic notifications</em>\n\n</ng-template>'/*ion-inline-end:"C:\code\hades\src\components\fcm-topic\fcm-topic.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_fcm_fcm__["a" /* FcmProvider */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* Platform */]])
     ], FcmTopicComponent);
@@ -3263,7 +3341,7 @@ var FcmTopicComponent = (function () {
 
 /***/ }),
 
-/***/ 761:
+/***/ 762:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -3528,11 +3606,11 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 761;
+webpackContext.id = 762;
 
 /***/ }),
 
-/***/ 780:
+/***/ 781:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3561,7 +3639,7 @@ var AddAttendanceComponent = (function () {
     }
     AddAttendanceComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'add-attendance',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\add-attendance\add-attendance.html"*/'<ion-content padding class="login-slider-main">\n\n  <ion-grid style="height: 100%">\n\n    <ion-row justify-content-center align-items-bottom style="height: 80%;">\n\n      <ion-slides pager="true">\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/rocket_200.png"></ion-img>\n\n          <p>Some fucking text goes here!!</p>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/chemistry_200.png"></ion-img>\n\n          <p>Another fucking test</p>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/last_icon_200.png"></ion-img>\n\n          <p>How your child becoms superhero using this app!!</p>\n\n        </ion-slide>\n\n      </ion-slides>\n\n      <email-login></email-login>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\add-attendance\add-attendance.html"*/
+            selector: 'add-attendance',template:/*ion-inline-start:"C:\code\hades\src\components\add-attendance\add-attendance.html"*/'<ion-content padding class="login-slider-main">\n\n  <ion-grid style="height: 100%">\n\n    <ion-row justify-content-center align-items-bottom style="height: 80%;">\n\n      <ion-slides pager="true">\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/rocket_200.png"></ion-img>\n\n          <p>Some fucking text goes here!!</p>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/chemistry_200.png"></ion-img>\n\n          <p>Another fucking test</p>\n\n        </ion-slide>\n\n        <ion-slide>\n\n          <ion-img style="background: transparent !important;  bottom:35%" width="200" height="200" src="../../assets/imgs/last_icon_200.png"></ion-img>\n\n          <p>How your child becoms superhero using this app!!</p>\n\n        </ion-slide>\n\n      </ion-slides>\n\n      <email-login></email-login>\n\n    </ion-row>\n\n  </ion-grid>\n\n</ion-content>'/*ion-inline-end:"C:\code\hades\src\components\add-attendance\add-attendance.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], AddAttendanceComponent);
@@ -3572,7 +3650,7 @@ var AddAttendanceComponent = (function () {
 
 /***/ }),
 
-/***/ 781:
+/***/ 782:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3664,7 +3742,7 @@ var StudentSelectorComponent = (function () {
     ], StudentSelectorComponent.prototype, "attendanceMap", void 0);
     StudentSelectorComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "student-selector",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\student-selector\student-selector.html"*/'<ion-list>\n  <h1>{{students}}</h1>\n  <div *ngFor="let student of students">\n    <ion-item class="itemClass">\n      <ion-label>{{student.id}} {{student.first_name}} {{student.last_name}}</ion-label>\n      <ion-toggle  checked="{{attendance[student.id]}}" ></ion-toggle>\n    </ion-item>\n</div>\n</ion-list>\n\n\n\n<ion-list>\n  <button (click)="markTrue()" >\n    True\n  </button>\n\n  <button (click)="markFalse()" >\n      False\n\n    </button>\n    <button (click)="reloadAttendance()" >\n      Reload\n\n    </button>\n    <button (click)="submitAttendance()" >\n      Submit\n\n    </button>\n\n</ion-list>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\student-selector\student-selector.html"*/
+            selector: "student-selector",template:/*ion-inline-start:"C:\code\hades\src\components\student-selector\student-selector.html"*/'<ion-list>\n\n  <h1>{{students}}</h1>\n\n  <div *ngFor="let student of students">\n\n    <ion-item class="itemClass">\n\n      <ion-label>{{student.id}} {{student.first_name}} {{student.last_name}}</ion-label>\n\n      <ion-toggle  checked="{{attendance[student.id]}}" ></ion-toggle>\n\n    </ion-item>\n\n</div>\n\n</ion-list>\n\n\n\n\n\n\n\n<ion-list>\n\n  <button (click)="markTrue()" >\n\n    True\n\n  </button>\n\n\n\n  <button (click)="markFalse()" >\n\n      False\n\n\n\n    </button>\n\n    <button (click)="reloadAttendance()" >\n\n      Reload\n\n\n\n    </button>\n\n    <button (click)="submitAttendance()" >\n\n      Submit\n\n\n\n    </button>\n\n\n\n</ion-list>\n\n'/*ion-inline-end:"C:\code\hades\src\components\student-selector\student-selector.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], StudentSelectorComponent);
@@ -3675,7 +3753,7 @@ var StudentSelectorComponent = (function () {
 
 /***/ }),
 
-/***/ 782:
+/***/ 783:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3728,7 +3806,7 @@ var ListDisplayComponent = (function () {
     ], ListDisplayComponent.prototype, "attendanceData", void 0);
     ListDisplayComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "list-display",template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\list-display\list-display.html"*/'<ion-list class="listClass">\n\n  <div *ngFor="let attendance of attendanceData">\n\n      <!-- <button ion-item *ngIf="attendance.day_view == \'true\' && attendance.month_view == \'true\'"> -->\n      <button ion-item *ngIf="attendance.day_view && attendance.month_view">\n\n        <ion-label>{{attendance.day + " " + attendance.date + "-" + attendance.month}}</ion-label>\n        <ion-label class="displayLabel">\n          <b>{{attendance.present +"/" + attendance.absent}}</b>\n        </ion-label>\n        <!-- <ion-label>{{attendance.month_view}}</ion-label>\n        <ion-label>{{attendance.day_view}}</ion-label> -->\n      </button>\n    </div>\n\n</ion-list>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\list-display\list-display.html"*/
+            selector: "list-display",template:/*ion-inline-start:"C:\code\hades\src\components\list-display\list-display.html"*/'<ion-list class="listClass">\n\n\n\n  <div *ngFor="let attendance of attendanceData">\n\n\n\n      <!-- <button ion-item *ngIf="attendance.day_view == \'true\' && attendance.month_view == \'true\'"> -->\n\n      <button ion-item *ngIf="attendance.day_view && attendance.month_view">\n\n\n\n        <ion-label>{{attendance.day + " " + attendance.date + "-" + attendance.month}}</ion-label>\n\n        <ion-label class="displayLabel">\n\n          <b>{{attendance.present +"/" + attendance.absent}}</b>\n\n        </ion-label>\n\n        <!-- <ion-label>{{attendance.month_view}}</ion-label>\n\n        <ion-label>{{attendance.day_view}}</ion-label> -->\n\n      </button>\n\n    </div>\n\n\n\n</ion-list>\n\n'/*ion-inline-end:"C:\code\hades\src\components\list-display\list-display.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], ListDisplayComponent);
@@ -3739,7 +3817,7 @@ var ListDisplayComponent = (function () {
 
 /***/ }),
 
-/***/ 783:
+/***/ 784:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3768,7 +3846,7 @@ var PopoverComponent = (function () {
     }
     PopoverComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'popover',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\popover\popover.html"*/'<!-- Generated template for the PopoverComponent component -->\n<div>\n  {{text}}\n</div>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\popover\popover.html"*/
+            selector: 'popover',template:/*ion-inline-start:"C:\code\hades\src\components\popover\popover.html"*/'<!-- Generated template for the PopoverComponent component -->\n\n<div>\n\n  {{text}}\n\n</div>\n\n'/*ion-inline-end:"C:\code\hades\src\components\popover\popover.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], PopoverComponent);
@@ -3779,7 +3857,7 @@ var PopoverComponent = (function () {
 
 /***/ }),
 
-/***/ 784:
+/***/ 785:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3808,7 +3886,7 @@ var AttendanceFilterComponent = (function () {
     }
     AttendanceFilterComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'attendance-filter',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\attendance-filter\attendance-filter.html"*/'<ion-list class="list-popover">\n    <!-- <ion-list-header>\n          Filters\n        </ion-list-header> -->\n    <ion-item class="item-leave-height">\n      <ion-label>Month</ion-label>\n      <ion-select>\n        <ion-option value="CASUAL LEAVE">Jan</ion-option>\n        <ion-option value="COMP OFF">Feb</ion-option>\n        <ion-option value="EARNED LEAVE">Mar</ion-option>\n        <ion-option value="SICK LEAVE">April</ion-option>\n      </ion-select>\n    </ion-item>\n    <!-- <ion-item-divider>\n          Item Divider\n        </ion-item-divider> -->\n    <!-- <ion-label>Days</ion-label> -->\n    <ion-item>\n      <ion-label>All Days</ion-label>\n      <ion-toggle></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Monday</ion-label>\n      <ion-toggle></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Tuesday</ion-label>\n      <ion-toggle></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Wednesday</ion-label>\n      <ion-toggle></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Thursday</ion-label>\n      <ion-toggle></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Friday</ion-label>\n      <ion-toggle></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Saturday</ion-label>\n      <ion-toggle></ion-toggle>\n    </ion-item>\n\n  </ion-list>\n  <ion-grid>\n    <ion-row  class="leave-margin">\n  <button ion-button>Cancel</button>\n  <button ion-button (click)="submitFilter()">Submit</button>\n  </ion-row>\n  </ion-grid>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\attendance-filter\attendance-filter.html"*/
+            selector: 'attendance-filter',template:/*ion-inline-start:"C:\code\hades\src\components\attendance-filter\attendance-filter.html"*/'<ion-list class="list-popover">\n\n    <!-- <ion-list-header>\n\n          Filters\n\n        </ion-list-header> -->\n\n    <ion-item class="item-leave-height">\n\n      <ion-label>Month</ion-label>\n\n      <ion-select>\n\n        <ion-option value="CASUAL LEAVE">Jan</ion-option>\n\n        <ion-option value="COMP OFF">Feb</ion-option>\n\n        <ion-option value="EARNED LEAVE">Mar</ion-option>\n\n        <ion-option value="SICK LEAVE">April</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n    <!-- <ion-item-divider>\n\n          Item Divider\n\n        </ion-item-divider> -->\n\n    <!-- <ion-label>Days</ion-label> -->\n\n    <ion-item>\n\n      <ion-label>All Days</ion-label>\n\n      <ion-toggle></ion-toggle>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Monday</ion-label>\n\n      <ion-toggle></ion-toggle>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Tuesday</ion-label>\n\n      <ion-toggle></ion-toggle>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Wednesday</ion-label>\n\n      <ion-toggle></ion-toggle>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Thursday</ion-label>\n\n      <ion-toggle></ion-toggle>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Friday</ion-label>\n\n      <ion-toggle></ion-toggle>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label>Saturday</ion-label>\n\n      <ion-toggle></ion-toggle>\n\n    </ion-item>\n\n\n\n  </ion-list>\n\n  <ion-grid>\n\n    <ion-row  class="leave-margin">\n\n  <button ion-button>Cancel</button>\n\n  <button ion-button (click)="submitFilter()">Submit</button>\n\n  </ion-row>\n\n  </ion-grid>\n\n'/*ion-inline-end:"C:\code\hades\src\components\attendance-filter\attendance-filter.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], AttendanceFilterComponent);
@@ -3819,7 +3897,7 @@ var AttendanceFilterComponent = (function () {
 
 /***/ }),
 
-/***/ 785:
+/***/ 786:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3848,7 +3926,7 @@ var AttendanceChoiceComponent = (function () {
     }
     AttendanceChoiceComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'attendance-choice',template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\components\attendance-choice\attendance-choice.html"*/'<!-- Generated template for the AttendanceChoiceComponent component -->\n<div>\n  {{text}}\n</div>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\components\attendance-choice\attendance-choice.html"*/
+            selector: 'attendance-choice',template:/*ion-inline-start:"C:\code\hades\src\components\attendance-choice\attendance-choice.html"*/'<!-- Generated template for the AttendanceChoiceComponent component -->\n\n<div>\n\n  {{text}}\n\n</div>\n\n'/*ion-inline-end:"C:\code\hades\src\components\attendance-choice\attendance-choice.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], AttendanceChoiceComponent);
@@ -3859,21 +3937,21 @@ var AttendanceChoiceComponent = (function () {
 
 /***/ }),
 
-/***/ 803:
+/***/ 804:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_homework_student_homework_student__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_dashboard_dashboard__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_homework_student_homework_student__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_dashboard_dashboard__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(489);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(490);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_auth_auth__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_analytics_analytics__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_remote_config_remote_config__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_slider_login_slider__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_analytics_analytics__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_remote_config_remote_config__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_slider_login_slider__ = __webpack_require__(209);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4009,7 +4087,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["i" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Ionic\ionic-firestarter\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-header class="menu_header">\n    <ion-toolbar>\n      <ion-grid class="menu_header_grid">\n        <ion-row row-center>\n          <ion-col col-8 class="header_title">\n            <ion-label text-capitalize padding-top>danerys targerian</ion-label>\n          </ion-col>\n          <ion-col col-4>\n            <div>\n              <img id="profilepic" src="../assets/imgs/student_70.png" />\n            </div>\n          </ion-col>\n        </ion-row>\n\n      </ion-grid>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n\n    <ion-list class="menu_wrapper">\n      <button ion-item class="menu_button">\n        <ion-icon name="home" class="menu_icon" color="primary"></ion-icon>\n        Home\n      </button>\n\n      <button ion-item class="menu_button">\n        <ion-icon name="notifications" class="menu_icon"></ion-icon>\n        Notifications\n      </button>\n      <button ion-item>\n        <ion-icon name="timer" class="menu_icon menu_lastitem"></ion-icon>\n        Time Table\n      </button>\n      <ion-item-divider></ion-item-divider>\n      <button ion-item>\n        <ion-icon name="bookmarks" class="menu_icon"></ion-icon>\n        Diary\n      </button>\n      <button ion-item>\n        <ion-icon name="book" class="menu_icon"></ion-icon>\n        Academics\n      </button>\n      <button menuClose ion-item (click)="openPage()">\n        <ion-icon name="flask" class="menu_icon"></ion-icon>\n        Subjects\n      </button>\n      <ion-item-divider></ion-item-divider>\n      <button ion-item>\n        <ion-icon name="images" class="menu_icon"></ion-icon>\n        Gallery\n      </button>\n      <button ion-item>\n        <ion-icon name="done-all" class="menu_icon"></ion-icon>\n        Fees\n      </button>\n      <button ion-item class="menu_lastitem">\n        <ion-icon name="call" class="menu_icon"></ion-icon>\n        Contact Us\n      </button>\n      <ion-item-divider></ion-item-divider>\n      <button ion-item>\n        <ion-label>\n          <ion-icon name="settings" class="menu_icon" color="primary"></ion-icon>\n          Settings\n        </ion-label>\n\n      </button>\n\n      <button ion-item (tap)="logOut()">\n          <ion-label>\n            <ion-icon name="log-out" class="menu_icon" color="primary" ></ion-icon>\n            Logout\n          </ion-label>\n\n        </button>\n\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<!-- <ion-nav id="nav" #content></ion-nav> -->\n<!-- <ion-nav [root]="rootPage"></ion-nav> -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"E:\Ionic\ionic-firestarter\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\code\hades\src\app\app.html"*/'<ion-menu [content]="content">\n\n\n\n  <ion-header class="menu_header">\n\n    <ion-toolbar>\n\n      <ion-grid class="menu_header_grid">\n\n        <ion-row row-center>\n\n          <ion-col col-8 class="header_title">\n\n            <ion-label text-capitalize padding-top>danerys targerian</ion-label>\n\n          </ion-col>\n\n          <ion-col col-4>\n\n            <div>\n\n              <img id="profilepic" src="../assets/imgs/student_70.png" />\n\n            </div>\n\n          </ion-col>\n\n        </ion-row>\n\n\n\n      </ion-grid>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n\n\n    <ion-list class="menu_wrapper">\n\n      <button ion-item class="menu_button">\n\n        <ion-icon name="home" class="menu_icon" color="primary"></ion-icon>\n\n        Home\n\n      </button>\n\n\n\n      <button ion-item class="menu_button">\n\n        <ion-icon name="notifications" class="menu_icon"></ion-icon>\n\n        Notifications\n\n      </button>\n\n      <button ion-item>\n\n        <ion-icon name="timer" class="menu_icon menu_lastitem"></ion-icon>\n\n        Time Table\n\n      </button>\n\n      <ion-item-divider></ion-item-divider>\n\n      <button ion-item>\n\n        <ion-icon name="bookmarks" class="menu_icon"></ion-icon>\n\n        Diary\n\n      </button>\n\n      <button ion-item>\n\n        <ion-icon name="book" class="menu_icon"></ion-icon>\n\n        Academics\n\n      </button>\n\n      <button menuClose ion-item (click)="openPage()">\n\n        <ion-icon name="flask" class="menu_icon"></ion-icon>\n\n        Subjects\n\n      </button>\n\n      <ion-item-divider></ion-item-divider>\n\n      <button ion-item>\n\n        <ion-icon name="images" class="menu_icon"></ion-icon>\n\n        Gallery\n\n      </button>\n\n      <button ion-item>\n\n        <ion-icon name="done-all" class="menu_icon"></ion-icon>\n\n        Fees\n\n      </button>\n\n      <button ion-item class="menu_lastitem">\n\n        <ion-icon name="call" class="menu_icon"></ion-icon>\n\n        Contact Us\n\n      </button>\n\n      <ion-item-divider></ion-item-divider>\n\n      <button ion-item>\n\n        <ion-label>\n\n          <ion-icon name="settings" class="menu_icon" color="primary"></ion-icon>\n\n          Settings\n\n        </ion-label>\n\n\n\n      </button>\n\n\n\n      <button ion-item (tap)="logOut()">\n\n          <ion-label>\n\n            <ion-icon name="log-out" class="menu_icon" color="primary" ></ion-icon>\n\n            Logout\n\n          </ion-label>\n\n\n\n        </button>\n\n\n\n    </ion-list>\n\n  </ion-content>\n\n</ion-menu>\n\n\n\n<!-- <ion-nav id="nav" #content></ion-nav> -->\n\n<!-- <ion-nav [root]="rootPage"></ion-nav> -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"C:\code\hades\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -4026,7 +4104,7 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 804:
+/***/ 805:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
